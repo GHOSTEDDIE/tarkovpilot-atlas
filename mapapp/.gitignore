@@ -1,0 +1,6 @@
+node_modules/
+dist/
+tarkovmap
+tarkovmap.exe
+tarkovmap-windows-*.exe
+mapapp-data.json

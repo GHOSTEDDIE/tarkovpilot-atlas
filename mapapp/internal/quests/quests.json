@@ -1,0 +1,5297 @@
+{
+ "quests": [
+  {
+   "id": "675c03d1f7da9792a405549a",
+   "title": "Abandoned Cargo",
+   "titleZh": "Abandoned Cargo",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": -182.22,
+     "wy": 1.03,
+     "wz": -135.74
+    },
+    {
+     "desc": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 147.91,
+     "wy": 1.41,
+     "wz": -67.8
+    },
+    {
+     "desc": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 60.23,
+     "wy": 4.72,
+     "wz": -65.86
+    },
+    {
+     "desc": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 115.59,
+     "wy": 1.62,
+     "wz": -38.22
+    },
+    {
+     "desc": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 103.04,
+     "wy": 1.62,
+     "wz": -65.12
+    },
+    {
+     "desc": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 66.61,
+     "wy": 9.0,
+     "wz": -60.8
+    },
+    {
+     "desc": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first special TerraGroup cargo with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 64.92,
+     "wy": 1.41,
+     "wz": -47.95
+    }
+   ]
+  },
+  {
+   "id": "66058ccbc7f3584787181478",
+   "title": "Against the Conscience - Part 1",
+   "titleZh": "Against the Conscience - Part 1",
+   "giver": "Fence",
+   "giverZh": "Fence",
+   "objectives": [
+    {
+     "desc": "Locate the old champion's room on Customs",
+     "descZh": "Locate the old champion's room on Customs",
+     "map": "customs",
+     "wx": 179.94,
+     "wy": 3.98,
+     "wz": 164.8
+    },
+    {
+     "desc": "Find out what happened to the champion",
+     "descZh": "Find out what happened to the champion",
+     "map": "customs",
+     "wx": 182.77,
+     "wy": 3.41,
+     "wz": 163.85
+    }
+   ]
+  },
+  {
+   "id": "666314b8312343839d032d24",
+   "title": "Airmail",
+   "titleZh": "Airmail",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Launch a red signal flare at the old sawmill on Woods",
+     "descZh": "Launch a red signal flare at the old sawmill on Woods",
+     "map": "woods",
+     "wx": -518.1,
+     "wy": 18.2,
+     "wz": -182.4
+    }
+   ]
+  },
+  {
+   "id": "6740b60c60a98cad1b0e0aa0",
+   "title": "Another Shipping Delay",
+   "titleZh": "Another Shipping Delay",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate the missing courier crew on Woods",
+     "descZh": "Locate the missing courier crew on Woods",
+     "map": "woods",
+     "wx": -39.06,
+     "wy": 19.88,
+     "wz": -250.38
+    }
+   ]
+  },
+  {
+   "id": "674492b6909d2013670a347a",
+   "title": "Ask for Directions",
+   "titleZh": "Ask for Directions",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first section of the cliff path with an MS2000 Marker on Lighthouse",
+     "descZh": "Locate and mark the first section of the cliff path with an MS2000 Marker on Lighthouse",
+     "map": "lighthouse",
+     "wx": -143.55,
+     "wy": 29.87,
+     "wz": -6.62
+    },
+    {
+     "desc": "Locate and mark the second section of the cliff path with an MS2000 Marker on Lighthouse",
+     "descZh": "Locate and mark the second section of the cliff path with an MS2000 Marker on Lighthouse",
+     "map": "lighthouse",
+     "wx": -167.82,
+     "wy": 30.89,
+     "wz": -52.03
+    },
+    {
+     "desc": "Locate and mark the third section of the cliff path with an MS2000 Marker on Lighthouse",
+     "descZh": "Locate and mark the third section of the cliff path with an MS2000 Marker on Lighthouse",
+     "map": "lighthouse",
+     "wx": -181.28,
+     "wy": 34.93,
+     "wz": -119.04
+    },
+    {
+     "desc": "Locate and mark the fourth section of the cliff path with an MS2000 Marker on Lighthouse",
+     "descZh": "Locate and mark the fourth section of the cliff path with an MS2000 Marker on Lighthouse",
+     "map": "lighthouse",
+     "wx": -185.21,
+     "wy": 23.36,
+     "wz": -177.93
+    }
+   ]
+  },
+  {
+   "id": "66058ccf06ef1d50a60c1f48",
+   "title": "Between Two Fires",
+   "titleZh": "Between Two Fires",
+   "giver": "Fence",
+   "giverZh": "Fence",
+   "objectives": [
+    {
+     "desc": "Return to the old champion's hideout on Customs",
+     "descZh": "Return to the old champion's hideout on Customs",
+     "map": "customs",
+     "wx": 179.94,
+     "wy": 3.98,
+     "wz": 164.8
+    }
+   ]
+  },
+  {
+   "id": "675c085d59b0575973005f52",
+   "title": "Break the Deal",
+   "titleZh": "Break the Deal",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Stash a DVL-10 sniper rifle at the specified spot on Customs",
+     "descZh": "Stash a DVL-10 sniper rifle at the specified spot on Customs",
+     "map": "customs",
+     "wx": 247.79,
+     "wy": 12.17,
+     "wz": -37.01
+    },
+    {
+     "desc": "Stash a DVL-10 magazine at the specified spot on Customs",
+     "descZh": "Stash a DVL-10 magazine at the specified spot on Customs",
+     "map": "customs",
+     "wx": 250.6,
+     "wy": 8.83,
+     "wz": -22.6
+    },
+    {
+     "desc": "Stash an ELCAN SpecterDR scope at the specified spot on Customs",
+     "descZh": "Stash an ELCAN SpecterDR scope at the specified spot on Customs",
+     "map": "customs",
+     "wx": 248.28,
+     "wy": 5.33,
+     "wz": -36.85
+    },
+    {
+     "desc": "Stash a pack of any 7.62x51 ammo at the specified spot on Customs",
+     "descZh": "Stash a pack of any 7.62x51 ammo at the specified spot on Customs",
+     "map": "customs",
+     "wx": 255.07,
+     "wy": 11.68,
+     "wz": -4.04
+    }
+   ]
+  },
+  {
+   "id": "66058cbd9f59e625462acc8e",
+   "title": "Create a Distraction - Part 1",
+   "titleZh": "Create a Distraction - Part 1",
+   "giver": "Ref",
+   "giverZh": "竞技场裁判",
+   "objectives": [
+    {
+     "desc": "Plant three TP-200 TNT bricks under Kaban's office on Streets of Tarkov",
+     "descZh": "Plant three TP-200 TNT bricks under Kaban's office on Streets of Tarkov",
+     "map": "groundzero",
+     "wx": 107.46,
+     "wy": 29.09,
+     "wz": 148.06
+    }
+   ]
+  },
+  {
+   "id": "6744aca8d3346c216702c583",
+   "title": "Discombobulate",
+   "titleZh": "Discombobulate",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Stash a VOG-25 Khattabka grenade at the first RPG ammo crate on Woods",
+     "descZh": "Stash a VOG-25 Khattabka grenade at the first RPG ammo crate on Woods",
+     "map": "woods",
+     "wx": -13.52,
+     "wy": -3.12,
+     "wz": 49.72
+    },
+    {
+     "desc": "Stash a VOG-25 Khattabka grenade at the second RPG ammo crate on Woods",
+     "descZh": "Stash a VOG-25 Khattabka grenade at the second RPG ammo crate on Woods",
+     "map": "woods",
+     "wx": 238.97,
+     "wy": -1.48,
+     "wz": -69.38
+    },
+    {
+     "desc": "Stash a VOG-25 Khattabka grenade at the third RPG ammo crate on Woods",
+     "descZh": "Stash a VOG-25 Khattabka grenade at the third RPG ammo crate on Woods",
+     "map": "woods",
+     "wx": -92.52,
+     "wy": 26.96,
+     "wz": -380.12
+    }
+   ]
+  },
+  {
+   "id": "66058cb22cee99303f1ba067",
+   "title": "Easy Money - Part 1",
+   "titleZh": "Easy Money - Part 1",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Plant the Bison vs Undertaker poster in the living quarters at the Scav base on Customs",
+     "descZh": "Plant the \"Bison VS Undertaker\" poster in the living quarters at the Scav base on Customs",
+     "map": "customs",
+     "wx": 203.19,
+     "wy": 1.98,
+     "wz": -116.58
+    },
+    {
+     "desc": "Plant the Bison vs Undertaker poster in the living quarters at the Scav base on Customs",
+     "descZh": "Plant the \"Bison VS Undertaker\" poster in the living quarters at the Scav base on Customs",
+     "map": "customs",
+     "wx": 206.75,
+     "wy": 2.05,
+     "wz": -120.2
+    },
+    {
+     "desc": "Plant the Bison vs Undertaker poster in the living quarters at the Scav base on Customs",
+     "descZh": "Plant the \"Bison VS Undertaker\" poster in the living quarters at the Scav base on Customs",
+     "map": "customs",
+     "wx": 192.34,
+     "wy": 2.17,
+     "wz": -103.75
+    },
+    {
+     "desc": "Plant the Bison vs Undertaker poster in the living quarters at the Scav base on Customs",
+     "descZh": "Plant the \"Bison VS Undertaker\" poster in the living quarters at the Scav base on Customs",
+     "map": "customs",
+     "wx": 187.22,
+     "wy": 2.17,
+     "wz": -101.97
+    },
+    {
+     "desc": "Plant the Bison vs Undertaker poster in the living quarters at the Scav base on Customs",
+     "descZh": "Plant the \"Bison VS Undertaker\" poster in the living quarters at the Scav base on Customs",
+     "map": "customs",
+     "wx": 206.88,
+     "wy": 1.98,
+     "wz": -124.64
+    }
+   ]
+  },
+  {
+   "id": "674602307e3818d5bb069489",
+   "title": "Hindsight 20/20",
+   "titleZh": "Hindsight 20/20",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Stash the first Russian armor-piercing ammo pack inside the bunker",
+     "descZh": "Stash the first Russian armor-piercing ammo pack inside the bunker",
+     "map": "woods",
+     "wx": -272.7,
+     "wy": 7.69,
+     "wz": -411.8
+    },
+    {
+     "desc": "Stash the second Russian armor-piercing ammo pack inside the bunker",
+     "descZh": "Stash the second Russian armor-piercing ammo pack inside the bunker",
+     "map": "woods",
+     "wx": -268.93,
+     "wy": 7.69,
+     "wz": -412.65
+    },
+    {
+     "desc": "Locate the bunker under the mountain on Woods",
+     "descZh": "Locate the bunker under the mountain on Woods",
+     "map": "woods",
+     "wx": -282.79,
+     "wy": 12.88,
+     "wz": -414.77
+    },
+    {
+     "desc": "Stash the third Russian armor-piercing ammo pack inside the bunker",
+     "descZh": "Stash the third Russian armor-piercing ammo pack inside the bunker",
+     "map": "woods",
+     "wx": -268.29,
+     "wy": 7.69,
+     "wz": -416.21
+    }
+   ]
+  },
+  {
+   "id": "673f4e956f1b89c7bc0f56ef",
+   "title": "Hot Wheels",
+   "titleZh": "Hot Wheels",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Locate and mark the spare BTR wheels with an MS2000 Marker",
+     "descZh": "Locate and mark the spare BTR wheels with an MS2000 Marker",
+     "map": "reserve",
+     "wx": 100.47,
+     "wy": -6.63,
+     "wz": 28.38
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 375.77,
+     "wy": 1.22,
+     "wz": 20.38
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 117.47,
+     "wy": 1.6,
+     "wz": -86.0
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 316.23,
+     "wy": 2.28,
+     "wz": -192.11
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 572.39,
+     "wy": 1.81,
+     "wz": -90.22
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 5.53,
+     "wy": 1.54,
+     "wz": -96.45
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 340.78,
+     "wy": 1.73,
+     "wz": -159.88
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 557.33,
+     "wy": -0.24,
+     "wz": 1.47
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": -176.86,
+     "wy": 1.69,
+     "wz": -206.77
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": -279.38,
+     "wy": 1.32,
+     "wz": -139.94
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 43.67,
+     "wy": 1.53,
+     "wz": -157.66
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 111.77,
+     "wy": 2.9,
+     "wz": -94.86
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 21.74,
+     "wy": -0.72,
+     "wz": 99.22
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 98.45,
+     "wy": 1.61,
+     "wz": -86.2
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": -226.94,
+     "wy": 1.35,
+     "wz": -87.07
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 92.18,
+     "wy": 1.55,
+     "wz": -152.42
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": 67.1,
+     "wy": 1.61,
+     "wz": -143.21
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": -203.42,
+     "wy": 1.36,
+     "wz": -188.64
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": -255.14,
+     "wy": 1.37,
+     "wz": -89.3
+    },
+    {
+     "desc": "Complete the main objective as soon as possible",
+     "descZh": "Complete the main objective as soon as possible",
+     "map": "customs",
+     "wx": -226.34,
+     "wy": 1.38,
+     "wz": -89.73
+    }
+   ]
+  },
+  {
+   "id": "673f5a4976553f78350bdac1",
+   "title": "Hot Wheels - Let's Try Again",
+   "titleZh": "Hot Wheels - Let's Try Again",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Locate and mark the spare BTR wheels with an MS2000 Marker on Reserve",
+     "descZh": "Locate and mark the spare BTR wheels with an MS2000 Marker on Reserve",
+     "map": "reserve",
+     "wx": 100.47,
+     "wy": -6.63,
+     "wz": 28.38
+    }
+   ]
+  },
+  {
+   "id": "66d9cbb67b491f9d5304f6e6",
+   "title": "Is This a Reference?",
+   "titleZh": "Is This a Reference?",
+   "giver": "Fence",
+   "giverZh": "Fence",
+   "objectives": [
+    {
+     "desc": "Install a WI-FI Camera at the barbed wire body on Streets of Tarkov",
+     "descZh": "Install a WI-FI Camera at the barbed wire body on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": 181.27,
+     "wy": 0.87,
+     "wz": 229.01
+    },
+    {
+     "desc": "Install a WI-FI Camera at the amphibian pizza lovers' hideout on Streets of Tarkov",
+     "descZh": "Install a WI-FI Camera at the amphibian pizza lovers' hideout on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": -262.82,
+     "wy": -2.33,
+     "wz": 206.34
+    },
+    {
+     "desc": "Install a WI-FI Camera at the really scary hole in the wall on Streets of Tarkov",
+     "descZh": "Install a WI-FI Camera at the really scary hole in the wall on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": 209.66,
+     "wy": 0.82,
+     "wz": 230.84
+    },
+    {
+     "desc": "Install a WI-FI Camera at the burned girl's sickroom on Streets of Tarkov",
+     "descZh": "Install a WI-FI Camera at the burned girl's sickroom on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": 182.72,
+     "wy": 2.17,
+     "wz": 111.75
+    },
+    {
+     "desc": "Install a WI-FI Camera at the high rise where one die-hard guy kicked ass on Ground Zero",
+     "descZh": "Install a WI-FI Camera at the high rise where one die-hard guy kicked ass on Ground Zero",
+     "map": "groundzero",
+     "wx": 4.63,
+     "wy": 23.95,
+     "wz": 337.25
+    },
+    {
+     "desc": "Install a WI-FI Camera at the computer with a joke for programmers on Ground Zero",
+     "descZh": "Install a WI-FI Camera at the computer with a joke for programmers on Ground Zero",
+     "map": "groundzero",
+     "wx": 118.71,
+     "wy": 24.24,
+     "wz": 190.3
+    },
+    {
+     "desc": "Install a WI-FI Camera at the little chair surrounded by big black chairs on Ground Zero",
+     "descZh": "Install a WI-FI Camera at the little chair surrounded by big black chairs on Ground Zero",
+     "map": "groundzero",
+     "wx": 41.1,
+     "wy": 31.41,
+     "wz": 140.81
+    },
+    {
+     "desc": "Install a WI-FI Camera by your friend Wilson on Lighthouse",
+     "descZh": "Install a WI-FI Camera by your friend Wilson on Lighthouse",
+     "map": "lighthouse",
+     "wx": 117.08,
+     "wy": 0.87,
+     "wz": -154.47
+    },
+    {
+     "desc": "Install a WI-FI Camera at the kindled rest place on Lighthouse",
+     "descZh": "Install a WI-FI Camera at the kindled rest place on Lighthouse",
+     "map": "lighthouse",
+     "wx": 97.63,
+     "wy": 3.66,
+     "wz": -165.79
+    },
+    {
+     "desc": "Install a WI-FI Camera at the ominous welcome sign on Lighthouse",
+     "descZh": "Install a WI-FI Camera at the ominous welcome sign on Lighthouse",
+     "map": "lighthouse",
+     "wx": 36.06,
+     "wy": 7.39,
+     "wz": -261.6
+    },
+    {
+     "desc": "Install a WI-FI Camera at the megagenius scientist's seat on Lighthouse",
+     "descZh": "Install a WI-FI Camera at the megagenius scientist's seat on Lighthouse",
+     "map": "lighthouse",
+     "wx": 97.11,
+     "wy": 24.23,
+     "wz": 115.72
+    },
+    {
+     "desc": "Install a WI-FI Camera at the place where conscripts did a very important task on Reserve",
+     "descZh": "Install a WI-FI Camera at the place where conscripts did a very important task on Reserve",
+     "map": "reserve",
+     "wx": -82.75,
+     "wy": -6.38,
+     "wz": 62.44
+    },
+    {
+     "desc": "Install a WI-FI Camera at the two chair riddle on Reserve",
+     "descZh": "Install a WI-FI Camera at the two chair riddle on Reserve",
+     "map": "reserve",
+     "wx": 125.1,
+     "wy": -6.48,
+     "wz": -89.34
+    },
+    {
+     "desc": "Install a WI-FI Camera at every tank driver's first videogame on Reserve",
+     "descZh": "Install a WI-FI Camera at every tank driver's first videogame on Reserve",
+     "map": "reserve",
+     "wx": -77.32,
+     "wy": -6.25,
+     "wz": -20.25
+    },
+    {
+     "desc": "Install a WI-FI Camera at the bucket-head villain on Customs",
+     "descZh": "Install a WI-FI Camera at the bucket-head villain on Customs",
+     "map": "customs",
+     "wx": 568.54,
+     "wy": 7.7,
+     "wz": -58.75
+    },
+    {
+     "desc": "Install a WI-FI Camera at Anvil 3-4 crew member's execution site on Customs",
+     "descZh": "Install a WI-FI Camera at Anvil 3-4 crew member's execution site on Customs",
+     "map": "customs",
+     "wx": 567.93,
+     "wy": 6.9,
+     "wz": -79.97
+    },
+    {
+     "desc": "Install a WI-FI Camera at every indie developer's worst nightmare on Customs",
+     "descZh": "Install a WI-FI Camera at every indie developer's worst nightmare on Customs",
+     "map": "customs",
+     "wx": 173.57,
+     "wy": 3.83,
+     "wz": 184.21
+    },
+    {
+     "desc": "Install a WI-FI Camera in the room where the firefighter burned the books to become happy on Factory",
+     "descZh": "Install a WI-FI Camera in the room where the firefighter burned the books to become happy on Factory",
+     "map": "factory",
+     "wx": 17.42,
+     "wy": 1.83,
+     "wz": 43.02
+    },
+    {
+     "desc": "Install a WI-FI Camera at the place where some valve technicians couldn't finish their third project on Factory",
+     "descZh": "Install a WI-FI Camera at the place where some valve technicians couldn't finish their third project on Factory",
+     "map": "factory",
+     "wx": 21.4,
+     "wy": -1.88,
+     "wz": 11.71
+    },
+    {
+     "desc": "Install a WI-FI Camera at the dangerous Russian chocolate beauty on Factory",
+     "descZh": "在工厂的“危险重重俄式巧克力美少女”处安装WI-FI摄像头",
+     "map": "factory",
+     "wx": -49.61,
+     "wy": 2.35,
+     "wz": 60.41
+    },
+    {
+     "desc": "Install a WI-FI Camera in the conspiracy theorist's room on Factory",
+     "descZh": "在工厂的“阴谋论学家”处安装WI-FI摄像头",
+     "map": "factory",
+     "wx": 27.37,
+     "wy": 9.23,
+     "wz": 38.42
+    },
+    {
+     "desc": "Install a WI-FI Camera near where someone thought he'd get transported to the magic school on Factory",
+     "descZh": "在工厂的“假想学校传送门”处安装WI-FI摄像头",
+     "map": "factory",
+     "wx": 52.41,
+     "wy": 1.86,
+     "wz": -17.49
+    },
+    {
+     "desc": "Install a WI-FI Camera at the mother of all strategy games on Factory",
+     "descZh": "在工厂的“策略游戏之母”处安装WI-FI摄像头",
+     "map": "factory",
+     "wx": 30.74,
+     "wy": 4.29,
+     "wz": -31.15
+    },
+    {
+     "desc": "Install a WI-FI Camera at the stairway to the skies on Factory",
+     "descZh": "在工厂的登顶楼梯处安装WI-FI摄像头",
+     "map": "factory",
+     "wx": 59.56,
+     "wy": 0.7,
+     "wz": 50.49
+    },
+    {
+     "desc": "Install a WI-FI Camera at the bear who sat into a flaming car on Woods",
+     "descZh": "在海岸线燃烧车辆里的小熊身边安装WI-FI摄像头",
+     "map": "woods",
+     "wx": -117.33,
+     "wy": 22.04,
+     "wz": -463.95
+    },
+    {
+     "desc": "Install a WI-FI Camera at the upside-down chair on Shoreline",
+     "descZh": "在海岸线的反转椅子处安装WI-FI摄像头",
+     "map": "shoreline",
+     "wx": 326.23,
+     "wy": -54.2,
+     "wz": 131.47
+    },
+    {
+     "desc": "Install a WI-FI Camera at the not-so-lonely bathroom on Shoreline",
+     "descZh": "在海岸线的公共浴室安装WI-FI摄像头",
+     "map": "shoreline",
+     "wx": -321.59,
+     "wy": -61.08,
+     "wz": 488.2
+    }
+   ]
+  },
+  {
+   "id": "6740a02a69a58fceba0ff399",
+   "title": "Natural Exchange",
+   "titleZh": "Natural Exchange",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Stash the first metal fuel tank at the smugglers' base on Shoreline",
+     "descZh": "Stash the first metal fuel tank at the smugglers' base on Shoreline",
+     "map": "shoreline",
+     "wx": -609.33,
+     "wy": -28.66,
+     "wz": -176.86
+    },
+    {
+     "desc": "Stash the second metal fuel tank at the smugglers' base on Shoreline",
+     "descZh": "Stash the second metal fuel tank at the smugglers' base on Shoreline",
+     "map": "shoreline",
+     "wx": -627.01,
+     "wy": -25.45,
+     "wz": -228.45
+    }
+   ]
+  },
+  {
+   "id": "673f61a066e6a521aa04b62b",
+   "title": "Order From Outside",
+   "titleZh": "Order From Outside",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Stash the device at the specified location on Woods",
+     "descZh": "Stash the device at the specified location on Woods",
+     "map": "woods",
+     "wx": -55.01,
+     "wy": 8.82,
+     "wz": -498.35
+    }
+   ]
+  },
+  {
+   "id": "666314c3acf8442f8b0531a3",
+   "title": "Proper Comeback",
+   "titleZh": "Proper Comeback",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Stash a Golden rooster figurine at Prapor's WI-FI Camera on Woods",
+     "descZh": "Stash a Golden rooster figurine at Prapor's WI-FI Camera on Woods",
+     "map": "woods",
+     "wx": -219.75,
+     "wy": 62.62,
+     "wz": -219.97
+    },
+    {
+     "desc": "Stash a Golden rooster figurine at Prapor's WI-FI Camera on Shoreline",
+     "descZh": "Stash a Golden rooster figurine at Prapor's WI-FI Camera on Shoreline",
+     "map": "shoreline",
+     "wx": -459.72,
+     "wy": -47.77,
+     "wz": 564.83
+    },
+    {
+     "desc": "Stash a Golden rooster figurine at Prapor's WI-FI Camera on Factory",
+     "descZh": "Stash a Golden rooster figurine at Prapor's WI-FI Camera on Factory",
+     "map": "factory",
+     "wx": 34.79,
+     "wy": 8.53,
+     "wz": 35.5
+    }
+   ]
+  },
+  {
+   "id": "675c15fbf7da9792a4059871",
+   "title": "Provide Viewership",
+   "titleZh": "Provide Viewership",
+   "giver": "Ref",
+   "giverZh": "竞技场裁判",
+   "objectives": [
+    {
+     "desc": "Install the first WI-FI Camera inside the industrial plant on Customs",
+     "descZh": "Install the first WI-FI Camera inside the industrial plant on Customs",
+     "map": "customs",
+     "wx": 256.88,
+     "wy": 13.59,
+     "wz": -75.08
+    },
+    {
+     "desc": "Install the second WI-FI Camera inside the industrial plant on Customs",
+     "descZh": "Install the second WI-FI Camera inside the industrial plant on Customs",
+     "map": "customs",
+     "wx": 254.8,
+     "wy": 2.28,
+     "wz": -75.23
+    },
+    {
+     "desc": "Install the third WI-FI Camera inside the industrial plant on Customs",
+     "descZh": "Install the third WI-FI Camera inside the industrial plant on Customs",
+     "map": "customs",
+     "wx": 262.4,
+     "wy": 6.49,
+     "wz": -39.41
+    },
+    {
+     "desc": "Install the fourth WI-FI Camera inside the industrial plant on Customs",
+     "descZh": "Install the fourth WI-FI Camera inside the industrial plant on Customs",
+     "map": "customs",
+     "wx": 278.64,
+     "wy": 2.17,
+     "wz": -52.2
+    },
+    {
+     "desc": "Eliminate any target inside the industrial plant on Customs",
+     "descZh": "Eliminate any target inside the industrial plant on Customs",
+     "map": "customs",
+     "wx": 276.38,
+     "wy": 2.17,
+     "wz": -45.57
+    }
+   ]
+  },
+  {
+   "id": "675c1ec7a46173572a0bf20a",
+   "title": "Rite of Passage",
+   "titleZh": "Rite of Passage",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Eliminate Scavs at the old gas station on Customs",
+     "descZh": "Eliminate Scavs at the old gas station on Customs",
+     "map": "customs",
+     "wx": 331.08,
+     "wy": 2.39,
+     "wz": -182.37
+    },
+    {
+     "desc": "Eliminate Scavs at the new gas station on Customs",
+     "descZh": "Eliminate Scavs at the new gas station on Customs",
+     "map": "customs",
+     "wx": 412.25,
+     "wy": 1.02,
+     "wz": 27.32
+    }
+   ]
+  },
+  {
+   "id": "674600a366e6a521aa05eb66",
+   "title": "Route Deviation",
+   "titleZh": "Route Deviation",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Mark the Collapsed Crane BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "Mark the Collapsed Crane BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": 195.53,
+     "wy": 3.21,
+     "wz": 256.32
+    },
+    {
+     "desc": "Mark the Old Scav Checkpoint BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "Mark the Old Scav Checkpoint BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": 120.76,
+     "wy": -2.44,
+     "wz": 26.16
+    },
+    {
+     "desc": "Mark the Pinewood Hotel BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "Mark the Pinewood Hotel BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": -131.7,
+     "wy": 0.63,
+     "wz": 64.95
+    },
+    {
+     "desc": "Mark the City Center BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "Mark the City Center BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": -13.11,
+     "wy": 2.36,
+     "wz": 217.21
+    },
+    {
+     "desc": "Mark the Tram BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "Mark the Tram BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": -232.09,
+     "wy": 2.45,
+     "wz": 236.69
+    },
+    {
+     "desc": "Mark the Rodina Cinema BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "Mark the Rodina Cinema BTR stop with an MS2000 Marker on Streets of Tarkov",
+     "map": "streetsoftarkov",
+     "wx": -136.84,
+     "wy": 1.92,
+     "wz": 399.3
+    }
+   ]
+  },
+  {
+   "id": "673f2cd5d3346c2167020484",
+   "title": "Shipping Delay - Part 2",
+   "titleZh": "Shipping Delay - Part 2",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Locate and scout the office at the depot on Woods",
+     "descZh": "Locate and scout the office at the depot on Woods",
+     "map": "woods",
+     "wx": -615.69,
+     "wy": 8.09,
+     "wz": 128.68
+    },
+    {
+     "desc": "Locate and scout the warehouses at the depot on Woods",
+     "descZh": "Locate and scout the warehouses at the depot on Woods",
+     "map": "woods",
+     "wx": -617.2,
+     "wy": 8.09,
+     "wz": 154.15
+    },
+    {
+     "desc": "Locate and scout the garages at the depot on Woods",
+     "descZh": "Locate and scout the garages at the depot on Woods",
+     "map": "woods",
+     "wx": -684.24,
+     "wy": 8.09,
+     "wz": 105.58
+    }
+   ]
+  },
+  {
+   "id": "6745fdddd3346c216702e0bf",
+   "title": "Simple Side Job",
+   "titleZh": "Simple Side Job",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Stash the cargo at the Scav house on Woods",
+     "descZh": "Stash the cargo at the Scav house on Woods",
+     "map": "woods",
+     "wx": 412.89,
+     "wy": -13.04,
+     "wz": 240.05
+    }
+   ]
+  },
+  {
+   "id": "66631493312343839d032d22",
+   "title": "Small Business - Part 3",
+   "titleZh": "Small Business - Part 3",
+   "giver": "Fence",
+   "giverZh": "Fence",
+   "objectives": [
+    {
+     "desc": "Stash a Cultist knife at the sunken village marked circle on Shoreline",
+     "descZh": "Stash a Cultist knife at the sunken village marked circle on Shoreline",
+     "map": "shoreline",
+     "wx": 251.99,
+     "wy": -52.69,
+     "wz": -105.12
+    },
+    {
+     "desc": "Stash a Cultist knife at the Health Resort east wing marked circle on Shoreline",
+     "descZh": "Stash a Cultist knife at the Health Resort east wing marked circle on Shoreline",
+     "map": "shoreline",
+     "wx": -336.64,
+     "wy": 3.54,
+     "wz": -88.73
+    },
+    {
+     "desc": "Stash a Cultist knife at the river village marked circle on Woods",
+     "descZh": "Stash a Cultist knife at the river village marked circle on Woods",
+     "map": "woods",
+     "wx": 195.98,
+     "wy": 1.03,
+     "wz": -7.24
+    },
+    {
+     "desc": "Stash a Cultist knife at the sawmill marked circle on Woods",
+     "descZh": "Stash a Cultist knife at the sawmill marked circle on Woods",
+     "map": "woods",
+     "wx": -88.7,
+     "wy": 12.55,
+     "wz": -717.61
+    }
+   ]
+  },
+  {
+   "id": "5edac63b930f5454f51e128b",
+   "title": "TerraGroup Employee",
+   "titleZh": "TerraGroup 雇员",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Find Sanitar's workplace in The Lab",
+     "descZh": "找到 Sanitar 在实验室的工作间",
+     "map": "lab",
+     "wx": -131.95,
+     "wy": 5.41,
+     "wz": -336.87
+    }
+   ]
+  },
+  {
+   "id": "6744af0969a58fceba101fed",
+   "title": "The Price of Independence",
+   "titleZh": "The Price of Independence",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Stash the letter on the third floor of the military headquarters on Reserve",
+     "descZh": "Stash the letter on the third floor of the military headquarters on Reserve",
+     "map": "reserve",
+     "wx": -127.22,
+     "wy": 0.7,
+     "wz": -20.36
+    },
+    {
+     "desc": "Launch a yellow signal flare at the train station warehouse on Lighthouse",
+     "descZh": "Launch a yellow signal flare at the train station warehouse on Lighthouse",
+     "map": "lighthouse",
+     "wx": -22.6,
+     "wy": 13.68,
+     "wz": -829.78
+    },
+    {
+     "desc": "Launch a yellow signal flare at the pier on Lighthouse",
+     "descZh": "Launch a yellow signal flare at the pier on Lighthouse",
+     "map": "lighthouse",
+     "wx": 164.62,
+     "wy": 2.34,
+     "wz": -160.06
+    }
+   ]
+  },
+  {
+   "id": "6745cbee909d2013670a4a55",
+   "title": "The Price of Independence",
+   "titleZh": "The Price of Independence",
+   "giver": "BTR Driver",
+   "giverZh": "BTR司机",
+   "objectives": [
+    {
+     "desc": "Stash the letter on the third floor of the military headquarters on Reserve",
+     "descZh": "Stash the letter on the third floor of the military headquarters on Reserve",
+     "map": "reserve",
+     "wx": -127.22,
+     "wy": 0.7,
+     "wz": -20.36
+    },
+    {
+     "desc": "Launch a yellow signal flare at the train station warehouse on Lighthouse",
+     "descZh": "Launch a yellow signal flare at the train station warehouse on Lighthouse",
+     "map": "lighthouse",
+     "wx": -22.6,
+     "wy": 13.68,
+     "wz": -829.78
+    },
+    {
+     "desc": "Launch a yellow signal flare at the pier on Lighthouse",
+     "descZh": "Launch a yellow signal flare at the pier on Lighthouse",
+     "map": "lighthouse",
+     "wx": 164.62,
+     "wy": 2.34,
+     "wz": -160.06
+    }
+   ]
+  },
+  {
+   "id": "665eec4a4dfc83b0ed0a9dca",
+   "title": "Thirsty - Delivery",
+   "titleZh": "Thirsty - Delivery",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate the specified stash spot on Woods",
+     "descZh": "Locate the specified stash spot on Woods",
+     "map": "woods",
+     "wx": 227.7,
+     "wy": 21.06,
+     "wz": -706.56
+    },
+    {
+     "desc": "Locate the specified stash spot on Customs",
+     "descZh": "Locate the specified stash spot on Customs",
+     "map": "customs",
+     "wx": 11.71,
+     "wy": -0.72,
+     "wz": 35.59
+    },
+    {
+     "desc": "Stash the first Propane tank (5L)",
+     "descZh": "Stash the first Propane tank (5L)",
+     "map": "woods",
+     "wx": 227.7,
+     "wy": 21.06,
+     "wz": -706.56
+    },
+    {
+     "desc": "Stash the second Propane tank (5L)",
+     "descZh": "Stash the second Propane tank (5L)",
+     "map": "customs",
+     "wx": 11.71,
+     "wy": -0.72,
+     "wz": 35.59
+    }
+   ]
+  },
+  {
+   "id": "665eeca45d86b6c8aa03c79d",
+   "title": "Thirsty - Echo",
+   "titleZh": "Thirsty - Echo",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate any information about Thirsty on Shoreline",
+     "descZh": "Locate any information about Thirsty on Shoreline",
+     "map": "shoreline",
+     "wx": -200.31,
+     "wy": -6.15,
+     "wz": -76.36
+    }
+   ]
+  },
+  {
+   "id": "666314bd920800278d0f6748",
+   "title": "Viewer",
+   "titleZh": "Viewer",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": " Install a WI-FI Camera at the office corridor on Factory",
+     "descZh": " Install a WI-FI Camera at the office corridor on Factory",
+     "map": "factory",
+     "wx": 36.84,
+     "wy": 9.43,
+     "wz": 35.5
+    },
+    {
+     "desc": "Install a WI-FI Camera on the mountain ledge on Woods",
+     "descZh": "Install a WI-FI Camera on the mountain ledge on Woods",
+     "map": "woods",
+     "wx": -219.23,
+     "wy": 64.62,
+     "wz": -224.43
+    },
+    {
+     "desc": "Install a WI-FI Camera at the pier tower on Shoreline",
+     "descZh": "Install a WI-FI Camera at the pier tower on Shoreline",
+     "map": "shoreline",
+     "wx": -459.34,
+     "wy": -47.6,
+     "wz": 566.97
+    }
+   ]
+  },
+  {
+   "id": "675c1cf4a757ddd00404f0a3",
+   "title": "Work Smarter",
+   "titleZh": "Work Smarter",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the secret exfil on Customs",
+     "descZh": "Survive and extract from Customs through ZB-1012",
+     "map": "customs",
+     "wx": -41.51,
+     "wy": -12.63,
+     "wz": 122.67
+    },
+    {
+     "desc": "Locate the secret exfil on Customs",
+     "descZh": "Survive and extract from Customs through ZB-1012",
+     "map": "customs",
+     "wx": 463.18,
+     "wy": -1.46,
+     "wz": -112.36
+    }
+   ]
+  },
+  {
+   "id": "68400953506db3b4db0700e7",
+   "title": "fair-price-part-2",
+   "titleZh": "",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "woods",
+     "wx": -542.37,
+     "wy": 18.38,
+     "wz": -203.87
+    }
+   ]
+  },
+  {
+   "id": "67a096577e86e067eb045733",
+   "title": "hidden-layer",
+   "titleZh": "",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": -196.5,
+     "wy": -6,
+     "wz": -81
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": -196,
+     "wy": -6.5,
+     "wz": -77
+    }
+   ]
+  },
+  {
+   "id": "684009026ceedc792c09b2a7",
+   "title": "hobby-club",
+   "titleZh": "",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "reserve",
+     "wx": 45.47,
+     "wy": -2.79,
+     "wz": -117.47
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "customs",
+     "wx": 584.28,
+     "wy": 0.94,
+     "wz": 5.02
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "customs",
+     "wx": 500.64,
+     "wy": 17.86,
+     "wz": 91.87
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "customs",
+     "wx": 500.64,
+     "wy": 17.86,
+     "wz": 91.87
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "customs",
+     "wx": 500.64,
+     "wy": 17.86,
+     "wz": 91.87
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "customs",
+     "wx": 500.64,
+     "wy": 17.86,
+     "wz": 91.87
+    }
+   ]
+  },
+  {
+   "id": "67a0964e972c11a3f507731b",
+   "title": "needle-in-a-haystack",
+   "titleZh": "",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "groundzero",
+     "wx": -15.4,
+     "wy": 23.79,
+     "wz": 68.9
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "interchange",
+     "wx": 159.9,
+     "wy": 23.4,
+     "wz": -246.7
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "interchange",
+     "wx": 42.5,
+     "wy": 29.9,
+     "wz": -216.4
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "streetsoftarkov",
+     "wx": 215.64,
+     "wy": 8.23,
+     "wz": 360.7
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": -625.82,
+     "wy": -54.72,
+     "wz": 482.17
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": -351.33,
+     "wy": -1.17,
+     "wz": -134
+    }
+   ]
+  },
+  {
+   "id": "67a09636b8725511260bc421",
+   "title": "shady-contractor",
+   "titleZh": "",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "groundzero",
+     "wx": 55.26,
+     "wy": 23.79,
+     "wz": 252.75
+    }
+   ]
+  },
+  {
+   "id": "67e993b1ac26bf29380a320b",
+   "title": "surprise-gift-pvp-zone",
+   "titleZh": "",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "customs",
+     "wx": 179.94,
+     "wy": 3.98,
+     "wz": 164.8
+    }
+   ]
+  },
+  {
+   "id": "6a45208043b8d7604d00b8d5",
+   "title": "the-huntsman-path-administrator-2",
+   "titleZh": "",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "lighthouse",
+     "wx": -22.6,
+     "wy": 13.68,
+     "wz": -829.78
+    }
+   ]
+  },
+  {
+   "id": "6179aff8f57fb279792c60a1",
+   "title": "Overpopulation",
+   "titleZh": "人口过剩",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Eliminate Scavs around the chalet area on Lighthouse",
+     "descZh": "清除灯塔房屋区域的Scav威胁",
+     "map": "lighthouse",
+     "wx": -108.87,
+     "wy": 22.24,
+     "wz": -2.31
+    }
+   ]
+  },
+  {
+   "id": "5a27b87686f77460de0252a8",
+   "title": "Humanitarian Supplies",
+   "titleZh": "人道主义援助",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first UN truck with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记第一辆卡车",
+     "map": "shoreline",
+     "wx": -234.49,
+     "wy": -3.47,
+     "wz": -164.42
+    },
+    {
+     "desc": "Locate the first truck that was holding the lost UN cargo on Shoreline",
+     "descZh": "在海岸线找到第一辆载有UN失踪货物的卡车",
+     "map": "shoreline",
+     "wx": -234.49,
+     "wy": -3.47,
+     "wz": -164.42
+    },
+    {
+     "desc": "Locate and mark the second UN truck with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记第二辆卡车",
+     "map": "shoreline",
+     "wx": -596.26,
+     "wy": -58.53,
+     "wz": 475.53
+    },
+    {
+     "desc": "Locate the second truck that was holding the lost UN cargo on Shoreline",
+     "descZh": "在海岸线找到第二辆载有UN失踪货物的卡车",
+     "map": "shoreline",
+     "wx": -596.26,
+     "wy": -58.53,
+     "wz": 475.53
+    }
+   ]
+  },
+  {
+   "id": "5d2495a886f77425cd51e403",
+   "title": "Introduction",
+   "titleZh": "介绍",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Find Jaeger's camp at the specified spot on Woods",
+     "descZh": "在森林找到Jaeger的营地",
+     "map": "woods",
+     "wx": -256,
+     "wy": 9.58,
+     "wz": 9.7
+    }
+   ]
+  },
+  {
+   "id": "63966fd9ea19ac7ed845db30",
+   "title": "Payback",
+   "titleZh": "以牙还牙",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Shoot a yellow signal flare at the radar station",
+     "descZh": "在雷达站发射一枚黄色信号弹",
+     "map": "reserve",
+     "wx": -15.8,
+     "wy": 19.9,
+     "wz": 184.8
+    }
+   ]
+  },
+  {
+   "id": "639136fa9444fb141f4e6eee",
+   "title": "Watching You",
+   "titleZh": "你被盯上了",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the surveillance spot on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到监视点位",
+     "map": "streetsoftarkov",
+     "wx": -67.75,
+     "wy": 5.95,
+     "wz": 65.88
+    }
+   ]
+  },
+  {
+   "id": "5ac3477486f7741d651d6885",
+   "title": "Scout",
+   "titleZh": "侦查",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the first Factory extraction",
+     "descZh": "找到第一个工厂撤离点",
+     "map": "factory",
+     "wx": 66.67,
+     "wy": -1.68,
+     "wz": -28.88
+    },
+    {
+     "desc": "Locate the second Factory extraction",
+     "descZh": "找到第二个工厂撤离点",
+     "map": "factory",
+     "wx": -53.11,
+     "wy": 2.29,
+     "wz": 58.19
+    },
+    {
+     "desc": "Locate the third Factory extraction",
+     "descZh": "找到第三个工厂撤离点",
+     "map": "factory",
+     "wx": 59.7,
+     "wy": 1.16,
+     "wz": 56.98
+    },
+    {
+     "desc": "Locate the fourth Factory extraction",
+     "descZh": "找到第四个工厂撤离点",
+     "map": "factory",
+     "wx": -18.4,
+     "wy": 1.16,
+     "wz": -49.02
+    }
+   ]
+  },
+  {
+   "id": "5ac3467986f7741d6224abc2",
+   "title": "Signal - Part 1",
+   "titleZh": "信号 - 1",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the first signal source on Shoreline",
+     "descZh": "找到第一个信号源",
+     "map": "shoreline",
+     "wx": -230.4,
+     "wy": 8.35,
+     "wz": -93.62
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": -230.55,
+     "wy": 8.32,
+     "wz": -92.39
+    },
+    {
+     "desc": "Locate the second signal source on Shoreline",
+     "descZh": "找到第二个信号源",
+     "map": "shoreline",
+     "wx": -483.31,
+     "wy": -25.76,
+     "wz": 253.66
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": -483.81,
+     "wy": -24.47,
+     "wz": 248.83
+    }
+   ]
+  },
+  {
+   "id": "5ac346cf86f7741d63233a02",
+   "title": "Signal - Part 3",
+   "titleZh": "信号 - 3",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Place the Signal jammer on the first specified place on Shoreline",
+     "descZh": "在海岸线的指定地点放置第一个信号干扰器",
+     "map": "shoreline",
+     "wx": -483.81,
+     "wy": -24.47,
+     "wz": 248.83
+    },
+    {
+     "desc": "Place the Signal jammer on the second specified place on Shoreline",
+     "descZh": "在海岸线的指定地点放置第二个信号干扰器",
+     "map": "shoreline",
+     "wx": -230.55,
+     "wy": 8.32,
+     "wz": -92.39
+    },
+    {
+     "desc": "Place the Signal jammer on the third specified place on Shoreline",
+     "descZh": "在海岸线的指定地点放置第三个信号干扰器",
+     "map": "shoreline",
+     "wx": -708.72,
+     "wy": -26.21,
+     "wz": 90.59
+    }
+   ]
+  },
+  {
+   "id": "5d25e4d586f77443e625e388",
+   "title": "Reserve",
+   "titleZh": "储备",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the food storage location on Reserve",
+     "descZh": "在储备站找到食品储存区域",
+     "map": "reserve",
+     "wx": 78.77,
+     "wy": -12.29,
+     "wz": -117.1
+    }
+   ]
+  },
+  {
+   "id": "64f731ab83cfca080a361e42",
+   "title": "Pets Won't Need It - Part 1",
+   "titleZh": "兽医也是医 - 1",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate and scout the vet clinic on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到并探索兽医诊所",
+     "map": "streetsoftarkov",
+     "wx": 224.87,
+     "wy": 4.82,
+     "wz": 172.81
+    },
+    {
+     "desc": "Locate and scout the x-ray technician's room on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到并探索X光技术员的房间",
+     "map": "streetsoftarkov",
+     "wx": 182.99,
+     "wy": 2.75,
+     "wz": 102.0
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "streetsoftarkov",
+     "wx": 39.05,
+     "wy": 3.65,
+     "wz": 162.41
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "streetsoftarkov",
+     "wx": -44.62,
+     "wy": 4.19,
+     "wz": 336.07
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "streetsoftarkov",
+     "wx": 89.26,
+     "wy": 5.07,
+     "wz": -275.35
+    }
+   ]
+  },
+  {
+   "id": "6573387d0b26ed4fde798de3",
+   "title": "Pets Won't Need It - Part 2",
+   "titleZh": "兽医也是医 - 2",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the first pharmacy on Primorsky Ave on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Primorsky大街找到第一家药店",
+     "map": "streetsoftarkov",
+     "wx": 39.05,
+     "wy": 3.65,
+     "wz": 162.41
+    },
+    {
+     "desc": "Locate the second pharmacy on Primorsky Ave on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Primorsky大街找到第二家药店",
+     "map": "streetsoftarkov",
+     "wx": -44.62,
+     "wy": 4.19,
+     "wz": 336.07
+    },
+    {
+     "desc": "Locate the third pharmacy at Cardinal apartment complex on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Cardinal公寓区找到第三家药店",
+     "map": "streetsoftarkov",
+     "wx": 89.26,
+     "wy": 5.07,
+     "wz": -275.35
+    }
+   ]
+  },
+  {
+   "id": "597a160786f77477531d39d2",
+   "title": "Out of Curiosity",
+   "titleZh": "出于好奇",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the transport with the chemicals on Customs",
+     "descZh": "在海关找到装有化学品的载具",
+     "map": "customs",
+     "wx": 480.77,
+     "wy": 3.29,
+     "wz": -76.69
+    },
+    {
+     "desc": "Mark the vehicle with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记载具",
+     "map": "customs",
+     "wx": 480.77,
+     "wy": 3.29,
+     "wz": -76.69
+    }
+   ]
+  },
+  {
+   "id": "64e7b99017ab941a6f7bf9d7",
+   "title": "Gendarmerie - Mall Cop",
+   "titleZh": "出警 - 商场",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Eliminate any target at the stylobate building while using Pistols on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Stylobate建筑附近使用手枪击杀任意敌对目标",
+     "map": "streetsoftarkov",
+     "wx": -102.9,
+     "wy": 8.6,
+     "wz": -25.6
+    }
+   ]
+  },
+  {
+   "id": "64e7b9a4aac4cd0a726562cb",
+   "title": "Gendarmerie - Tickets, Please",
+   "titleZh": "出警 - 检票",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Eliminate any target at the Rodina cinema while using SMGs on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Rodina影院建筑附近使用冲锋枪击杀任意敌对目标",
+     "map": "streetsoftarkov",
+     "wx": -180.4,
+     "wy": 16.5,
+     "wz": 400.7
+    }
+   ]
+  },
+  {
+   "id": "5979f9ba86f7740f6c3fe9f2",
+   "title": "Chemical - Part 1",
+   "titleZh": "化学品 - 1",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate the sleeping place of the former Deputy Chief of Security on Customs",
+     "descZh": "在海关找到前安全局副局长的住处",
+     "map": "customs",
+     "wx": 487.89,
+     "wy": 6.11,
+     "wz": -139.85
+    }
+   ]
+  },
+  {
+   "id": "597a0f5686f774273b74f676",
+   "title": "Chemical - Part 4",
+   "titleZh": "化学品 - 4",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate the transport with the chemicals on Customs",
+     "descZh": "找到装有化学品的载具",
+     "map": "customs",
+     "wx": 480.77,
+     "wy": 3.29,
+     "wz": -76.69
+    },
+    {
+     "desc": "Mark the vehicle with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记化学品转运车",
+     "map": "customs",
+     "wx": 480.77,
+     "wy": 3.29,
+     "wz": -76.69
+    }
+   ]
+  },
+  {
+   "id": "5f04886a3937dc337a6b8238",
+   "title": "Chemistry Closet",
+   "titleZh": "化学橱柜",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate Sanitar's office in the health resort",
+     "descZh": "在疗养院找到Sanitar的办公室",
+     "map": "shoreline",
+     "wx": -322.83,
+     "wy": -2.75,
+     "wz": -77.54
+    }
+   ]
+  },
+  {
+   "id": "66aa74571e5e199ecd094f18",
+   "title": "Secrets of Polikhim",
+   "titleZh": "化工厂的秘密",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Stash the package at the laboratory storage room on Factory",
+     "descZh": "在工厂的实验室储藏间藏匿精密工具",
+     "map": "factory",
+     "wx": 27.89,
+     "wy": 1.15,
+     "wz": -32.89
+    }
+   ]
+  },
+  {
+   "id": "5a68661a86f774500f48afb0",
+   "title": "Health Care Privacy - Part 1",
+   "titleZh": "医疗隐私 - 1",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first ambulance with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线找到第一辆救护车，并使用MS2000指示器标记",
+     "map": "shoreline",
+     "wx": 312.7,
+     "wy": -59.18,
+     "wz": 314.5
+    },
+    {
+     "desc": "Locate and mark the second ambulance with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线找到第二辆救护车，并使用MS2000指示器标记",
+     "map": "shoreline",
+     "wx": 354.92,
+     "wy": -58.63,
+     "wz": 306.12
+    },
+    {
+     "desc": "Locate and mark the third ambulance with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线找到第三辆救护车，并使用MS2000指示器标记",
+     "map": "shoreline",
+     "wx": -258.07,
+     "wy": -3.96,
+     "wz": -85.66
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": 97.66,
+     "wy": -47.25,
+     "wz": 70.8
+    }
+   ]
+  },
+  {
+   "id": "5a68665c86f774255929b4c7",
+   "title": "Health Care Privacy - Part 3",
+   "titleZh": "医疗隐私 - 3",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the van of the Health Resort medical services director on Woods",
+     "descZh": "在森林找到那辆曾属于疗养院医疗服务负责人的车",
+     "map": "woods",
+     "wx": -97.15,
+     "wy": -13.19,
+     "wz": 219.76
+    }
+   ]
+  },
+  {
+   "id": "5a68669a86f774255929b4d4",
+   "title": "Health Care Privacy - Part 5",
+   "titleZh": "医疗隐私 - 5",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the drop spot on night-time Factory",
+     "descZh": "在夜间找到工厂的投放地点",
+     "map": "factory",
+     "wx": 24.61,
+     "wy": 9.17,
+     "wz": 39.08
+    },
+    {
+     "desc": "Obtain 3 packs of Gunpowder \"Kite\" and stash them in the designated spot",
+     "descZh": "取得3个“Kite”火药并将它们藏匿在指定地点",
+     "map": "factory",
+     "wx": 24.61,
+     "wy": 9.17,
+     "wz": 39.08
+    }
+   ]
+  },
+  {
+   "id": "66b38c7bf85b8bf7250f9cb6",
+   "title": "Rough Tarkov",
+   "titleZh": "危机四伏塔科夫",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the heavily mined area on Woods",
+     "descZh": "在森林找到高密度雷区",
+     "map": "woods",
+     "wx": 341.6,
+     "wy": 22.91,
+     "wz": -492.3
+    },
+    {
+     "desc": "Locate the Claymore mine on Ground Zero",
+     "descZh": "在中心区找到阔剑地雷",
+     "map": "groundzero",
+     "wx": 60.35,
+     "wy": 23.74,
+     "wz": 170.89
+    }
+   ]
+  },
+  {
+   "id": "669fa394e0c9f9fafa082897",
+   "title": "Forklift Certified",
+   "titleZh": "叉车拼多多",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the first forklift on Factory",
+     "descZh": "在工厂找到第1辆叉车",
+     "map": "factory",
+     "wx": 62.68,
+     "wy": 1.04,
+     "wz": 23.4
+    },
+    {
+     "desc": "Locate the second forklift on Factory",
+     "descZh": "在工厂找到第2辆叉车",
+     "map": "factory",
+     "wx": 71.02,
+     "wy": 1.16,
+     "wz": -40.93
+    },
+    {
+     "desc": "Locate the third forklift on Factory",
+     "descZh": "在工厂找到第3辆叉车",
+     "map": "factory",
+     "wx": 64.97,
+     "wy": 1.16,
+     "wz": -47.28
+    },
+    {
+     "desc": "Locate the fourth forklift on Factory",
+     "descZh": "在工厂找到第4辆叉车",
+     "map": "factory",
+     "wx": -31.57,
+     "wy": 2.33,
+     "wz": 57.84
+    },
+    {
+     "desc": "Locate the fifth forklift on Factory",
+     "descZh": "在工厂找到第5辆叉车",
+     "map": "factory",
+     "wx": 22.58,
+     "wy": 1.16,
+     "wz": -23.83
+    },
+    {
+     "desc": "Locate the sixth forklift on Factory",
+     "descZh": "在工厂找到第6辆叉车",
+     "map": "factory",
+     "wx": 21.87,
+     "wy": 1.16,
+     "wz": -30.78
+    },
+    {
+     "desc": "Locate the seventh forklift on Factory",
+     "descZh": "在工厂找到第7辆叉车",
+     "map": "factory",
+     "wx": 12.37,
+     "wy": 1.16,
+     "wz": 30.42
+    },
+    {
+     "desc": "Locate the eighth forklift on Factory",
+     "descZh": "在工厂找到第8辆叉车",
+     "map": "factory",
+     "wx": -15.77,
+     "wy": 2.26,
+     "wz": 32.58
+    },
+    {
+     "desc": "Locate the ninth forklift on Factory",
+     "descZh": "在工厂找到第9辆叉车",
+     "map": "factory",
+     "wx": 13.63,
+     "wy": 1.16,
+     "wz": -30.07
+    },
+    {
+     "desc": "Locate the tenth forklift on Factory",
+     "descZh": "在工厂找到第10辆叉车",
+     "map": "factory",
+     "wx": 53.37,
+     "wy": 1.48,
+     "wz": -22.46
+    },
+    {
+     "desc": "Locate the eleventh forklift on Factory",
+     "descZh": "在工厂找到第11辆叉车",
+     "map": "factory",
+     "wx": 18.3,
+     "wy": 1.49,
+     "wz": -15.19
+    },
+    {
+     "desc": "Locate the twelfth forklift on Factory",
+     "descZh": "Locate the twelfth forklift on Factory",
+     "map": "factory",
+     "wx": 58.32,
+     "wy": 1.73,
+     "wz": 58.98
+    }
+   ]
+  },
+  {
+   "id": "6572e876dc0d635f633a5714",
+   "title": "Pyramid Scheme",
+   "titleZh": "发财计划",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate the first group of ATMs on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到第一批ATM机",
+     "map": "streetsoftarkov",
+     "wx": 97.42,
+     "wy": 1.23,
+     "wz": -22.25
+    },
+    {
+     "desc": "Locate the second ATM on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到第二台ATM机",
+     "map": "streetsoftarkov",
+     "wx": -148.57,
+     "wy": 6.08,
+     "wz": -62.75
+    },
+    {
+     "desc": "Locate the first ATM on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到第一台ATM机",
+     "map": "streetsoftarkov",
+     "wx": 83.02,
+     "wy": 1.22,
+     "wz": -30.5
+    },
+    {
+     "desc": "Locate the third ATM on Primorsky Ave on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Primorsky大街找到第三台ATM机",
+     "map": "streetsoftarkov",
+     "wx": 8.29,
+     "wy": -2.76,
+     "wz": 5.15
+    },
+    {
+     "desc": "Locate the third ATM on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到第三台ATM机",
+     "map": "streetsoftarkov",
+     "wx": -113.87,
+     "wy": 1.61,
+     "wz": -12.51
+    },
+    {
+     "desc": "Locate the fourth ATM on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到第四台ATM机",
+     "map": "streetsoftarkov",
+     "wx": -166.48,
+     "wy": 1.62,
+     "wz": -3.38
+    },
+    {
+     "desc": "Locate the group of ATMs on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到一组ATM机",
+     "map": "streetsoftarkov",
+     "wx": -160.19,
+     "wy": 1.6,
+     "wz": -47.81
+    },
+    {
+     "desc": "Locate the second ATM on Primorsky Ave on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Primorsky大街找到第二台ATM机",
+     "map": "streetsoftarkov",
+     "wx": 0.45,
+     "wy": -2.74,
+     "wz": -18.79
+    },
+    {
+     "desc": "Locate the fourth group of ATMs on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到第四批ATM机",
+     "map": "streetsoftarkov",
+     "wx": -35.2,
+     "wy": 1.57,
+     "wz": -69.98
+    },
+    {
+     "desc": "Locate the fifth group of ATMs on Klimov Street on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Klimov大街找到第五批ATM机",
+     "map": "streetsoftarkov",
+     "wx": -53.58,
+     "wy": 1.58,
+     "wz": -69.35
+    }
+   ]
+  },
+  {
+   "id": "60896bca6ee58f38c417d4f2",
+   "title": "No Place for Renegades",
+   "titleZh": "叛无所依",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Eliminate Raiders in the command bunker on Reserve",
+     "descZh": "消灭储备站地堡控制室中的掠夺者",
+     "map": "reserve",
+     "wx": -109.65,
+     "wy": -12.83,
+     "wz": 37.51
+    }
+   ]
+  },
+  {
+   "id": "5edab736cc183c769d778bc2",
+   "title": "Colleagues - Part 1",
+   "titleZh": "同事 - 1",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the group that was sent to the Health Resort on Shoreline",
+     "descZh": "找到被派往海岸线疗养院的小组",
+     "map": "shoreline",
+     "wx": -253.17,
+     "wy": -4.07,
+     "wz": -56.86
+    },
+    {
+     "desc": "Locate the group that was sent to the pier on Shoreline",
+     "descZh": "找到被派往海岸线码头的小组",
+     "map": "shoreline",
+     "wx": -311.9,
+     "wy": -60.9,
+     "wz": 489.7
+    },
+    {
+     "desc": "Locate the group that was sent to the cottages on Shoreline",
+     "descZh": "找到被派往海岸线别墅的小组",
+     "map": "shoreline",
+     "wx": 94.21,
+     "wy": -47.5,
+     "wz": 61.97
+    }
+   ]
+  },
+  {
+   "id": "6089736efa70fc097863b8f6",
+   "title": "Back Door",
+   "titleZh": "后门",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Find the unpowered secret exit on Reserve",
+     "descZh": "在储备站找到未供电的秘密出口",
+     "map": "reserve",
+     "wx": -119.75,
+     "wy": -29.31,
+     "wz": 171.79
+    }
+   ]
+  },
+  {
+   "id": "625d7005a4eb80027c4f2e09",
+   "title": "Knock-Knock",
+   "titleZh": "咚咚咚",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Check if the radio transmitter works near the Lighthouse peninsula",
+     "descZh": "在灯塔小岛附近检查应答机能否正常工作",
+     "map": "lighthouse",
+     "wx": 119.3,
+     "wy": 2.15,
+     "wz": 520.76
+    }
+   ]
+  },
+  {
+   "id": "5ede55112c95834b583f052a",
+   "title": "The Bunker - Part 1",
+   "titleZh": "地堡 - 1",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the underground bunker on Reserve",
+     "descZh": "找到地堡",
+     "map": "reserve",
+     "wx": -115.03,
+     "wy": -11.86,
+     "wz": 33.88
+    },
+    {
+     "desc": "Locate the control room in the underground bunker on Reserve",
+     "descZh": "找到地堡控制室",
+     "map": "reserve",
+     "wx": -116.75,
+     "wy": -13.16,
+     "wz": 31.69
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "reserve",
+     "wx": -90.31,
+     "wy": -13.42,
+     "wz": -5.15
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "reserve",
+     "wx": -144.25,
+     "wy": -9.98,
+     "wz": 6.19
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "reserve",
+     "wx": -149.41,
+     "wy": -9.33,
+     "wz": 50.0
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "reserve",
+     "wx": -107.01,
+     "wy": -9.39,
+     "wz": 77.49
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "reserve",
+     "wx": -73.0,
+     "wy": -9.65,
+     "wz": 29.99
+    }
+   ]
+  },
+  {
+   "id": "5ede567cfa6dc072ce15d6e3",
+   "title": "The Bunker - Part 2",
+   "titleZh": "地堡 - 2",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the hermetic door leading to the hospital (White Bishop) on Reserve",
+     "descZh": "找到通往医院的密闭门（白主教）",
+     "map": "reserve",
+     "wx": -90.31,
+     "wy": -13.42,
+     "wz": -5.15
+    },
+    {
+     "desc": "Locate one of the two hermetic doors leading to the academy building (Black Bishop) on Reserve",
+     "descZh": "找到通往学院大楼的两扇密闭门中的一个（黑主教）",
+     "map": "reserve",
+     "wx": -144.25,
+     "wy": -9.98,
+     "wz": 6.19
+    },
+    {
+     "desc": "Locate one of the two hermetic doors leading to barracks #1 (Black Pawn) on Reserve",
+     "descZh": "找到通往1号军营的两扇密闭门中的一个（黑兵）",
+     "map": "reserve",
+     "wx": -149.41,
+     "wy": -9.33,
+     "wz": 50.0
+    },
+    {
+     "desc": "Locate one of the two hermetic doors leading to barracks #2 (White Pawn) on Reserve",
+     "descZh": "找到通往2号军营的两扇密闭门中的一个（白兵）",
+     "map": "reserve",
+     "wx": -107.01,
+     "wy": -9.39,
+     "wz": 77.49
+    },
+    {
+     "desc": "Locate the hermetic door leading to the building of the air control center (King) on Reserve",
+     "descZh": "找到通往空中管制中心大楼的密闭门（白王）",
+     "map": "reserve",
+     "wx": -73.0,
+     "wy": -9.65,
+     "wz": 29.99
+    }
+   ]
+  },
+  {
+   "id": "639135e0fa894f0a866afde6",
+   "title": "Urban Medicine",
+   "titleZh": "城市的解药",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the chemical laboratory on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到化学品实验室",
+     "map": "streetsoftarkov",
+     "wx": 92.96,
+     "wy": 3.59,
+     "wz": 320.38
+    }
+   ]
+  },
+  {
+   "id": "597a171586f77405ba6887d3",
+   "title": "Big Customer",
+   "titleZh": "大客户",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the transport with the chemicals on Customs",
+     "descZh": "找到装有化学品的载具",
+     "map": "customs",
+     "wx": 480.77,
+     "wy": 3.29,
+     "wz": -76.69
+    },
+    {
+     "desc": "Mark the vehicle with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记化学品转运车",
+     "map": "customs",
+     "wx": 480.77,
+     "wy": 3.29,
+     "wz": -76.69
+    }
+   ]
+  },
+  {
+   "id": "5ae448e586f7744dcf0c2a67",
+   "title": "Big Sale",
+   "titleZh": "大甩卖",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate the AVOKADO store on Interchange",
+     "descZh": "检查AVOKADO商店",
+     "map": "interchange",
+     "wx": -33.16,
+     "wy": 28.63,
+     "wz": 25.81
+    },
+    {
+     "desc": "Locate the KOSTIN store on Interchange",
+     "descZh": "检查KOSTIN商店",
+     "map": "interchange",
+     "wx": -24.67,
+     "wy": 28.62,
+     "wz": -103.52
+    },
+    {
+     "desc": "Locate the tRend store on Interchange",
+     "descZh": "检查tRend商店",
+     "map": "interchange",
+     "wx": 64.17,
+     "wy": 28.07,
+     "wz": -155.4
+    },
+    {
+     "desc": "Locate the DINO CLOTHES store on Interchange",
+     "descZh": "检查DINO CLOTHES商店",
+     "map": "interchange",
+     "wx": 94.39,
+     "wy": 28.16,
+     "wz": -120.64
+    },
+    {
+     "desc": "Locate the TOP BRAND store on Interchange",
+     "descZh": "检查TOP BRAND商店",
+     "map": "interchange",
+     "wx": 94.2,
+     "wy": 28.2,
+     "wz": 10.22
+    }
+   ]
+  },
+  {
+   "id": "63967028c4a91c5cb76abd81",
+   "title": "Trouble in the Big City",
+   "titleZh": "大都会之谜",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Locate the transport holding the cargo on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到装有货物的载具",
+     "map": "streetsoftarkov",
+     "wx": 15.65,
+     "wy": 3.39,
+     "wz": 226.62
+    },
+    {
+     "desc": "Mark the cargo area with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记货物所在区域",
+     "map": "streetsoftarkov",
+     "wx": 10.49,
+     "wy": 4.75,
+     "wz": 217.56
+    },
+    {
+     "desc": "Launch a yellow flare near the armored convoy to confirm that the job is done",
+     "descZh": "在装甲车队附近发射黄色信号弹以表明任务完成",
+     "map": "streetsoftarkov",
+     "wx": 9.69,
+     "wy": 8.55,
+     "wz": 217.15
+    }
+   ]
+  },
+  {
+   "id": "63966fbeea19ac7ed845db2e",
+   "title": "Missing Informant",
+   "titleZh": "失踪的线人",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Locate the informant's backup hideout on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到线人备用藏身处",
+     "map": "streetsoftarkov",
+     "wx": -130.4,
+     "wy": 3.2,
+     "wz": 396.47
+    }
+   ]
+  },
+  {
+   "id": "6179b4f16e9dd54ac275e407",
+   "title": "Missing Cargo",
+   "titleZh": "失踪货物",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate the crashed helicopter on Lighthouse",
+     "descZh": "在灯塔找到失事的直升机",
+     "map": "lighthouse",
+     "wx": -126.7,
+     "wy": 22.43,
+     "wz": 301.52
+    }
+   ]
+  },
+  {
+   "id": "626bd75d5bef5d7d590bd415",
+   "title": "Top Secret",
+   "titleZh": "头号机密",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate the radar station commandant's office on Lighthouse",
+     "descZh": "在灯塔找到雷达站指挥员的办公室",
+     "map": "lighthouse",
+     "wx": 353.11,
+     "wy": 17.02,
+     "wz": 547.82
+    }
+   ]
+  },
+  {
+   "id": "657315e1dccd301f1301416a",
+   "title": "Luxurious Life",
+   "titleZh": "奢靡人生",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the liquor store on Ground Zero",
+     "descZh": "在中心区找到酒商店",
+     "map": "groundzero",
+     "wx": 117.06,
+     "wy": 24.23,
+     "wz": 26.86
+    }
+   ]
+  },
+  {
+   "id": "6089743983426423753cd58a",
+   "title": "Safe Corridor",
+   "titleZh": "安全通道",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Eliminate Scavs in the underground warehouse on Reserve",
+     "descZh": "消灭储备站地下仓库里的Scav",
+     "map": "reserve",
+     "wx": 65.39,
+     "wy": -24.43,
+     "wz": -104.65
+    }
+   ]
+  },
+  {
+   "id": "6179ac7511973d018217d0b9",
+   "title": "Easy Job - Part 1",
+   "titleZh": "小菜一碟 - 1",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the helicopter at the water treatment plant on Lighthouse",
+     "descZh": "在灯塔的污水处理厂找到直升机",
+     "map": "lighthouse",
+     "wx": -95.95,
+     "wy": 2.4,
+     "wz": -553.35
+    },
+    {
+     "desc": "Mark the helicopter with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记直升机",
+     "map": "lighthouse",
+     "wx": -96.49,
+     "wy": 2.37,
+     "wz": -552.59
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "lighthouse",
+     "wx": -51.17,
+     "wy": 14.54,
+     "wz": -573.21
+    }
+   ]
+  },
+  {
+   "id": "6179acbdc760af5ad2053585",
+   "title": "Easy Job - Part 2",
+   "titleZh": "小菜一碟 - 2",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Eliminate any target around the helicopter area at the water treatment plant on Lighthouse",
+     "descZh": "消灭灯塔污水处理厂直升机周围的任意敌人",
+     "map": "lighthouse",
+     "wx": -51.17,
+     "wy": 14.54,
+     "wz": -573.21
+    }
+   ]
+  },
+  {
+   "id": "669fa3979b0ce3feae01a130",
+   "title": "Claustrophobia",
+   "titleZh": "幽闭恐惧症",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Eliminate any target in the old cellars while using a shotgun on Factory",
+     "descZh": "在工厂的破旧地窖中使用霰弹枪击杀任意目标",
+     "map": "factory",
+     "wx": 19.81,
+     "wy": -2.56,
+     "wz": 46.84
+    },
+    {
+     "desc": "Eliminate any target in the old cellars while using a shotgun on Factory",
+     "descZh": "在工厂的破旧地窖中使用霰弹枪击杀任意目标",
+     "map": "factory",
+     "wx": -51.08,
+     "wy": -2.99,
+     "wz": 13.58
+    },
+    {
+     "desc": "Eliminate any target in the old cellars while using a shotgun on Factory",
+     "descZh": "在工厂的破旧地窖中使用霰弹枪击杀任意目标",
+     "map": "factory",
+     "wx": 19.81,
+     "wy": -2.99,
+     "wz": -28.64
+    },
+    {
+     "desc": "Eliminate any target in the old cellars while using a shotgun on Factory",
+     "descZh": "在工厂的破旧地窖中使用霰弹枪击杀任意目标",
+     "map": "factory",
+     "wx": 64.99,
+     "wy": -2.99,
+     "wz": 13.58
+    }
+   ]
+  },
+  {
+   "id": "65733403eefc2c312a759ddb",
+   "title": "Developer's Secrets - Part 1",
+   "titleZh": "开发者之谜 - 1",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the IT firm office on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到IT公司的办公室",
+     "map": "streetsoftarkov",
+     "wx": 164.36,
+     "wy": 1.72,
+     "wz": 148.11
+    },
+    {
+     "desc": "Unravel the secret of the firm's success",
+     "descZh": "解开公司获得成功的秘密",
+     "map": "streetsoftarkov",
+     "wx": 164.25,
+     "wy": 1.72,
+     "wz": 167.29
+    }
+   ]
+  },
+  {
+   "id": "6573382e557ff128bf3da536",
+   "title": "Developer's Secrets - Part 2",
+   "titleZh": "开发者之谜 - 2",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Unravel the secret of the IT firm's employees' high morale on Streets of Tarkov",
+     "descZh": "解开塔科夫街区IT公司员工精力充沛的秘密",
+     "map": "streetsoftarkov",
+     "wx": -211.76,
+     "wy": 4.2,
+     "wz": 297.29
+    }
+   ]
+  },
+  {
+   "id": "63966fe7ea74a47c2d3fc0e6",
+   "title": "Return the Favor",
+   "titleZh": "归还人情",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Eliminate PMC operatives around the mountain area on Woods",
+     "descZh": "在森林的大山附近击杀PMC",
+     "map": "woods",
+     "wx": -185,
+     "wy": 45.7,
+     "wz": -292.7
+    },
+    {
+     "desc": "Hide the TerraGroup \"Blue Folders\" materials inside the black SUV in the USEC camp on Woods",
+     "descZh": "将TerraGroup \"蓝色文件夹\"藏匿在森林USEC营地的黑色SUV里面",
+     "map": "woods",
+     "wx": 289.97,
+     "wy": 23.52,
+     "wz": -439.01
+    },
+    {
+     "desc": "Hide the TerraGroup \"Blue Folders\" materials in the crates near the satellite antenna in the USEC camp on Woods",
+     "descZh": "将TerraGroup \"蓝色文件夹\"藏匿在USEC营地卫星天线附近的箱子里",
+     "map": "woods",
+     "wx": 292.48,
+     "wy": 23.35,
+     "wz": -507.38
+    }
+   ]
+  },
+  {
+   "id": "59674eb386f774539f14813a",
+   "title": "Delivery From the Past",
+   "titleZh": "往事速递",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Stash the package in the break room on the 2nd floor near Gate 3 on Factory",
+     "descZh": "将容器藏匿在工厂3号门旁边的二层休息室内",
+     "map": "factory",
+     "wx": 41.74,
+     "wy": 5.45,
+     "wz": 40.82
+    }
+   ]
+  },
+  {
+   "id": "5b478d0f86f7744d190d91b5",
+   "title": "Minibus",
+   "titleZh": "微型客车",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first yellow minibus with an MS2000 Marker on Interchange",
+     "descZh": "在立交桥找到第一辆微型客车，并使用MS2000指示器标记",
+     "map": "interchange",
+     "wx": 109.87,
+     "wy": 22.33,
+     "wz": 288.77
+    },
+    {
+     "desc": "Locate and mark the second yellow minibus with an MS2000 Marker on Interchange",
+     "descZh": "在立交桥找到第二辆微型客车，并使用MS2000指示器标记",
+     "map": "interchange",
+     "wx": 17.56,
+     "wy": 22.83,
+     "wz": -25.5
+    },
+    {
+     "desc": "Locate and mark the third yellow minibus with an MS2000 Marker on Interchange",
+     "descZh": "在立交桥找到第三辆微型客车，并使用MS2000指示器标记",
+     "map": "interchange",
+     "wx": -49.77,
+     "wy": 22.85,
+     "wz": 59.04
+    }
+   ]
+  },
+  {
+   "id": "5d25e4ad86f77443e625e387",
+   "title": "Nostalgia",
+   "titleZh": "怀旧之情",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate Jaeger's Health Resort room with a view of the bay on Shoreline",
+     "descZh": "在疗养院找到Jaeger的海景房间",
+     "map": "shoreline",
+     "wx": -229.06,
+     "wy": 3.29,
+     "wz": -88.86
+    }
+   ]
+  },
+  {
+   "id": "60e71d6d7fcf9c556f325055",
+   "title": "The Courier",
+   "titleZh": "急先锋",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Stash a Trijicon REAP-IR scope behind the trash containers at the \"new\" gas station on Customs",
+     "descZh": "在海关“新加油站”的垃圾箱后面藏匿Trijicon REAP-IR瞄准镜 ",
+     "map": "customs",
+     "wx": 424.96,
+     "wy": 2.31,
+     "wz": 28.41
+    }
+   ]
+  },
+  {
+   "id": "63966faeea19ac7ed845db2c",
+   "title": "Information Source",
+   "titleZh": "情报之源",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first Patrol-A armored vehicle with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到第一辆Patrol-A装甲车，并使用MS2000指示器标记",
+     "map": "streetsoftarkov",
+     "wx": -69.39,
+     "wy": 3.52,
+     "wz": 358.46
+    },
+    {
+     "desc": "Locate and mark the second Patrol-A armored vehicle with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到第二辆Patrol-A装甲车，并使用MS2000指示器标记",
+     "map": "streetsoftarkov",
+     "wx": 172.48,
+     "wy": 4.79,
+     "wz": 416.94
+    }
+   ]
+  },
+  {
+   "id": "5b47926a86f7747ccc057c15",
+   "title": "Informed Means Armed",
+   "titleZh": "情报就是力量",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Install a WI-FI Camera to watch the sawmill dock on Woods",
+     "descZh": "在森林安装无线摄像头以监视伐木场码头",
+     "map": "woods",
+     "wx": 31.09,
+     "wy": -13.61,
+     "wz": 83.01
+    },
+    {
+     "desc": "Install a WI-FI Camera to watch the Kiba Arms store entrance on Interchange",
+     "descZh": "在立交桥安装无线摄像头以监视Kiba武器商店大门",
+     "map": "interchange",
+     "wx": 8.1,
+     "wy": 27.55,
+     "wz": -36.7
+    }
+   ]
+  },
+  {
+   "id": "5ae449b386f77446d8741719",
+   "title": "Gratitude",
+   "titleZh": "感恩的心",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Stash a Shemagh (Green) at the sawmill docks on Woods",
+     "descZh": "把提花头巾藏匿在指定地点",
+     "map": "woods",
+     "wx": 23.79,
+     "wy": -15.41,
+     "wz": 99.84
+    },
+    {
+     "desc": "Stash RayBench Hipster Reserve sunglasses at the sawmill docks on Woods",
+     "descZh": "把雷硼太阳镜藏匿在指定地点",
+     "map": "woods",
+     "wx": 23.79,
+     "wy": -15.41,
+     "wz": 99.84
+    }
+   ]
+  },
+  {
+   "id": "5b4795fb86f7745876267770",
+   "title": "Chumming",
+   "titleZh": "愿者上钩",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Stash Golden neck chains in the microwave on the 3rd floor of the dorm on Customs",
+     "descZh": "在海关将金项链藏到宿舍楼三楼的微波炉里",
+     "map": "customs",
+     "wx": 170.79,
+     "wy": 6.88,
+     "wz": 172
+    },
+    {
+     "desc": "Stash Golden neck chains in the middle wooden cabin at the sawmill on Woods",
+     "descZh": "在森林将将金项链藏到伐木场宿舍区的中间小屋内",
+     "map": "woods",
+     "wx": -6.21,
+     "wy": -0.49,
+     "wz": -75.55
+    }
+   ]
+  },
+  {
+   "id": "5ae448f286f77448d73c0131",
+   "title": "The Blood of War - Part 1",
+   "titleZh": "战争之血 - 1",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first fuel tank with an MS2000 Marker on Interchange",
+     "descZh": "标记第一辆油罐车",
+     "map": "interchange",
+     "wx": -208.36,
+     "wy": 22.84,
+     "wz": -74.42
+    },
+    {
+     "desc": "Locate and mark the first fuel tank with an MS2000 Marker on Interchange",
+     "descZh": "标记第一辆油罐车",
+     "map": "interchange",
+     "wx": -172.62,
+     "wy": 22.81,
+     "wz": -359.48
+    },
+    {
+     "desc": "Locate and mark the second fuel tank with an MS2000 Marker on Interchange",
+     "descZh": "标记第二辆油罐车",
+     "map": "interchange",
+     "wx": 274.29,
+     "wy": 22.85,
+     "wz": 14.53
+    }
+   ]
+  },
+  {
+   "id": "5c10f94386f774227172c572",
+   "title": "The Blood of War - Part 3",
+   "titleZh": "战争之血 - 3",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first fuel stash with an MS2000 Marker on Woods",
+     "descZh": "在森林找到第一个燃料堆，并使用MS2000指示器标记",
+     "map": "woods",
+     "wx": 356.45,
+     "wy": 0.35,
+     "wz": -85.88
+    },
+    {
+     "desc": "Locate and mark the second fuel stash with an MS2000 Marker on Woods",
+     "descZh": "在森林找到第二个燃料堆，并使用MS2000指示器标记",
+     "map": "woods",
+     "wx": -325.04,
+     "wy": 15.32,
+     "wz": 23.98
+    },
+    {
+     "desc": "Locate and mark the third fuel stash with an MS2000 Marker on Woods",
+     "descZh": "在森林找到第三个燃料堆，并使用MS2000指示器标记",
+     "map": "woods",
+     "wx": -200.41,
+     "wy": 31.3,
+     "wz": -210.92
+    }
+   ]
+  },
+  {
+   "id": "657315df034d76585f032e01",
+   "title": "Shooting Cans",
+   "titleZh": "打靶训练",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the Utyos machine gun on Ground Zero",
+     "descZh": "在中心区找到Utyos机枪",
+     "map": "groundzero",
+     "wx": 56.6,
+     "wy": 32.34,
+     "wz": 130.6
+    },
+    {
+     "desc": "Locate the AGS grenade launcher on Ground Zero",
+     "descZh": "在中心区找到AGS榴弹发射器",
+     "map": "groundzero",
+     "wx": 101.04,
+     "wy": 34.16,
+     "wz": 276.36
+    }
+   ]
+  },
+  {
+   "id": "63966fccac6f8f3c677b9d89",
+   "title": "Snatch",
+   "titleZh": "抢夺先机",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Stash the forged intelligence under the BMP-2 in place of the original",
+     "descZh": "将伪造的情报藏匿在BMP-2下方以完成调包",
+     "map": "reserve",
+     "wx": 101.73,
+     "wy": -5.59,
+     "wz": 64.44
+    }
+   ]
+  },
+  {
+   "id": "639670029113f06a7c3b2377",
+   "title": "Following the Bread Crumbs",
+   "titleZh": "按图索骥",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Search the weapon testing area in The Lab",
+     "descZh": "搜索实验室的武器测试区域",
+     "map": "lab",
+     "wx": -182.87,
+     "wy": 1.29,
+     "wz": -312.88
+    },
+    {
+     "desc": "Search the human experiment room in The Lab",
+     "descZh": "搜索实验室的人体实验室",
+     "map": "lab",
+     "wx": -131.54,
+     "wy": 1.0,
+     "wz": -357.84
+    }
+   ]
+  },
+  {
+   "id": "63966ff54c3ef01b6f3ffad8",
+   "title": "Provocation",
+   "titleZh": "挑衅",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Eliminate any target around the Kiba Arms store while using an ASh-12 on Interchange",
+     "descZh": "在立交桥使用Ash-12击杀任何位于Kiba Arms商店附近的敌人",
+     "map": "interchange",
+     "wx": -9.44,
+     "wy": 28.24,
+     "wz": -33.71
+    },
+    {
+     "desc": "Stash a Salty Dog beef sausage inside the Kiba Arms store",
+     "descZh": "将咸狗牛肉肠藏匿在Kiba Arms商店里",
+     "map": "interchange",
+     "wx": -19.5,
+     "wy": 27.57,
+     "wz": -22.4
+    },
+    {
+     "desc": "Stash a Bottle of Fierce Hatchling moonshine inside the secret secure hideout",
+     "descZh": "将一瓶“凶狠跑刀崽”月光藏匿在秘密安全屋里",
+     "map": "interchange",
+     "wx": -49.32,
+     "wy": 21.8,
+     "wz": 45.03
+    },
+    {
+     "desc": "Stash a Toilet paper inside the secret container stash",
+     "descZh": "将厕纸藏匿在秘密物资箱里",
+     "map": "interchange",
+     "wx": 138.85,
+     "wy": 25.06,
+     "wz": 274.36
+    }
+   ]
+  },
+  {
+   "id": "5ac345dc86f774288030817f",
+   "title": "Farming - Part 1",
+   "titleZh": "挖矿 - 1",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Fix the first control board with a Toolset on Factory",
+     "descZh": "在工厂使用一套工具修复第一块控制板",
+     "map": "factory",
+     "wx": 68.19,
+     "wy": 1.06,
+     "wz": -7.38
+    },
+    {
+     "desc": "Fix the second control board with a Toolset on Factory",
+     "descZh": "在工厂使用一套工具修复第二块控制板",
+     "map": "factory",
+     "wx": 60.08,
+     "wy": 1.09,
+     "wz": -48.39
+    }
+   ]
+  },
+  {
+   "id": "5ac3462b86f7741d6118b983",
+   "title": "Farming - Part 3",
+   "titleZh": "挖矿 - 3",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the warehouse of seized goods on Customs",
+     "descZh": "在海关找到罚没品仓库",
+     "map": "customs",
+     "wx": -212.57,
+     "wy": 1.16,
+     "wz": -109.05
+    }
+   ]
+  },
+  {
+   "id": "5967725e86f774601a446662",
+   "title": "Shaking Up the Teller",
+   "titleZh": "探囊取物",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Gain access to dorm room 214 on Customs",
+     "descZh": "设法进入宿舍214房间",
+     "map": "customs",
+     "wx": 176.42,
+     "wy": 3.33,
+     "wz": 184.25
+    }
+   ]
+  },
+  {
+   "id": "5fd9fad9c1ce6b1a3b486d00",
+   "title": "Search Mission",
+   "titleZh": "搜索任务",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate Prapor's missing convoy on Woods",
+     "descZh": "在森林找到Prapor的失踪车队",
+     "map": "woods",
+     "wx": 195.56,
+     "wy": 12.21,
+     "wz": -595.82
+    },
+    {
+     "desc": "Locate the temporary USEC camp on Woods",
+     "descZh": "找到USEC临时营地",
+     "map": "woods",
+     "wx": 283.05,
+     "wy": 24.04,
+     "wz": -439.39
+    }
+   ]
+  },
+  {
+   "id": "657315e4a6af4ab4b50f3459",
+   "title": "Saving the Mole",
+   "titleZh": "救援行动",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Access the scientist's office",
+     "descZh": "进入科学家的办公室",
+     "map": "groundzero",
+     "wx": -13.48,
+     "wy": 31.01,
+     "wz": 51.33
+    },
+    {
+     "desc": "Locate the USEC PMC group at the parking lot of the TerraGroup complex on Ground Zero",
+     "descZh": "在中心区的TerraGroup大楼停车场找到USEC PMC的踪迹",
+     "map": "groundzero",
+     "wx": -21.01,
+     "wy": 24.23,
+     "wz": -25.1
+    },
+    {
+     "desc": "Locate the lab scientist on Ground Zero",
+     "descZh": "在中心区找到实验室科学家",
+     "map": "groundzero",
+     "wx": -60.45,
+     "wy": 25.62,
+     "wz": 27.42
+    }
+   ]
+  },
+  {
+   "id": "596b43fb86f77457ca186186",
+   "title": "The Extortionist",
+   "titleZh": "敲诈者",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate the messenger's body on Customs",
+     "descZh": "找到信使的尸体",
+     "map": "customs",
+     "wx": 27.49,
+     "wy": 1.49,
+     "wz": -110.2
+    },
+    {
+     "desc": "Locate the place where the messenger hid the cargo on Customs",
+     "descZh": "找到信使藏匿货物的地点",
+     "map": "customs",
+     "wx": 368.89,
+     "wy": 1.6,
+     "wz": -49.89
+    }
+   ]
+  },
+  {
+   "id": "657315ddab5a49b71f098853",
+   "title": "First in Line",
+   "titleZh": "新手上路",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the Emercom station on Ground Zero",
+     "descZh": "在中心区找到Emercom站点",
+     "map": "groundzero",
+     "wx": 156.2,
+     "wy": 25.52,
+     "wz": -83.59
+    }
+   ]
+  },
+  {
+   "id": "66aa58245ab22944110db6e9",
+   "title": "New Day, New Paths",
+   "titleZh": "新路线，新机遇",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Scout the intersection of Mira Ave and the overpass on Ground Zero (In one raid)",
+     "descZh": "Scout the intersection of Mira Ave and the overpass on Ground Zero (In one raid)",
+     "map": "groundzero",
+     "wx": 172.43,
+     "wy": 17.31,
+     "wz": 64.7
+    },
+    {
+     "desc": "Locate the passage leading to Streets of Tarkov on Ground Zero (In one raid)",
+     "descZh": "Locate the passage leading to Streets of Tarkov on Ground Zero (In one raid)",
+     "map": "groundzero",
+     "wx": 222.83,
+     "wy": 15.99,
+     "wz": 65.72
+    }
+   ]
+  },
+  {
+   "id": "6086c852c945025d41566124",
+   "title": "Revision - Reserve",
+   "titleZh": "无中生有 - 储备站",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and inspect the first BMP-2 on Reserve",
+     "descZh": "在储备站找到并检查第一辆BMP-2步战车",
+     "map": "reserve",
+     "wx": -100.4,
+     "wy": -4.32,
+     "wz": -155.69
+    },
+    {
+     "desc": "Locate and inspect the second BMP-2 on Reserve",
+     "descZh": "在储备站找到并检查第二辆BMP-2步战车",
+     "map": "reserve",
+     "wx": 79.01,
+     "wy": -4.63,
+     "wz": -31.55
+    },
+    {
+     "desc": "Locate and inspect the third BMP-2 on Reserve",
+     "descZh": "在储备站找到并检查第三辆BMP-2步战车",
+     "map": "reserve",
+     "wx": 103.38,
+     "wy": -4.63,
+     "wz": 63.87
+    },
+    {
+     "desc": "Locate and inspect the fourth BMP-2 on Reserve",
+     "descZh": "在储备站找到并检查第四辆BMP-2步战车",
+     "map": "reserve",
+     "wx": 53.83,
+     "wy": -4.14,
+     "wz": 122.03
+    },
+    {
+     "desc": "Mark the first BMP-2 with an MS2000 Marker",
+     "descZh": "标记第一辆BMP-2步战车",
+     "map": "reserve",
+     "wx": -100.58,
+     "wy": -3.72,
+     "wz": -155.88
+    },
+    {
+     "desc": "Mark the second BMP-2 with an MS2000 Marker",
+     "descZh": "标记第二辆BMP-2步战车",
+     "map": "reserve",
+     "wx": 79.03,
+     "wy": -5.44,
+     "wz": -31.79
+    },
+    {
+     "desc": "Mark the third BMP-2 with an MS2000 Marker",
+     "descZh": "标记第三辆BMP-2步战车",
+     "map": "reserve",
+     "wx": 101.73,
+     "wy": -5.59,
+     "wz": 64.44
+    },
+    {
+     "desc": "Mark the fourth BMP-2 with an MS2000 Marker",
+     "descZh": "标记第四辆BMP-2步战车",
+     "map": "reserve",
+     "wx": 53.62,
+     "wy": -4.0,
+     "wz": 122.66
+    }
+   ]
+  },
+  {
+   "id": "639135f286e646067c176a87",
+   "title": "Revision - Streets of Tarkov",
+   "titleZh": "无中生有 - 塔科夫街区",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first LAV III with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到第一辆LAV III装甲车，并使用MS2000指示器标记",
+     "map": "streetsoftarkov",
+     "wx": -139.43,
+     "wy": 3.56,
+     "wz": 438.81
+    },
+    {
+     "desc": "Locate and mark the Stryker with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到Stryker装甲车，并使用MS2000指示器标记",
+     "map": "streetsoftarkov",
+     "wx": 146.31,
+     "wy": 4.7,
+     "wz": 408.41
+    },
+    {
+     "desc": "Locate and mark the second LAV III with an MS2000 Marker on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到第二辆LAV III装甲车，并使用MS2000指示器标记",
+     "map": "streetsoftarkov",
+     "wx": 2.19,
+     "wy": 0.9,
+     "wz": 34.04
+    }
+   ]
+  },
+  {
+   "id": "6179b4d1bca27a099552e04e",
+   "title": "Revision - Lighthouse",
+   "titleZh": "无中生有 - 灯塔",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first BRDM with an MS2000 Marker on Lighthouse",
+     "descZh": "找到第一辆BRDM装甲车，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": 13.14,
+     "wy": 2.79,
+     "wz": -503.23
+    },
+    {
+     "desc": "Locate and mark the second BRDM with an MS2000 Marker on Lighthouse",
+     "descZh": "找到第二辆BRDM装甲车，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": -65.24,
+     "wy": 3.36,
+     "wz": -691.48
+    },
+    {
+     "desc": "Locate and mark the first Stryker with an MS2000 Marker on Lighthouse",
+     "descZh": "找到第一辆Stryker装甲车，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": 66.08,
+     "wy": 2.76,
+     "wz": 516.58
+    },
+    {
+     "desc": "Locate and mark the second Stryker with an MS2000 Marker on Lighthouse",
+     "descZh": "找到第二辆Stryker装甲车，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": -41.47,
+     "wy": 10.19,
+     "wz": 16.49
+    }
+   ]
+  },
+  {
+   "id": "669fa38fad7f1eac2607ed46",
+   "title": "One Less Loose End",
+   "titleZh": "最后的细枝末节",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Stash the journal at the old sawmill on Woods",
+     "descZh": "在森林的旧锯木厂中藏匿日志",
+     "map": "woods",
+     "wx": -510.89,
+     "wy": 17.15,
+     "wz": -178.23
+    }
+   ]
+  },
+  {
+   "id": "639282134ed9512be67647ed",
+   "title": "Road Closed",
+   "titleZh": "此路不通",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Determine the ambush spot",
+     "descZh": "找到偷袭位置",
+     "map": "streetsoftarkov",
+     "wx": 62.18,
+     "wy": 7.11,
+     "wz": 272.84
+    },
+    {
+     "desc": "Locate the cargo convoy on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到运送货物的车队",
+     "map": "streetsoftarkov",
+     "wx": 15.65,
+     "wy": 3.39,
+     "wz": 226.62
+    }
+   ]
+  },
+  {
+   "id": "59689fbd86f7740d137ebfc4",
+   "title": "Operation Aquarius - Part 1",
+   "titleZh": "水瓶座行动 - 1",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the water stockpile hidden inside one of the dorm rooms on Customs",
+     "descZh": "在海关找到被藏在宿舍楼里的水",
+     "map": "customs",
+     "wx": 232.24,
+     "wy": 3.39,
+     "wz": 138.88
+    }
+   ]
+  },
+  {
+   "id": "6179afd0bca27a099552e040",
+   "title": "Lost Contact",
+   "titleZh": "消失的线人",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Find the lost group in the chalet area on Lighthouse",
+     "descZh": "在灯塔的房屋区域找到失踪的小队",
+     "map": "lighthouse",
+     "wx": -70.36,
+     "wy": 26.78,
+     "wz": 132.23
+    }
+   ]
+  },
+  {
+   "id": "608974af4b05530f55550c21",
+   "title": "Inventory Check",
+   "titleZh": "清点库存",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Check the first arsenal in the eastern barracks (Black Pawn) on Reserve",
+     "descZh": "检查储备站西边军营的第一个军械库",
+     "map": "reserve",
+     "wx": -167.38,
+     "wy": -1.29,
+     "wz": 31.36
+    },
+    {
+     "desc": "Check the duty room in the eastern barracks (Black Pawn) on Reserve",
+     "descZh": "检查储备站西边军营的值班室",
+     "map": "reserve",
+     "wx": -164.96,
+     "wy": -4.22,
+     "wz": 34.53
+    },
+    {
+     "desc": "Check the second arsenal in the eastern barracks (Black Pawn) on Reserve",
+     "descZh": "检查储备站西边军营的第二个军械库",
+     "map": "reserve",
+     "wx": -167.38,
+     "wy": -7.05,
+     "wz": 31.36
+    },
+    {
+     "desc": "Check the first arsenal in the southern barracks (White Pawn) on Reserve",
+     "descZh": "检查储备站北边军营的第一个军械库",
+     "map": "reserve",
+     "wx": -125.54,
+     "wy": -1.29,
+     "wz": 95.68
+    },
+    {
+     "desc": "Check the second arsenal in the southern barracks (White Pawn) on Reserve",
+     "descZh": "检查储备站北边军营的第二个军械库",
+     "map": "reserve",
+     "wx": -125.52,
+     "wy": -7.05,
+     "wz": 95.68
+    }
+   ]
+  },
+  {
+   "id": "5a27b75b86f7742e97191958",
+   "title": "Fishing Gear",
+   "titleZh": "渔具",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate the boat hidden next to the breakwater on Shoreline",
+     "descZh": "在海岸线找到防波堤旁边的船只",
+     "map": "shoreline",
+     "wx": -182.04,
+     "wy": -63.73,
+     "wz": 459.85
+    },
+    {
+     "desc": "Stash an SV-98 sniper rifle in the boat",
+     "descZh": "把狙击步枪藏匿在船上",
+     "map": "shoreline",
+     "wx": -182.04,
+     "wy": -63.73,
+     "wz": 459.85
+    },
+    {
+     "desc": "Stash a Leatherman Multitool in the boat",
+     "descZh": "把多功能工具藏匿在船上",
+     "map": "shoreline",
+     "wx": -182.04,
+     "wy": -63.73,
+     "wz": 459.85
+    }
+   ]
+  },
+  {
+   "id": "5a27bbf886f774333a418eeb",
+   "title": "Wet Job - Part 2",
+   "titleZh": "湿活 - 2",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate the fishermen's dwelling on Shoreline",
+     "descZh": "在海岸线找到渔民的住所",
+     "map": "shoreline",
+     "wx": 235.56,
+     "wy": -64.46,
+     "wz": 442.02
+    },
+    {
+     "desc": "Mark the fishing table with an MS2000 Marker",
+     "descZh": "使用MS2000指示器标记钓鱼桌",
+     "map": "shoreline",
+     "wx": 235.56,
+     "wy": -64.46,
+     "wz": 442.02
+    }
+   ]
+  },
+  {
+   "id": "5a27bc1586f7741f6d40fa2f",
+   "title": "Wet Job - Part 3",
+   "titleZh": "湿活 - 3",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate Artyom’s car on Shoreline",
+     "descZh": "在海岸线找到Artyom的车",
+     "map": "shoreline",
+     "wx": 72.91,
+     "wy": -59.67,
+     "wz": 348.73
+    }
+   ]
+  },
+  {
+   "id": "5b478b1886f7744d1b23c57d",
+   "title": "Hot Delivery",
+   "titleZh": "火线速递",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Stash the ComTac II headsets in the specified place on Interchange",
+     "descZh": "将Peltor ComTac 2藏到指定地点",
+     "map": "interchange",
+     "wx": -50.39,
+     "wy": 27.7,
+     "wz": 25.08
+    },
+    {
+     "desc": "Stash the 6B47 helmets (Olive Drab) in the specified place on Interchange",
+     "descZh": "将6B47头盔藏到指定地点",
+     "map": "interchange",
+     "wx": -50.39,
+     "wy": 27.7,
+     "wz": 25.08
+    },
+    {
+     "desc": "Stash the Gzhel-K body armor in the specified place on Interchange",
+     "descZh": "将BNTI Gzhel-K护甲藏到指定地点",
+     "map": "interchange",
+     "wx": 179.86,
+     "wy": 22.31,
+     "wz": -40.9
+    }
+   ]
+  },
+  {
+   "id": "66ab970848ddbe9d4a0c49a8",
+   "title": "Special Comms",
+   "titleZh": "特别联络",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Stash a Military cable at the boulder next to RUAF gate on Woods",
+     "descZh": "在森林的指定位置藏匿军用电缆",
+     "map": "woods",
+     "wx": -119.04,
+     "wy": -0.93,
+     "wz": 400.65
+    },
+    {
+     "desc": "Stash a Bulbex cable cutter at the sandbags next to LAV III above the storage warehouse on Reserve",
+     "descZh": "在储备站的指定位置藏匿Bulbex剪线器",
+     "map": "reserve",
+     "wx": 50.98,
+     "wy": -0.62,
+     "wz": -181.92
+    }
+   ]
+  },
+  {
+   "id": "5d25e44386f77409453bce7b",
+   "title": "The Huntsman Path - Evil Watchman",
+   "titleZh": "猎人之路 - 邪恶守望者",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Eliminate PMC operatives in the Dorms area on Customs",
+     "descZh": "在海关宿舍楼区域击杀PMC",
+     "map": "customs",
+     "wx": 201.18,
+     "wy": 5.31,
+     "wz": 154.53
+    }
+   ]
+  },
+  {
+   "id": "66b38e144f2ab7cc530c3fe7",
+   "title": "Every Hunter Knows This",
+   "titleZh": "猎人必修课",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate a good tripwire installation spot on Factory",
+     "descZh": "在工厂找到合适的绊线布设点位",
+     "map": "factory",
+     "wx": 25.35,
+     "wy": 8.76,
+     "wz": 39.25
+    },
+    {
+     "desc": "Locate a good tripwire installation spot on Customs",
+     "descZh": "在海关找到合适的绊线布设点位",
+     "map": "customs",
+     "wx": 171.12,
+     "wy": 0.77,
+     "wz": 159.92
+    }
+   ]
+  },
+  {
+   "id": "5a27b7a786f774579c3eb376",
+   "title": "Tigr Safari",
+   "titleZh": "猎虎行动",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 505.03,
+     "wy": 1.24,
+     "wz": -11.29
+    },
+    {
+     "desc": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 17.86,
+     "wy": 0.35,
+     "wz": 0.36
+    },
+    {
+     "desc": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
+     "descZh": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
+     "map": "customs",
+     "wx": 565.76,
+     "wy": -0.01,
+     "wz": -24.17
+    }
+   ]
+  },
+  {
+   "id": "5d25b6be86f77444001e1b89",
+   "title": "The Survivalist Path - Thrifty",
+   "titleZh": "生存者之路 - 省吃俭用",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Stash an Iskra ration pack in the ZB-016 bunker on Woods",
+     "descZh": "在森林的ZB-016地堡里藏匿Iskra个人配给口粮",
+     "map": "woods",
+     "wx": -386.79,
+     "wy": 4.22,
+     "wz": 22.59
+    },
+    {
+     "desc": "Stash a Bottle of water (0.6L) in the ZB-016 bunker on Woods",
+     "descZh": "在森林的ZB-016地堡里藏匿瓶装水",
+     "map": "woods",
+     "wx": -386.79,
+     "wy": 4.22,
+     "wz": 22.59
+    },
+    {
+     "desc": "Stash an Iskra ration pack in the ZB-014 bunker on Woods",
+     "descZh": "在森林的ZB-014地堡里藏匿Iskra个人配给口粮",
+     "map": "woods",
+     "wx": 447.98,
+     "wy": -13.19,
+     "wz": 71.3
+    },
+    {
+     "desc": "Stash a Bottle of water (0.6L) in the ZB-014 bunker on Woods",
+     "descZh": "在森林的ZB-014地堡里藏匿瓶装水",
+     "map": "woods",
+     "wx": 447.98,
+     "wy": -13.19,
+     "wz": 71.3
+    }
+   ]
+  },
+  {
+   "id": "5a03173786f77451cb427172",
+   "title": "Spa Tour - Part 2",
+   "titleZh": "疗养之旅 - 2",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the helicopter at the Health Resort with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线使用MS2000指示器标记直升机 ",
+     "map": "shoreline",
+     "wx": -250.5,
+     "wy": -5.14,
+     "wz": -48.28
+    },
+    {
+     "desc": "Mark the safe passage to the helicopter with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线使用MS2000指示器标记安全通道",
+     "map": "shoreline",
+     "wx": -280.55,
+     "wy": -4.78,
+     "wz": -41.31
+    }
+   ]
+  },
+  {
+   "id": "5a03296886f774569778596a",
+   "title": "Spa Tour - Part 4",
+   "titleZh": "疗养之旅 - 4",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate the generators in the east wing of the Health Resort on Shoreline",
+     "descZh": "找到疗养院东楼的发电机",
+     "map": "shoreline",
+     "wx": -336.55,
+     "wy": 0.14,
+     "wz": -76.43
+    },
+    {
+     "desc": "Locate the generators in the west wing of the Health Resort on Shoreline",
+     "descZh": "找到疗养院西楼的发电机",
+     "map": "shoreline",
+     "wx": -171.16,
+     "wy": 0.14,
+     "wz": -75.51
+    }
+   ]
+  },
+  {
+   "id": "626bd75e47ea7f506e5493c5",
+   "title": "Broadcast - Part 1",
+   "titleZh": "直播 - 1",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the hidden recording studio on Lighthouse",
+     "descZh": "在灯塔找到隐蔽的录制室",
+     "map": "lighthouse",
+     "wx": 32.55,
+     "wy": 6.41,
+     "wz": -640.29
+    },
+    {
+     "desc": "Place a Signal Jammer inside the studio",
+     "descZh": "在录制室内放置信号干扰器",
+     "map": "lighthouse",
+     "wx": 32.55,
+     "wy": 6.41,
+     "wz": -640.29
+    }
+   ]
+  },
+  {
+   "id": "63913715f8e5dd32bf4e3aaa",
+   "title": "Broadcast - Part 2",
+   "titleZh": "直播 - 2",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the place of bloody broadcast inside the grocery store on Streets of Tarkov",
+     "descZh": "在塔科夫街区的杂货商店找到血腥直播的拍摄地点",
+     "map": "streetsoftarkov",
+     "wx": 157.36,
+     "wy": 5.1,
+     "wz": 314.25
+    }
+   ]
+  },
+  {
+   "id": "63a511ea30d85e10e375b045",
+   "title": "Broadcast - Part 3",
+   "titleZh": "直播 - 3",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the place of bloody broadcast inside the old house on Streets of Tarkov",
+     "descZh": "在塔科夫街区的老房子里找到血腥直播的拍摄地点",
+     "map": "streetsoftarkov",
+     "wx": -204.67,
+     "wy": 3.26,
+     "wz": 242.99
+    }
+   ]
+  },
+  {
+   "id": "6391372c8ba6894d155e77d7",
+   "title": "Broadcast - Part 4",
+   "titleZh": "直播 - 4",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the cultist meeting spot on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到邪教徒的聚集处",
+     "map": "streetsoftarkov",
+     "wx": -130.8,
+     "wy": 9.49,
+     "wz": 269.74
+    }
+   ]
+  },
+  {
+   "id": "64ee99639878a0569d6ec8c9",
+   "title": "Broadcast - Part 5",
+   "titleZh": "直播 - 5",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the ritual spot on Chekannaya st. on Streets of Tarkov",
+     "descZh": "在塔科夫街区的Chekannaya大街找到仪式地点",
+     "map": "streetsoftarkov",
+     "wx": 188.39,
+     "wy": 0.76,
+     "wz": 226.51
+    },
+    {
+     "desc": "Stash a Cultist knife at the ritual spot",
+     "descZh": "在仪式地点藏匿一把邪教徒的刀",
+     "map": "streetsoftarkov",
+     "wx": 188.59,
+     "wy": 0.37,
+     "wz": 226.38
+    }
+   ]
+  },
+  {
+   "id": "59c124d686f774189b3c843f",
+   "title": "BP Depot",
+   "titleZh": "石油存储",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first fuel tank with an MS2000 Marker on Customs",
+     "descZh": "在海关使用MS2000指示器标记第一辆油罐车",
+     "map": "customs",
+     "wx": 429.86,
+     "wy": 2.74,
+     "wz": 16.23
+    },
+    {
+     "desc": "Locate and mark the first fuel tank with an MS2000 Marker on Customs",
+     "descZh": "在海关使用MS2000指示器标记第一辆油罐车",
+     "map": "customs",
+     "wx": 101.45,
+     "wy": 3.06,
+     "wz": -14.1
+    },
+    {
+     "desc": "Locate and mark the first fuel tank with an MS2000 Marker on Customs",
+     "descZh": "在海关使用MS2000指示器标记第一辆油罐车",
+     "map": "customs",
+     "wx": 334.96,
+     "wy": 3.04,
+     "wz": -189.97
+    },
+    {
+     "desc": "Locate and mark the first fuel tank with an MS2000 Marker on Customs",
+     "descZh": "在海关使用MS2000指示器标记第一辆油罐车",
+     "map": "customs",
+     "wx": -334.93,
+     "wy": 2.22,
+     "wz": -163.46
+    }
+   ]
+  },
+  {
+   "id": "5a27b7d686f77460d847e6a6",
+   "title": "Scrap Metal",
+   "titleZh": "破铜烂铁",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first T-90 tank with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线找到第一辆T-90坦克，并使用MS2000指示器标记",
+     "map": "shoreline",
+     "wx": -153.08,
+     "wy": -17.05,
+     "wz": -280.18
+    },
+    {
+     "desc": "Locate and mark the second T-90 tank with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线找到第二辆T-90坦克，并使用MS2000指示器标记",
+     "map": "shoreline",
+     "wx": 378.74,
+     "wy": -54.38,
+     "wz": 166.86
+    },
+    {
+     "desc": "Locate and mark the third T-90 tank with an MS2000 Marker on Shoreline",
+     "descZh": "在海岸线找到第三辆T-90坦克，并使用MS2000指示器标记",
+     "map": "shoreline",
+     "wx": -349.68,
+     "wy": -39.86,
+     "wz": 185.87
+    }
+   ]
+  },
+  {
+   "id": "6391d90f4ed9512be67647df",
+   "title": "Make Amends",
+   "titleZh": "破镜重圆",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Visit the Lighthouse building",
+     "descZh": "前往灯塔",
+     "map": "lighthouse",
+     "wx": 442.23,
+     "wy": 24.11,
+     "wz": 460.69
+    }
+   ]
+  },
+  {
+   "id": "626148334149f1149b5b12ca",
+   "title": "Make Amends - Security",
+   "titleZh": "破镜重圆 - 安保",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Place a WI-FI Camera at the yellow bus on the southern bridge approaching the water treatment plant",
+     "descZh": "在污水处理厂附近南部大桥上的黄色公交车处放置WI-FI摄像头",
+     "map": "lighthouse",
+     "wx": -12.22,
+     "wy": 7.32,
+     "wz": -306.14
+    },
+    {
+     "desc": "Place a WI-FI Camera at the yellow bulldozer in the south-eastern part of the water treatment plant",
+     "descZh": "在污水处理厂东南角的黄色推土机处放置WI-FI摄像头",
+     "map": "lighthouse",
+     "wx": -195.28,
+     "wy": 6.15,
+     "wz": -431.19
+    },
+    {
+     "desc": "Place a WI-FI Camera at the police truck in the western part of the water treatment plant",
+     "descZh": "在污水处理厂西边的警车处放置WI-FI摄像头",
+     "map": "lighthouse",
+     "wx": 83.14,
+     "wy": 6.15,
+     "wz": -557.8
+    },
+    {
+     "desc": "Place a WI-FI Camera at the army truck near the industrial zone in the northern part of the water treatment plant",
+     "descZh": "在污水处理厂北边工业区附近的军车处放置WI-FI摄像头",
+     "map": "lighthouse",
+     "wx": -77.33,
+     "wy": 12.01,
+     "wz": -790.08
+    }
+   ]
+  },
+  {
+   "id": "6261483dc4874104f230c0cd",
+   "title": "Make Amends - Quarantine",
+   "titleZh": "破镜重圆 - 隔离",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Place a WI-FI Camera inside the quarantine zone in The Lab",
+     "descZh": "在实验室的隔离区内放置WI-FI摄像头",
+     "map": "lab",
+     "wx": -129.05,
+     "wy": 1.6,
+     "wz": -358.51
+    }
+   ]
+  },
+  {
+   "id": "5d25e48186f77443e625e386",
+   "title": "Courtesy Visit",
+   "titleZh": "礼节性拜访",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the chairman's house in the abandoned village on Shoreline",
+     "descZh": "在海岸线的废弃村庄里找到地方主席的房子",
+     "map": "shoreline",
+     "wx": 405.94,
+     "wy": -51.93,
+     "wz": -44.5
+    },
+    {
+     "desc": "Locate the fisherman's house in the abandoned village on Shoreline",
+     "descZh": "在海岸线的废弃村庄里找到渔夫的房子",
+     "map": "shoreline",
+     "wx": 382.94,
+     "wy": -51.93,
+     "wz": -125.9
+    },
+    {
+     "desc": "Locate the priest's house in the abandoned village on Shoreline",
+     "descZh": "在海岸线的废弃村庄里找到牧师的房子",
+     "map": "shoreline",
+     "wx": 287.14,
+     "wy": -49.2,
+     "wz": -46.32
+    }
+   ]
+  },
+  {
+   "id": "64ee9df4496db64f9b7a4432",
+   "title": "The Door",
+   "titleZh": "神秘的门",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate the cause of the signal jamming on Streets of Tarkov",
+     "descZh": "在塔科夫街区调查信号异常的原因",
+     "map": "streetsoftarkov",
+     "wx": 184.42,
+     "wy": 6.76,
+     "wz": 55.58
+    },
+    {
+     "desc": "Install a WI-FI Camera to watch the door",
+     "descZh": "安装WI-FI摄像头以监视房门",
+     "map": "streetsoftarkov",
+     "wx": 183.93,
+     "wy": 6.09,
+     "wz": 53.35
+    },
+    {
+     "desc": "Install a WI-FI Camera to watch the stairwell",
+     "descZh": "安装WI-FI摄像头以监视楼梯",
+     "map": "streetsoftarkov",
+     "wx": 176.3,
+     "wy": 6.29,
+     "wz": 82.24
+    }
+   ]
+  },
+  {
+   "id": "5a27bb3d86f77411ea361a21",
+   "title": "Cargo X - Part 2",
+   "titleZh": "神秘货物 - 2",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate the room with reservoirs in the Health Resort on Shoreline",
+     "descZh": "在疗养院找到水箱所在的房间",
+     "map": "shoreline",
+     "wx": -336.97,
+     "wy": -2.73,
+     "wz": -88.09
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "shoreline",
+     "wx": -149.87,
+     "wy": -6.08,
+     "wz": -77.0
+    }
+   ]
+  },
+  {
+   "id": "5a27bb5986f7741dfb660900",
+   "title": "Cargo X - Part 3",
+   "titleZh": "神秘货物 - 3",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate the TerraGroup cargo hidden inside the Health Resort on Shoreline",
+     "descZh": "在海岸线找到被藏匿的TerraGroup货物",
+     "map": "shoreline",
+     "wx": -149.87,
+     "wy": -6.08,
+     "wz": -77.0
+    }
+   ]
+  },
+  {
+   "id": "61958c366726521dd96828ec",
+   "title": "Cargo X - Part 4",
+   "titleZh": "神秘货物 - 4",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the TerraGroup cargo with an MS2000 Marker on Lighthouse",
+     "descZh": "在灯塔的海边找到TerraGroup的货物",
+     "map": "lighthouse",
+     "wx": 136.9,
+     "wy": 0.79,
+     "wz": 47.89
+    }
+   ]
+  },
+  {
+   "id": "5c0d0f1886f77457b8210226",
+   "title": "Lend-Lease - Part 2",
+   "titleZh": "租借法案 - 2",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "lighthouse",
+     "wx": -119.22,
+     "wy": 13.01,
+     "wz": -841.13
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "lighthouse",
+     "wx": -119.22,
+     "wy": 13.01,
+     "wz": -841.13
+    }
+   ]
+  },
+  {
+   "id": "6578ec473dbd035d04531a8d",
+   "title": "Steady Signal",
+   "titleZh": "稳定信号",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Mark the first weather station with an MS2000 Marker on Woods",
+     "descZh": "在森林使用MS2000指示器标记第一个气象站",
+     "map": "woods",
+     "wx": 412.21,
+     "wy": 13.71,
+     "wz": -608.53
+    },
+    {
+     "desc": "Mark the first weather station with an MS2000 Marker on Woods",
+     "descZh": "在森林使用MS2000指示器标记第一个气象站",
+     "map": "woods",
+     "wx": -209.22,
+     "wy": 77.52,
+     "wz": -279.78
+    },
+    {
+     "desc": "Mark the first weather station with an MS2000 Marker on Woods",
+     "descZh": "在森林使用MS2000指示器标记第一个气象站",
+     "map": "woods",
+     "wx": -97.25,
+     "wy": 13.99,
+     "wz": -542.05
+    },
+    {
+     "desc": "Mark the first weather station with an MS2000 Marker on Woods",
+     "descZh": "在森林使用MS2000指示器标记第一个气象站",
+     "map": "woods",
+     "wx": 247.27,
+     "wy": -9.07,
+     "wz": 291.49
+    },
+    {
+     "desc": "Mark the first weather station with an MS2000 Marker on Woods",
+     "descZh": "在森林使用MS2000指示器标记第一个气象站",
+     "map": "woods",
+     "wx": -447.08,
+     "wy": 2.06,
+     "wz": 249
+    }
+   ]
+  },
+  {
+   "id": "65802b627b44fa5e14638899",
+   "title": "Nothing Fishy About This",
+   "titleZh": "绝不上当",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate Ragman's SUV on Shoreline",
+     "descZh": "在海岸线找到Ragman的SUV",
+     "map": "shoreline",
+     "wx": 227.16,
+     "wy": -54.91,
+     "wz": -159.88
+    }
+   ]
+  },
+  {
+   "id": "639136d68ba6894d155e77cf",
+   "title": "Green Corridor",
+   "titleZh": "绿色通道",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the cargo convoy on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到运送货物的车队",
+     "map": "streetsoftarkov",
+     "wx": 15.65,
+     "wy": 3.39,
+     "wz": 226.62
+    },
+    {
+     "desc": "Determine the ambush spot",
+     "descZh": "找到偷袭位置",
+     "map": "streetsoftarkov",
+     "wx": 62.18,
+     "wy": 7.11,
+     "wz": 272.84
+    }
+   ]
+  },
+  {
+   "id": "626bd75b05f287031503c7f6",
+   "title": "Drug Trafficking",
+   "titleZh": "缉毒行动",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the hidden drug lab on Lighthouse",
+     "descZh": "在灯塔找到隐蔽的毒品实验室",
+     "map": "lighthouse",
+     "wx": -119.22,
+     "wy": 13.01,
+     "wz": -841.13
+    },
+    {
+     "desc": "Stash a WI-FI Camera in the drug lab",
+     "descZh": "在毒品实验室中藏匿WI-FI摄像头",
+     "map": "lighthouse",
+     "wx": -119.22,
+     "wy": 13.01,
+     "wz": -841.13
+    }
+   ]
+  },
+  {
+   "id": "625d6ffaf7308432be1d44c5",
+   "title": "Network Provider - Part 2",
+   "titleZh": "网络供应商 - 2",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Set up the radio repeater inside the MI-8 helicopter at the water treatment plant on Lighthouse",
+     "descZh": "将信号中继器安装在污水处理厂的MI-8直升机内部",
+     "map": "lighthouse",
+     "wx": -94.62,
+     "wy": 1.94,
+     "wz": -550.69
+    },
+    {
+     "desc": "Set up the radio repeater inside the abandoned USEC cottage on Lighthouse",
+     "descZh": "将信号中继器安装在废弃的USEC营房内部",
+     "map": "lighthouse",
+     "wx": -116.49,
+     "wy": 40.36,
+     "wz": 88.87
+    },
+    {
+     "desc": "Set up the radio repeater at a high elevation overlooking the peninsula on Lighthouse",
+     "descZh": "将信号中继器安装在可以俯瞰灯塔的高处",
+     "map": "lighthouse",
+     "wx": 71.11,
+     "wy": 10.16,
+     "wz": 392.52
+    },
+    {
+     "desc": "Set up the radio repeater on the roof of the sunken building at the shore on Lighthouse",
+     "descZh": "将信号中继器安装在海边沉没建筑的房顶",
+     "map": "lighthouse",
+     "wx": 127.57,
+     "wy": 6.99,
+     "wz": 293.0
+    }
+   ]
+  },
+  {
+   "id": "5967530a86f77462ba22226b",
+   "title": "Bad Rep Evidence",
+   "titleZh": "罪证",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Gain access to the locked room in the office hallway on the third floor on Factory",
+     "descZh": "设法进入工厂办公区三楼的上锁房间",
+     "map": "factory",
+     "wx": 30.13,
+     "wy": 8.72,
+     "wz": 38.89
+    }
+   ]
+  },
+  {
+   "id": "63a88045abf76d719f42d715",
+   "title": "The Delicious Sausage",
+   "titleZh": "美味香肠",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Scout the Shestyorochka store at Nikitskaya street",
+     "descZh": "搜索Nikitskaya大街的Shestyorochka（Шестёрочка）商店",
+     "map": "streetsoftarkov",
+     "wx": -204.31,
+     "wy": 4.3,
+     "wz": 181.22
+    },
+    {
+     "desc": "Scout the Sparja store at Primorsky ave",
+     "descZh": "搜索Primorsky大道的Sparja（Спаржа）商店",
+     "map": "streetsoftarkov",
+     "wx": 153.69,
+     "wy": 4.68,
+     "wz": 299.04
+    },
+    {
+     "desc": "Scout the Sparja store in Pinewood hotel",
+     "descZh": "搜索Pinewood酒店的Sparja（Спаржа）商店",
+     "map": "streetsoftarkov",
+     "wx": -77.17,
+     "wy": 2.33,
+     "wz": 158.91
+    },
+    {
+     "desc": "Scout the Goshan store in Concordia",
+     "descZh": "搜索Concordia区的Goshan商店",
+     "map": "streetsoftarkov",
+     "wx": 275.65,
+     "wy": 4.3,
+     "wz": 380.83
+    }
+   ]
+  },
+  {
+   "id": "639dbaf17c898a131e1cffff",
+   "title": "Debtor",
+   "titleZh": "老赖",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Find the debtor on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到老赖",
+     "map": "streetsoftarkov",
+     "wx": -80.26,
+     "wy": 5.98,
+     "wz": 50.5
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "streetsoftarkov",
+     "wx": 107.94,
+     "wy": 7.57,
+     "wz": 232.19
+    }
+   ]
+  },
+  {
+   "id": "5edabd13218d181e29451442",
+   "title": "Rigged Game",
+   "titleZh": "肮脏游戏",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Mark the medical container at the Health Resort with an MS2000 Marker on Shoreline",
+     "descZh": "将MS200指示器放在海岸线疗养院的医疗物资箱上",
+     "map": "shoreline",
+     "wx": -263.59,
+     "wy": -3.96,
+     "wz": -85.72
+    },
+    {
+     "desc": "Mark the medical container by cottages with an MS2000 Marker on Shoreline",
+     "descZh": "将MS200指示器放在海岸线别墅的医疗物资箱上",
+     "map": "shoreline",
+     "wx": 98.1,
+     "wy": -47.19,
+     "wz": 96.98
+    },
+    {
+     "desc": "Mark the medical container at the river pier with an MS2000 Marker on Shoreline",
+     "descZh": "将MS200指示器放在海岸线码头的医疗物资箱上",
+     "map": "shoreline",
+     "wx": -305.38,
+     "wy": -60.86,
+     "wz": 492.2
+    }
+   ]
+  },
+  {
+   "id": "6179b3a12153c15e937d52bc",
+   "title": "Energy Crisis",
+   "titleZh": "能源危机",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Find and mark the group of fuel tanks with an MS2000 Marker on Lighthouse",
+     "descZh": "在灯塔找到一组油罐，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": -116.6,
+     "wy": 11.67,
+     "wz": -921.85
+    },
+    {
+     "desc": "Find and mark the first tanker truck with an MS2000 Marker on Lighthouse",
+     "descZh": "在灯塔找到第一辆油罐车，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": -73.71,
+     "wy": 11.61,
+     "wz": -875.55
+    },
+    {
+     "desc": "Find and mark the second tanker truck with an MS2000 Marker on Lighthouse",
+     "descZh": "在灯塔找到第二辆油罐车，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": -158.46,
+     "wy": 6.04,
+     "wz": -608.02
+    },
+    {
+     "desc": "Find and mark the third tanker truck with an MS2000 Marker on Lighthouse",
+     "descZh": "在灯塔找到第三辆油罐车，并使用MS2000指示器标记",
+     "map": "lighthouse",
+     "wx": 29.08,
+     "wy": 5.99,
+     "wz": -423.36
+    }
+   ]
+  },
+  {
+   "id": "639135a7e705511c8a4a1b78",
+   "title": "Ballet Lover",
+   "titleZh": "芭蕾舞者",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate the balletmeister's apartment on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到芭蕾舞演员的公寓",
+     "map": "streetsoftarkov",
+     "wx": 47.63,
+     "wy": 12.66,
+     "wz": 153.12
+    }
+   ]
+  },
+  {
+   "id": "65734c186dc1e402c80dc19e",
+   "title": "Dandies",
+   "titleZh": "花花公子",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Stash a Bomber beanie inside the barber shop on Streets of Tarkov",
+     "descZh": "在塔科夫街区的理发店里藏匿Bomber 无檐小便帽",
+     "map": "streetsoftarkov",
+     "wx": 206.61,
+     "wy": 4.33,
+     "wz": 411.78
+    },
+    {
+     "desc": "Stash RayBench Hipster Reserve sunglasses inside the barber shop on Streets of Tarkov",
+     "descZh": "在塔科夫街区的理发店里藏匿Raybench Hipster Reserve太阳镜",
+     "map": "streetsoftarkov",
+     "wx": 214.29,
+     "wy": 4.25,
+     "wz": 409.25
+    }
+   ]
+  },
+  {
+   "id": "639135b04ed9512be67647d7",
+   "title": "Glory to CPSU - Part 1",
+   "titleZh": "苏共之辉 - 1",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the apartment of Prapor's friend on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到Prapor朋友的公寓",
+     "map": "streetsoftarkov",
+     "wx": 131.43,
+     "wy": 7.59,
+     "wz": 232.37
+    }
+   ]
+  },
+  {
+   "id": "64f5aac4b63b74469b6c14c2",
+   "title": "Glory to CPSU - Part 2",
+   "titleZh": "苏共之辉 - 2",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the place of work of Prapor's friend on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到Prapor朋友的工作地点",
+     "map": "streetsoftarkov",
+     "wx": 246.25,
+     "wy": -0.33,
+     "wz": 52.42
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "streetsoftarkov",
+     "wx": 131.43,
+     "wy": 7.59,
+     "wz": 232.37
+    }
+   ]
+  },
+  {
+   "id": "5969f9e986f7741dde183a50",
+   "title": "Pharmacist",
+   "titleZh": "药剂师",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Locate the paramedic’s car on Customs",
+     "descZh": "在海关找到护士的车",
+     "map": "customs",
+     "wx": 579.37,
+     "wy": 0.13,
+     "wz": -1.82
+    },
+    {
+     "desc": "Find a way inside the two-story dorm room 114 on Customs",
+     "descZh": "进入海关双层宿舍楼的114房间",
+     "map": "customs",
+     "wx": 235.48,
+     "wy": 0.43,
+     "wz": 160.07
+    }
+   ]
+  },
+  {
+   "id": "59675d6c86f7740a842fc482",
+   "title": "Ice Cream Cones",
+   "titleZh": "蛋卷冰淇淋",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the locked bunker on Woods",
+     "descZh": "在森林找到正确的地堡",
+     "map": "woods",
+     "wx": 443.01,
+     "wy": -14.99,
+     "wz": 67.67
+    }
+   ]
+  },
+  {
+   "id": "66aba85403e0ee3101042877",
+   "title": "Beneath The Streets",
+   "titleZh": "街区之下",
+   "giver": "Therapist",
+   "giverZh": "Therapist",
+   "objectives": [
+    {
+     "desc": "Scout the server room in The Lab (In one raid)",
+     "descZh": "Scout the server room in The Lab (In one raid)",
+     "map": "lab",
+     "wx": -125.55,
+     "wy": 2.54,
+     "wz": -305.09
+    },
+    {
+     "desc": "Locate the passage leading to Streets of Tarkov in The Lab (In one raid)",
+     "descZh": "Locate the passage leading to Streets of Tarkov in The Lab (In one raid)",
+     "map": "lab",
+     "wx": -169.08,
+     "wy": 0.91,
+     "wz": -420.88
+    },
+    {
+     "desc": "Scout the hazard dome in The Lab (In one raid)",
+     "descZh": "Scout the hazard dome in The Lab (In one raid)",
+     "map": "lab",
+     "wx": -172.28,
+     "wy": 1.01,
+     "wz": -371.25
+    },
+    {
+     "desc": "Scout the control room in The Lab (In one raid)",
+     "descZh": "Scout the control room in The Lab (In one raid)",
+     "map": "lab",
+     "wx": -170.74,
+     "wy": 4.75,
+     "wz": -283.03
+    }
+   ]
+  },
+  {
+   "id": "6396700fea19ac7ed845db32",
+   "title": "Spotter",
+   "titleZh": "观察员",
+   "giver": "Lightkeeper",
+   "giverZh": "Lightkeeper",
+   "objectives": [
+    {
+     "desc": "Locate a good sniping position in Concordia overlooking the construction site",
+     "descZh": "在塔科夫街区的Concordia区域找到一处能够俯瞰建筑工地的狙击点",
+     "map": "streetsoftarkov",
+     "wx": 219.39,
+     "wy": 10.32,
+     "wz": 397.48
+    },
+    {
+     "desc": "Locate a good sniping position in Concordia overlooking the construction site",
+     "descZh": "在塔科夫街区的Concordia区域找到一处能够俯瞰建筑工地的狙击点",
+     "map": "streetsoftarkov",
+     "wx": 224.98,
+     "wy": 10.34,
+     "wz": 396.67
+    },
+    {
+     "desc": "Locate a good sniping position in Concordia overlooking the construction site",
+     "descZh": "在塔科夫街区的Concordia区域找到一处能够俯瞰建筑工地的狙击点",
+     "map": "streetsoftarkov",
+     "wx": 214.79,
+     "wy": 10.32,
+     "wz": 398.14
+    },
+    {
+     "desc": "Hide AI Tactical Sound Moderator .338 LM near the red table",
+     "descZh": "在红色桌子附近藏匿一个AI .338 LM战术声音抑制器",
+     "map": "streetsoftarkov",
+     "wx": 228.19,
+     "wy": 9.88,
+     "wz": 396.69
+    },
+    {
+     "desc": "Hide AI Tactical Sound Moderator .338 LM near the red table",
+     "descZh": "在红色桌子附近藏匿一个AI .338 LM战术声音抑制器",
+     "map": "streetsoftarkov",
+     "wx": 218.21,
+     "wy": 9.9,
+     "wz": 396.31
+    },
+    {
+     "desc": "Hide AI Tactical Sound Moderator .338 LM near the red table",
+     "descZh": "在红色桌子附近藏匿一个AI .338 LM战术声音抑制器",
+     "map": "streetsoftarkov",
+     "wx": 215.75,
+     "wy": 9.79,
+     "wz": 395.9
+    },
+    {
+     "desc": "Locate a good sniping position at Primorsky overlooking the movie theater",
+     "descZh": "在塔科夫街区的Primorsky（Приморский）区域找到一处能够俯瞰电影院的狙击点",
+     "map": "streetsoftarkov",
+     "wx": 36.98,
+     "wy": 11.08,
+     "wz": 88.17
+    },
+    {
+     "desc": "Locate a good sniping position at Primorsky overlooking the movie theater",
+     "descZh": "在塔科夫街区的Primorsky（Приморский）区域找到一处能够俯瞰电影院的狙击点",
+     "map": "streetsoftarkov",
+     "wx": 37.87,
+     "wy": 12.66,
+     "wz": 155.78
+    },
+    {
+     "desc": "Hide Trijicon REAP-IR thermal scope under Makhors' bed",
+     "descZh": "在山羊床底下藏匿一个Trijicon REAP-IR热成像步枪瞄准镜",
+     "map": "streetsoftarkov",
+     "wx": 37.98,
+     "wy": 12.15,
+     "wz": 156.25
+    }
+   ]
+  },
+  {
+   "id": "669fa3a1c26f13bd04030f37",
+   "title": "Capacity Check",
+   "titleZh": "设施维护",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Fix the first reactor mixer with a Toolset on Factory",
+     "descZh": "在工厂使用一套工具修复第一个混合反应器",
+     "map": "factory",
+     "wx": 17.81,
+     "wy": 4.75,
+     "wz": 6.08
+    },
+    {
+     "desc": "Fix the second reactor mixer with a Toolset on Factory",
+     "descZh": "在工厂使用一套工具修复第二个混合反应器",
+     "map": "factory",
+     "wx": 6.76,
+     "wy": 4.75,
+     "wz": 6.08
+    },
+    {
+     "desc": "Fix the third reactor mixer with a Toolset on Factory",
+     "descZh": "在工厂使用一套工具修复第三个混合反应器",
+     "map": "factory",
+     "wx": -4.36,
+     "wy": 4.75,
+     "wz": 6.08
+    }
+   ]
+  },
+  {
+   "id": "625d6ffcaa168e51321d69d7",
+   "title": "Assessment - Part 1",
+   "titleZh": "试探 - 1",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Eliminate PMC operatives near the Lighthouse peninsula",
+     "descZh": "消灭位于灯塔本体区域的PMC行动人员",
+     "map": "lighthouse",
+     "wx": -29.57,
+     "wy": 23.34,
+     "wz": 112.69
+    }
+   ]
+  },
+  {
+   "id": "625d6fff4149f1149b5b12c9",
+   "title": "Assessment - Part 2",
+   "titleZh": "试探 - 2",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first bunker with an MS2000 marker on Woods",
+     "descZh": "在森林找到第一个地堡，并使用MS2000指示器标记",
+     "map": "woods",
+     "wx": 222.16,
+     "wy": 21.38,
+     "wz": -706.6
+    },
+    {
+     "desc": "Locate and mark the second bunker with an MS2000 marker on Woods",
+     "descZh": "在森林找到第二个地堡，并使用MS2000指示器标记",
+     "map": "woods",
+     "wx": -156.09,
+     "wy": 52.27,
+     "wz": -273.32
+    },
+    {
+     "desc": "Locate and mark the third bunker with an MS2000 marker on Woods",
+     "descZh": "在森林找到第三个地堡，并使用MS2000指示器标记",
+     "map": "woods",
+     "wx": -157.6,
+     "wy": 47.17,
+     "wz": -233.2
+    },
+    {
+     "desc": "Locate and mark the fourth bunker with an MS2000 marker on Woods",
+     "descZh": "在森林找到第四个地堡，并使用MS2000指示器标记",
+     "map": "woods",
+     "wx": 446.34,
+     "wy": -13.14,
+     "wz": 69.18
+    }
+   ]
+  },
+  {
+   "id": "6573397ef3f8344c4575cd87",
+   "title": "Properties All Around",
+   "titleZh": "财不外露",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Locate the real estate fund on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到不动产管理处",
+     "map": "streetsoftarkov",
+     "wx": -58.32,
+     "wy": 3.58,
+     "wz": 457.86
+    }
+   ]
+  },
+  {
+   "id": "639135c3744e452011470807",
+   "title": "House Arrest - Part 1",
+   "titleZh": "软禁 - 1",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Locate where the missing group was held captive on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到失踪小队被关押的位置",
+     "map": "streetsoftarkov",
+     "wx": 127.09,
+     "wy": 10.64,
+     "wz": 232.57
+    },
+    {
+     "desc": "",
+     "descZh": "",
+     "map": "streetsoftarkov",
+     "wx": -80.26,
+     "wy": 5.98,
+     "wz": 50.5
+    }
+   ]
+  },
+  {
+   "id": "639135cd8ba6894d155e77cb",
+   "title": "House Arrest - Part 2",
+   "titleZh": "软禁 - 2",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Find out what happened to the warden",
+     "descZh": "调查看守者的遭遇",
+     "map": "streetsoftarkov",
+     "wx": 106.77,
+     "wy": 4.65,
+     "wz": 222.48
+    },
+    {
+     "desc": "Locate the improvised jail warden's apartment on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到临时监狱看守者的公寓",
+     "map": "streetsoftarkov",
+     "wx": 107.94,
+     "wy": 7.57,
+     "wz": 232.19
+    }
+   ]
+  },
+  {
+   "id": "625d700cc48e6c62a440fab5",
+   "title": "Getting Acquainted",
+   "titleZh": "邂逅",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Visit the Lighthouse building",
+     "descZh": "前往灯塔",
+     "map": "lighthouse",
+     "wx": 442.23,
+     "wy": 24.11,
+     "wz": 460.69
+    }
+   ]
+  },
+  {
+   "id": "5a27b9de86f77464e5044585",
+   "title": "The Cult - Part 1",
+   "titleZh": "邪教 - 1",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate the missing informant on Shoreline",
+     "descZh": "在海岸线找到失踪的线人",
+     "map": "shoreline",
+     "wx": 287.07,
+     "wy": -49.35,
+     "wz": -42.33
+    }
+   ]
+  },
+  {
+   "id": "5a27ba1c86f77461ea5a3c56",
+   "title": "The Cult - Part 2",
+   "titleZh": "邪教 - 2",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first ritual spot with an MS2000 Marker on Woods",
+     "descZh": "将MS2000指示器放置在森林的第一个仪式地点上",
+     "map": "woods",
+     "wx": 195.98,
+     "wy": 1.03,
+     "wz": -7.24
+    },
+    {
+     "desc": "Locate and mark the second ritual spot with an MS2000 Marker on Woods",
+     "descZh": "将MS2000指示器放置在森林的第二个仪式地点上",
+     "map": "woods",
+     "wx": -88.7,
+     "wy": 12.55,
+     "wz": -717.61
+    },
+    {
+     "desc": "Locate and mark the ritual spot with an MS2000 Marker on Shoreline",
+     "descZh": "将MS2000指示器放置在海岸线的仪式地点上",
+     "map": "shoreline",
+     "wx": -336.64,
+     "wy": 3.54,
+     "wz": -88.73
+    }
+   ]
+  },
+  {
+   "id": "61904daa7d0d857927447b9c",
+   "title": "The Hermit",
+   "titleZh": "隐士",
+   "giver": "Jaeger",
+   "giverZh": "Jaeger",
+   "objectives": [
+    {
+     "desc": "Locate the hideout of Jaeger's friend on Lighthouse",
+     "descZh": "在灯塔找到Jaeger朋友的藏身处",
+     "map": "lighthouse",
+     "wx": -246.59,
+     "wy": 0.91,
+     "wz": -328.26
+    }
+   ]
+  },
+  {
+   "id": "669fa39c64ea11e84c0642a6",
+   "title": "The Walls Have Eyes",
+   "titleZh": "隔墙有“眼”",
+   "giver": "Skier",
+   "giverZh": "Skier",
+   "objectives": [
+    {
+     "desc": "Install a WI-FI Camera in the first crane's cockpit on Factory",
+     "descZh": "在工厂的第一个起重机驾驶室内安装WI-FI摄像头",
+     "map": "factory",
+     "wx": 63.61,
+     "wy": 6.44,
+     "wz": 35.11
+    },
+    {
+     "desc": "Install a WI-FI Camera in the second crane's cockpit on Factory",
+     "descZh": "在工厂的第二个起重机驾驶室内安装WI-FI摄像头",
+     "map": "factory",
+     "wx": -5.47,
+     "wy": 5.78,
+     "wz": -32.48
+    },
+    {
+     "desc": "Install a WI-FI Camera in the third crane's cockpit on Factory",
+     "descZh": "在工厂的第三个起重机驾驶室内安装WI-FI摄像头",
+     "map": "factory",
+     "wx": -24.44,
+     "wy": 6.2,
+     "wz": 60.43
+    }
+   ]
+  },
+  {
+   "id": "608974d01a66564e74191fc0",
+   "title": "A Fuel Matter",
+   "titleZh": "雪中送炭",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Mark the first group of fuel tanks with an MS2000 Marker on Reserve",
+     "descZh": "在储备站使用MS2000指示器标记第一组油罐",
+     "map": "reserve",
+     "wx": 11.95,
+     "wy": -9.89,
+     "wz": 73.8
+    },
+    {
+     "desc": "Mark the second group of fuel tanks with an MS2000 Marker on Reserve",
+     "descZh": "在储备站使用MS2000指示器标记第二组油罐",
+     "map": "reserve",
+     "wx": 170.03,
+     "wy": -9.31,
+     "wz": -97.86
+    }
+   ]
+  },
+  {
+   "id": "639135bbc115f907b14700a6",
+   "title": "Audiophile",
+   "titleZh": "高保真",
+   "giver": "Ragman",
+   "giverZh": "Ragman",
+   "objectives": [
+    {
+     "desc": "Locate the musician gathering spot on Streets of Tarkov",
+     "descZh": "在塔科夫街区找到音乐人集会点",
+     "map": "streetsoftarkov",
+     "wx": 42.98,
+     "wy": 11.75,
+     "wz": 151.46
+    }
+   ]
+  },
+  {
+   "id": "5a27b80086f774429a5d7e20",
+   "title": "Eagle Eye",
+   "titleZh": "鹰眼",
+   "giver": "Peacekeeper",
+   "giverZh": "Peacekeeper",
+   "objectives": [
+    {
+     "desc": "Locate the first UAV crash site on Shoreline",
+     "descZh": "在海岸线找到第一架无人机的坠毁点",
+     "map": "shoreline",
+     "wx": -553.09,
+     "wy": -29.35,
+     "wz": -127.68
+    },
+    {
+     "desc": "Locate the second UAV crash site on Shoreline",
+     "descZh": "在海岸线找到第二架无人机的坠毁点",
+     "map": "shoreline",
+     "wx": 81.43,
+     "wy": -31.82,
+     "wz": -166.84
+    }
+   ]
+  },
+  {
+   "id": "5eda19f0edce541157209cee",
+   "title": "Anesthesia",
+   "titleZh": "麻醉",
+   "giver": "Prapor",
+   "giverZh": "Prapor",
+   "objectives": [
+    {
+     "desc": "Mark the first trading post with an MS2000 Marker on Shoreline",
+     "descZh": "用MS2000指示器标记海岸线的第一个交易站 ",
+     "map": "shoreline",
+     "wx": -263.98,
+     "wy": -3.96,
+     "wz": -85.25
+    },
+    {
+     "desc": "Mark the second trading post with an MS2000 Marker on Shoreline",
+     "descZh": "用MS2000指示器标记海岸线的第二个交易站",
+     "map": "shoreline",
+     "wx": 96.73,
+     "wy": -47.19,
+     "wz": 97.1
+    },
+    {
+     "desc": "Mark the third trading post with an MS2000 Marker on Shoreline",
+     "descZh": "用MS2000指示器标记海岸线的第三个交易站",
+     "map": "shoreline",
+     "wx": -306.2,
+     "wy": -60.86,
+     "wz": 494.1
+    }
+   ]
+  },
+  {
+   "id": "669fa39b91b0a8c9680fc467",
+   "title": "Black Swan",
+   "titleZh": "黑天鹅计划",
+   "giver": "Mechanic",
+   "giverZh": "Mechanic",
+   "objectives": [
+    {
+     "desc": "Locate and mark the first heat exchanger with an MS2000 Marker on Factory",
+     "descZh": "在工厂使用MS2000指示器标记第一个热交换器",
+     "map": "factory",
+     "wx": -16.99,
+     "wy": -1.6,
+     "wz": 34.81
+    },
+    {
+     "desc": "Locate and mark the first heat exchanger with an MS2000 Marker on Factory",
+     "descZh": "在工厂使用MS2000指示器标记第一个热交换器",
+     "map": "factory",
+     "wx": 34.43,
+     "wy": -1.48,
+     "wz": -4.45
+    },
+    {
+     "desc": "Locate and mark the first heat exchanger with an MS2000 Marker on Factory",
+     "descZh": "在工厂使用MS2000指示器标记第一个热交换器",
+     "map": "factory",
+     "wx": 45.62,
+     "wy": -1.6,
+     "wz": -36.13
+    }
+   ]
+  }
+ ]
+}

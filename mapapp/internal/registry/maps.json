@@ -1,0 +1,431 @@
+{
+ "factory": {
+  "name": "Factory",
+  "nameRu": "Завод",
+  "svgFile": "Factory.svg",
+  "floors": [
+   "Basement",
+   "Ground_Floor",
+   "First_Floor",
+   "Second_Floor"
+  ],
+  "defaultFloor": "Ground_Floor",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 90,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -67,
+   "maxX": 76.6,
+   "minZ": -65.5,
+   "maxZ": 69
+  },
+  "floorRanges": [],
+  "nameZh": "工厂"
+ },
+ "customs": {
+  "name": "Customs",
+  "nameRu": "Таможня",
+  "svgFile": "Customs.svg",
+  "floors": [
+   "Ground_Level"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -371,
+   "maxX": 698,
+   "minZ": -307,
+   "maxZ": 237
+  },
+  "floorRanges": [],
+  "nameZh": "海关"
+ },
+ "woods": {
+  "name": "Woods",
+  "nameRu": "Лес",
+  "svgFile": "Woods.svg",
+  "floors": [
+   "Ground_Level"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -695,
+   "maxX": 650,
+   "minZ": -945,
+   "maxZ": 470
+  },
+  "floorRanges": [],
+  "nameZh": "森林"
+ },
+ "shoreline": {
+  "name": "Shoreline",
+  "nameRu": "Берег",
+  "svgFile": "Shoreline.svg",
+  "floors": [
+   "Ground_Level",
+   "Underground_Level",
+   "First_Floor",
+   "Second_Floor",
+   "Third_Floor"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -1060,
+   "maxX": 506,
+   "minZ": -405,
+   "maxZ": 618
+  },
+  "floorRanges": [],
+  "nameZh": "海岸线"
+ },
+ "interchange": {
+  "name": "Interchange",
+  "nameRu": "Развязка",
+  "svgFile": "Interchange.svg",
+  "floors": [
+   "Ground_Level",
+   "First_Floor",
+   "Second_Floor"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -364,
+   "maxX": 530,
+   "minZ": -439,
+   "maxZ": 452
+  },
+  "floorRanges": [],
+  "nameZh": "立交桥"
+ },
+ "lab": {
+  "name": "The Lab",
+  "nameRu": "Лаборатория",
+  "svgFile": "Labs.svg",
+  "floors": [
+   "Technical_Level",
+   "First_Level",
+   "Second_Level"
+  ],
+  "defaultFloor": "Technical_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 270,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -287,
+   "maxX": -91,
+   "minZ": -477,
+   "maxZ": -193
+  },
+  "floorRanges": [],
+  "nameZh": "实验室"
+ },
+ "reserve": {
+  "name": "Reserve",
+  "nameRu": "Резерв",
+  "svgFile": "Reserve.svg",
+  "floors": [
+   "Bunkers",
+   "Ground_Level"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -303,
+   "maxX": 289,
+   "minZ": -338,
+   "maxZ": 336
+  },
+  "floorRanges": [],
+  "nameZh": "储备站"
+ },
+ "lighthouse": {
+  "name": "Lighthouse",
+  "nameRu": "Маяк",
+  "svgFile": "Lighthouse.svg",
+  "floors": [
+   "Ground_Level"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -545,
+   "maxX": 515,
+   "minZ": -1000,
+   "maxZ": 725
+  },
+  "floorRanges": [],
+  "nameZh": "灯塔"
+ },
+ "streetsoftarkov": {
+  "name": "Streets of Tarkov",
+  "nameRu": "",
+  "svgFile": "StreetsOfTarkov.svg",
+  "floors": [
+   "Ground_Level",
+   "Underground_Level",
+   "First_Floor",
+   "Second_Floor",
+   "Third_Floor",
+   "Fourth_Floor",
+   "Fifth_Floor"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -280,
+   "maxX": 323,
+   "minZ": -317,
+   "maxZ": 549
+  },
+  "floorRanges": [],
+  "nameZh": "塔科夫街区"
+ },
+ "groundzero": {
+  "name": "Ground Zero",
+  "nameRu": "",
+  "svgFile": "GroundZero.svg",
+  "floors": [
+   "Ground_Level",
+   "Underground_Level",
+   "First_Floor",
+   "Second_Floor",
+   "Third_Floor"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -99,
+   "maxX": 249,
+   "minZ": -124,
+   "maxZ": 364
+  },
+  "floorRanges": [],
+  "nameZh": "中心区"
+ },
+ "terminal": {
+  "name": "Terminal",
+  "nameRu": "",
+  "nameZh": "",
+  "svgFile": "Terminal.svg",
+  "floors": [
+   "Ground_Level"
+  ],
+  "defaultFloor": "Ground_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -372,
+   "maxX": 292,
+   "minZ": -420,
+   "maxZ": 406
+  },
+  "floorRanges": []
+ }
+}

@@ -7,3 +7,6 @@ app/build/bin/
 deploy/dist/
 # deploy scripts don't belong here (public repo) — guard against accidental adding
 deploy*.ps1
+
+.DS_Store
+.claude/
