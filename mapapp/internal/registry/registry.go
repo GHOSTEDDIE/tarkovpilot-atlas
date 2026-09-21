@@ -54,17 +54,42 @@ type FloorRange struct {
 	MaxY  float64 `json:"maxY"`
 }
 
+// Raster describes a locally bundled slippy-map tile set. Transform matches
+// Leaflet's CRS.Simple transformation [scaleX, marginX, scaleY, marginY]; the
+// vertical scale is inverted when world coordinates are projected to pixels.
+type Raster struct {
+	Zoom      int           `json:"zoom"`
+	TileSize  int           `json:"tileSize"`
+	Transform [4]float64    `json:"transform"`
+	Layers    []RasterLayer `json:"layers"`
+}
+
+type RasterLayer struct {
+	Floor     string `json:"floor"`
+	TilePath  string `json:"tilePath"`
+	SourceURL string `json:"sourceUrl,omitempty"`
+}
+
 type Map struct {
-	ID           string       `json:"id"`
-	Name         string       `json:"name"`
-	NameRu       string       `json:"nameRu"`
-	NameZh       string       `json:"nameZh"`
-	SvgFile      string       `json:"svgFile"`
-	Floors       []string     `json:"floors"`
-	DefaultFloor string       `json:"defaultFloor"`
-	Projection   Projection   `json:"projection"`
-	Bounds       Bounds       `json:"bounds"`
-	FloorRanges  []FloorRange `json:"floorRanges"`
+	ID                     string       `json:"id"`
+	Name                   string       `json:"name"`
+	NameRu                 string       `json:"nameRu"`
+	NameZh                 string       `json:"nameZh"`
+	SvgFile                string       `json:"svgFile"`
+	FallbackImage          string       `json:"fallbackImage,omitempty"`
+	FallbackImageSource    string       `json:"fallbackImageSource,omitempty"`
+	FallbackImageWidth     int          `json:"fallbackImageWidth,omitempty"`
+	FallbackImageHeight    int          `json:"fallbackImageHeight,omitempty"`
+	FallbackAttribution    string       `json:"fallbackAttribution,omitempty"`
+	FallbackAttributionURL string       `json:"fallbackAttributionUrl,omitempty"`
+	Floors                 []string     `json:"floors"`
+	DefaultFloor           string       `json:"defaultFloor"`
+	Projection             Projection   `json:"projection"`
+	Bounds                 Bounds       `json:"bounds"`
+	FloorRanges            []FloorRange `json:"floorRanges"`
+	Raster                 *Raster      `json:"raster,omitempty"`
+	Attribution            string       `json:"attribution,omitempty"`
+	AttributionURL         string       `json:"attributionUrl,omitempty"`
 }
 
 // FloorForY picks a floor by world height; empty = caller uses default.

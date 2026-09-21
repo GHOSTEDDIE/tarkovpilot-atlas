@@ -3,4 +3,9 @@ dist/
 tarkovmap
 tarkovmap.exe
 tarkovmap-windows-*.exe
+tarkovpilot-atlas
+tarkovpilot-atlas.exe
+tarkovpilot-atlas-windows-*.exe
 mapapp-data.json
+mapapp-content.json
+mapapp-map-cache/

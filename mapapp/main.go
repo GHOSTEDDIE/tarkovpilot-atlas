@@ -1,13 +1,13 @@
-// tarkovmap — self-hosted Escape from Tarkov position map.
+// TarkovPilot Atlas — self-hosted Escape from Tarkov map and quest companion.
 //
 // 双击运行（无参数）：启动服务器 + 内置 agent（自动监听截图目录），
 // 并自动用浏览器打开地图页面。数据文件保存在 exe 同目录。
 //
 // 子命令（一般用不到）：
 //
-//	tarkovmap serve   [-addr :8400] [-data FILE] [-token T] [-svg-base URL] [-no-browser] [-agent=false] [-screenshots DIR] [-logs DIR]
-//	tarkovmap agent   -server URL [-screenshots DIR] [-logs DIR] [-token T]   （游戏和服务器分开两台机器时用）
-//	tarkovmap parse   <screenshot filename>                                   （调试图文件名解析）
+//	tarkovpilot-atlas serve   [-addr :8400] [-data FILE] [-token T] [-svg-base URL] [-no-browser] [-agent=false] [-screenshots DIR] [-logs DIR]
+//	tarkovpilot-atlas agent   -server URL [-screenshots DIR] [-logs DIR] [-token T]   （游戏和服务器分开两台机器时用）
+//	tarkovpilot-atlas parse   <screenshot filename>                                   （调试图文件名解析）
 //
 // Windows 默认目录：截图为 %USERPROFILE%\Documents\Escape from Tarkov\Screenshots；
 // 日志目录自动从常见安装路径检测，也可用 -logs 指定。
@@ -15,6 +15,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
@@ -30,6 +31,9 @@ import (
 	"time"
 
 	"tarkovmap/internal/agent"
+	"tarkovmap/internal/autoupdate"
+	"tarkovmap/internal/content"
+	"tarkovmap/internal/mapassets"
 	"tarkovmap/internal/parser"
 	"tarkovmap/internal/quests"
 	"tarkovmap/internal/registry"
@@ -39,7 +43,7 @@ import (
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lmsgprefix)
-	log.SetPrefix("[tarkovmap] ")
+	log.SetPrefix("[TarkovPilot Atlas] ")
 
 	if len(os.Args) < 2 {
 		serveCmd(nil) // double-click: everything with defaults
@@ -52,6 +56,8 @@ func main() {
 		agentCmd(os.Args[2:])
 	case "parse":
 		parseCmd(os.Args[2:])
+	case "data":
+		dataCmd(os.Args[2:])
 	default:
 		if strings.HasPrefix(os.Args[1], "-") {
 			serveCmd(os.Args[1:]) // flags without a subcommand = serve
@@ -64,29 +70,109 @@ func main() {
 
 func usage() {
 	fmt.Fprintf(os.Stderr, `usage:
-  tarkovmap            双击启动：服务器 + 内置 agent，自动打开浏览器
-  tarkovmap serve [-addr :8400] [-data FILE] [-token T] [-svg-base URL] [-no-browser] [-agent=false]
-  tarkovmap agent -server URL [-screenshots DIR] [-logs DIR] [-token T]
-  tarkovmap parse "2025-12-20[02-09]-420.18, 1.00, 319.01-...png"
+  tarkovpilot-atlas            双击启动：服务器 + 内置 agent，自动打开浏览器
+  tarkovpilot-atlas serve [-addr :8400] [-data FILE] [-token T] [-svg-base URL] [-auto-update=true] [-no-browser] [-agent=false]
+  tarkovpilot-atlas agent -server URL [-screenshots DIR] [-logs DIR] [-token T]
+  tarkovpilot-atlas agent replay-quests -server URL -logs DIR [-profile default] [-mode pvp|pve] [-wipe current]
+  tarkovpilot-atlas data refresh [-file FILE] [-base-url URL] [-apply]
+  tarkovpilot-atlas data maps-refresh [-dir DIR] [-svg-base URL]
+  tarkovpilot-atlas data rollback [-file FILE]
+  tarkovpilot-atlas parse "2025-12-20[02-09]-420.18, 1.00, 319.01-...png"
 `)
+}
+
+func dataCmd(args []string) {
+	if len(args) == 0 {
+		log.Fatal("data: expected refresh or rollback")
+	}
+	switch args[0] {
+	case "refresh":
+		fs := flag.NewFlagSet("data refresh", flag.ExitOnError)
+		file := fs.String("file", defaultContentFile(), "active content-pack file")
+		baseURL := fs.String("base-url", content.DefaultUpstreamBaseURL, "tarkov.dev static JSON base URL")
+		apply := fs.Bool("apply", false, "activate the validated pack (without this flag only preview the report)")
+		_ = fs.Parse(args[1:])
+		report, err := content.Refresh(context.Background(), content.RefreshOptions{
+			BaseURL: *baseURL,
+			Target:  *file,
+			Apply:   *apply,
+		})
+		if err != nil {
+			log.Fatal(err)
+		}
+		b, _ := json.MarshalIndent(report, "", "  ")
+		fmt.Println(string(b))
+		if !*apply {
+			fmt.Println("预览完成；确认报告后追加 -apply 激活该数据包。")
+		}
+	case "rollback":
+		fs := flag.NewFlagSet("data rollback", flag.ExitOnError)
+		file := fs.String("file", defaultContentFile(), "active content-pack file")
+		_ = fs.Parse(args[1:])
+		if err := content.Rollback(*file); err != nil {
+			log.Fatal(err)
+		}
+		fmt.Printf("已回滚内容包：%s\n", *file)
+	case "maps-refresh":
+		fs := flag.NewFlagSet("data maps-refresh", flag.ExitOnError)
+		dir := fs.String("dir", defaultMapCacheDir(), "versioned runtime map-art cache")
+		svgSource := fs.String("svg-base", mapassets.DefaultSVGBaseURL, "remote SVG source base URL")
+		_ = fs.Parse(args[1:])
+		report, err := mapassets.Refresh(context.Background(), registry.MustLoad(), mapassets.RefreshOptions{
+			Root: *dir, SVGBaseURL: *svgSource,
+		})
+		if err != nil {
+			log.Fatal(err)
+		}
+		b, _ := json.MarshalIndent(report, "", "  ")
+		fmt.Println(string(b))
+	default:
+		log.Fatalf("data: unknown action %q", args[0])
+	}
 }
 
 func serveCmd(args []string) {
 	fs := flag.NewFlagSet("serve", flag.ExitOnError)
 	addr := fs.String("addr", ":8400", "listen address")
 	data := fs.String("data", defaultDataFile(), "state/calibration data file")
+	contentFile := fs.String("content", defaultContentFile(), "versioned game-content pack")
 	token := fs.String("token", "", "optional ingest token (X-Token header)")
 	svgBase := fs.String("svg-base", server.DefaultSVGBaseURL, "base URL for map SVG files")
 	noBrowser := fs.Bool("no-browser", false, "do not open the browser on start")
 	embedAgent := fs.Bool("agent", true, "run the built-in screenshots/logs agent")
 	screens := fs.String("screenshots", defaultScreenshotsDir(), "EFT screenshots folder (built-in agent)")
 	logsDir := fs.String("logs", detectLogsDir(), "EFT Logs folder (built-in agent)")
+	autoUpdate := fs.Bool("auto-update", true, "refresh game data and map art in the background")
+	updateInterval := fs.Duration("update-interval", 24*time.Hour, "successful automatic update interval")
+	updateRetry := fs.Duration("update-retry", time.Hour, "automatic update retry interval after failure")
+	updateBaseURL := fs.String("update-base-url", content.DefaultUpstreamBaseURL, "tarkov.dev static JSON base URL")
+	mapCache := fs.String("map-cache", defaultMapCacheDir(), "versioned runtime map-art cache")
 	_ = fs.Parse(args)
 
 	reg := registry.MustLoad()
 	qr := quests.MustLoad()
+	catalog, err := content.Load(*contentFile)
+	if err != nil {
+		log.Fatalf("content pack: %v", err)
+	}
+	mapDir, mapAssetVersion, mapErr := mapassets.LoadActive(*mapCache, reg)
+	if mapErr != nil && !os.IsNotExist(mapErr) {
+		log.Printf("地图资源缓存不可用，使用内置地图：%v", mapErr)
+	}
+	updateStateFile := *contentFile + ".update.json"
+	updateStatus, statusErr := autoupdate.Load(updateStateFile)
+	if statusErr != nil {
+		log.Printf("自动更新状态不可读，将重新检查：%v", statusErr)
+	}
+	updateStatus.Enabled = *autoUpdate
+	updateStatus.ContentVersion = catalog.Meta().Version
+	updateStatus.MapAssetVersion = mapAssetVersion
+
 	st := store.New(*data, reg)
-	srv := server.New(st, reg, qr, server.Config{Token: *token, SVGBaseURL: *svgBase})
+	srv := server.New(st, reg, qr, server.Config{
+		Token: *token, SVGBaseURL: *svgBase, Catalog: catalog, LogsDir: *logsDir,
+		MapDir: mapDir, MapAssetVersion: mapAssetVersion, UpdateStatus: updateStatus,
+	})
 
 	httpSrv := &http.Server{Addr: *addr, Handler: srv.Handler()}
 	ln, err := net.Listen("tcp", *addr)
@@ -105,6 +191,51 @@ func serveCmd(args []string) {
 
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer cancel()
+	if *autoUpdate {
+		_, contentStatErr := os.Stat(*contentFile)
+		forceUpdate := contentStatErr != nil || catalog.Meta().Source == "embedded" || mapDir == ""
+		go autoupdate.Run(ctx, autoupdate.Config{
+			StateFile: updateStateFile, Interval: *updateInterval, RetryInterval: *updateRetry, Force: forceUpdate,
+			ContentUpdate: func(updateCtx context.Context) (string, error) {
+				report, err := content.Refresh(updateCtx, content.RefreshOptions{
+					BaseURL: *updateBaseURL, Target: *contentFile, Apply: true,
+				})
+				if err != nil {
+					log.Printf("游戏数据自动更新失败，继续使用当前版本：%v", err)
+					return "", err
+				}
+				updated, err := content.Load(*contentFile)
+				if err != nil {
+					return "", err
+				}
+				srv.SetCatalog(updated)
+				if report.Unchanged {
+					log.Printf("游戏数据已是最新版本：%s", updated.Meta().Version)
+				} else {
+					log.Printf("游戏数据已自动更新：%s", updated.Meta().Version)
+				}
+				return updated.Meta().Version, nil
+			},
+			MapAssetUpdate: func(updateCtx context.Context) (string, error) {
+				if *svgBase != server.DefaultSVGBaseURL {
+					return mapAssetVersion, nil
+				}
+				report, err := mapassets.Refresh(updateCtx, reg, mapassets.RefreshOptions{Root: *mapCache})
+				if err != nil {
+					log.Printf("地图资源自动更新失败，继续使用当前或内置地图：%v", err)
+					return "", err
+				}
+				srv.SetMapAssets(report.Directory, report.Version)
+				if report.Unchanged {
+					log.Printf("地图资源已是最新版本：%s", report.Version)
+				} else {
+					log.Printf("地图资源已自动更新：%s（%d 个文件）", report.Version, report.Files)
+				}
+				return report.Version, nil
+			},
+			OnStatus: srv.SetUpdateStatus,
+		})
+	}
 
 	if *embedAgent {
 		a := agent.New(agent.Config{
@@ -127,11 +258,21 @@ func serveCmd(args []string) {
 }
 
 func agentCmd(args []string) {
+	replay := len(args) > 0 && args[0] == "replay-quests"
+	if replay {
+		args = args[1:]
+	}
 	fs := flag.NewFlagSet("agent", flag.ExitOnError)
 	serverURL := fs.String("server", "", "map server URL, e.g. http://192.168.1.10:8400")
 	token := fs.String("token", "", "ingest token")
 	screens := fs.String("screenshots", defaultScreenshotsDir(), "EFT screenshots folder")
 	logsDir := fs.String("logs", detectLogsDir(), "EFT Logs folder (optional, enables auto map/quest detection)")
+	profile := fs.String("profile", "default", "local profile name")
+	mode := fs.String("mode", "pvp", "task mode: pvp or pve")
+	wipe := fs.String("wipe", "current", "wipe-cycle identifier")
+	fromSession := fs.String("from-session", "", "first historical log-session folder to import")
+	sourceProfile := fs.String("source-profile", "", "game profile id to import")
+	applyReplay := fs.Bool("apply", false, "upload the previewed historical task events")
 	_ = fs.Parse(args)
 
 	if *serverURL == "" {
@@ -146,7 +287,31 @@ func agentCmd(args []string) {
 		Token:          *token,
 		ScreenshotsDir: *screens,
 		LogsDir:        *logsDir,
+		Profile:        *profile,
+		Mode:           *mode,
+		Wipe:           *wipe,
+		FromSession:    *fromSession,
+		SourceProfile:  *sourceProfile,
 	})
+	if replay {
+		if *logsDir == "" {
+			log.Fatal("agent replay-quests: -logs is required")
+		}
+		result, err := a.ReplayQuests(*applyReplay)
+		if err != nil {
+			log.Fatal(err)
+		}
+		log.Printf("历史任务日志：%d 个会话，%d 个事件，%d 个候选起点", result.Sessions, len(result.Events), len(result.Breakpoints))
+		for _, breakpoint := range result.Breakpoints {
+			log.Printf("候选起点：%s profile=%s mode=%s version=%s", breakpoint.SessionID, breakpoint.GameProfileID, breakpoint.Mode, breakpoint.GameVersion)
+		}
+		if *applyReplay {
+			log.Printf("历史任务日志上报完成：%d 个事件", len(result.Events))
+		} else {
+			log.Printf("仅预览；确认候选起点后追加 -from-session <目录名> -apply")
+		}
+		return
+	}
 
 	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer cancel()
@@ -181,6 +346,22 @@ func defaultDataFile() string {
 		return "mapapp-data.json"
 	}
 	return filepath.Join(filepath.Dir(exe), "mapapp-data.json")
+}
+
+func defaultContentFile() string {
+	exe, err := os.Executable()
+	if err != nil {
+		return "mapapp-content.json"
+	}
+	return filepath.Join(filepath.Dir(exe), "mapapp-content.json")
+}
+
+func defaultMapCacheDir() string {
+	exe, err := os.Executable()
+	if err != nil {
+		return "mapapp-map-cache"
+	}
+	return filepath.Join(filepath.Dir(exe), "mapapp-map-cache")
 }
 
 func defaultScreenshotsDir() string {

@@ -15,7 +15,8 @@ export function horizontalOf(map, world) {
 }
 
 export function baseProject(map, world, svgSize) {
-  const p = map.projection
+	if (map.raster) return rasterProject(map, world)
+	const p = map.projection
   const b = map.bounds
   const [h, v] = horizontalOf(map, world)
   let u = (h - b.minX) / (b.maxX - b.minX)
@@ -30,6 +31,25 @@ export function baseProject(map, world, svgSize) {
   const u2 = 0.5 + du * cos - dw * sin
   const w2 = 0.5 + du * sin + dw * cos
   return [u2 * svgSize.w, w2 * svgSize.h]
+}
+
+// Exact CRS.Simple projection used by the bundled Tarkov.dev raster maps.
+// The transform is [scaleX, marginX, scaleY, marginY], and Leaflet's screen Y
+// axis is inverted. Keeping this math here makes raster and marker positions
+// share one projection pipeline.
+export function rasterProject(map, world) {
+	const [h, v] = horizontalOf(map, world)
+	const radians = ((map.projection.rotation || 0) * Math.PI) / 180
+	const cos = Math.cos(radians)
+	const sin = Math.sin(radians)
+	const rotatedX = h * cos - v * sin
+	const rotatedY = h * sin + v * cos
+	const [scaleX, marginX, scaleY, marginY] = map.raster.transform
+	const zoomScale = 2 ** map.raster.zoom
+	return [
+		zoomScale * (scaleX * rotatedX + marginX),
+		zoomScale * (-scaleY * rotatedY + marginY),
+	]
 }
 
 export function applyAffine(af, x, y) {

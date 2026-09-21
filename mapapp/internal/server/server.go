@@ -7,12 +7,19 @@ import (
 	"io/fs"
 	"log"
 	"net/http"
+	"os"
+	"path"
+	"path/filepath"
 	"strings"
 	"sync"
 	"time"
 
+	"tarkovmap/internal/autoupdate"
+	"tarkovmap/internal/content"
 	"tarkovmap/internal/gamelogs"
 	"tarkovmap/internal/parser"
+	"tarkovmap/internal/progress"
+	"tarkovmap/internal/questlog"
 	"tarkovmap/internal/quests"
 	"tarkovmap/internal/registry"
 	"tarkovmap/internal/store"
@@ -29,30 +36,51 @@ var mapsFS embed.FS
 const DefaultSVGBaseURL = "/maps/"
 
 type Server struct {
-	st       *store.Store
-	reg      *registry.Registry
-	qr       *quests.Registry
-	token    string // optional ingest token; empty = open
-	svgBase  string
-	mux      *http.ServeMux
+	st           *store.Store
+	reg          *registry.Registry
+	qr           *quests.Registry
+	catalog      *content.Catalog
+	token        string // optional ingest token; empty = open
+	svgBase      string
+	logsDir      string
+	mux          *http.ServeMux
+	embeddedMaps http.Handler
+
+	resourceMu      sync.RWMutex
+	mapDir          string
+	mapAssetVersion string
+	updateStatus    autoupdate.Status
 
 	mu      sync.Mutex
 	clients map[chan []byte]struct{}
 }
 
 type Config struct {
-	Token      string // if set, ingest POSTs need X-Token or ?token=
-	SVGBaseURL string // where the web UI fetches map SVGs from
+	Token           string // if set, ingest POSTs need X-Token or ?token=
+	SVGBaseURL      string // where the web UI fetches map SVGs from
+	Catalog         *content.Catalog
+	LogsDir         string
+	MapDir          string // validated runtime map package; embedded maps remain fallback
+	MapAssetVersion string
+	UpdateStatus    autoupdate.Status
 }
 
 func New(st *store.Store, reg *registry.Registry, qr *quests.Registry, cfg Config) *Server {
 	s := &Server{
-		st:       st,
-		reg:      reg,
-		qr:       qr,
-		token:    cfg.Token,
-		svgBase:  cfg.SVGBaseURL,
-		clients:  map[chan []byte]struct{}{},
+		st:              st,
+		reg:             reg,
+		qr:              qr,
+		catalog:         cfg.Catalog,
+		token:           cfg.Token,
+		svgBase:         cfg.SVGBaseURL,
+		logsDir:         cfg.LogsDir,
+		mapDir:          cfg.MapDir,
+		mapAssetVersion: cfg.MapAssetVersion,
+		updateStatus:    cfg.UpdateStatus,
+		clients:         map[chan []byte]struct{}{},
+	}
+	if s.catalog == nil {
+		s.catalog, _ = content.Load("")
 	}
 	if s.svgBase == "" {
 		s.svgBase = DefaultSVGBaseURL
@@ -67,6 +95,16 @@ func New(st *store.Store, reg *registry.Registry, qr *quests.Registry, cfg Confi
 	mux.HandleFunc("GET /api/state", s.handleState)
 	mux.HandleFunc("GET /api/events", s.handleEvents)
 	mux.HandleFunc("GET /api/quests", s.handleQuests)
+	mux.HandleFunc("GET /api/catalog/meta", s.handleCatalogMeta)
+	mux.HandleFunc("GET /api/tasks", s.handleTasks)
+	mux.HandleFunc("GET /api/maps/{id}/features", s.handleMapFeatures)
+	mux.HandleFunc("GET /api/progress", s.handleProgress)
+	mux.HandleFunc("PUT /api/progress/scope", s.withAuth(s.handlePutProgressScope))
+	mux.HandleFunc("PUT /api/progress/tasks/{id}", s.withAuth(s.handlePutTaskProgress))
+	mux.HandleFunc("PUT /api/progress/objectives/{id}", s.withAuth(s.handlePutObjectiveProgress))
+	mux.HandleFunc("POST /api/ingest/quest-events", s.withAuth(s.handleIngestQuestEvents))
+	mux.HandleFunc("GET /api/log-replay/candidates", s.handleLogReplayCandidates)
+	mux.HandleFunc("POST /api/log-replay", s.withAuth(s.handleLogReplay))
 	mux.HandleFunc("GET /api/config", s.handleGetConfig) // agents poll this
 	mux.HandleFunc("POST /api/config", s.withAuth(s.handleSetConfig))
 	mux.HandleFunc("POST /api/ingest/screenshot", s.withAuth(s.handleIngestScreenshot))
@@ -88,13 +126,69 @@ func New(st *store.Store, reg *registry.Registry, qr *quests.Registry, cfg Confi
 	if err != nil {
 		panic(err)
 	}
-	mux.Handle("GET /maps/", http.StripPrefix("/maps/", http.FileServer(http.FS(mapsSub))))
+	s.embeddedMaps = http.FileServer(http.FS(mapsSub))
+	mux.Handle("GET /maps/", http.StripPrefix("/maps/", http.HandlerFunc(s.handleMapAsset)))
+	mux.Handle("GET /media/", http.StripPrefix("/media/", http.FileServer(http.FS(content.MediaFS()))))
 
 	s.mux = mux
 	return s
 }
 
 func (s *Server) Handler() http.Handler { return s.mux }
+
+func (s *Server) currentCatalog() *content.Catalog {
+	s.resourceMu.RLock()
+	defer s.resourceMu.RUnlock()
+	return s.catalog
+}
+
+func (s *Server) SetCatalog(catalog *content.Catalog) {
+	if catalog == nil {
+		return
+	}
+	s.resourceMu.Lock()
+	s.catalog = catalog
+	s.resourceMu.Unlock()
+	s.broadcastState()
+}
+
+func (s *Server) SetMapAssets(directory, version string) {
+	s.resourceMu.Lock()
+	s.mapDir = directory
+	s.mapAssetVersion = version
+	s.resourceMu.Unlock()
+	s.broadcastState()
+}
+
+func (s *Server) SetUpdateStatus(status autoupdate.Status) {
+	s.resourceMu.Lock()
+	s.updateStatus = status
+	s.resourceMu.Unlock()
+	s.broadcastState()
+}
+
+func (s *Server) handleMapAsset(w http.ResponseWriter, r *http.Request) {
+	clean := path.Clean("/" + r.URL.Path)
+	clean = strings.TrimPrefix(clean, "/")
+	if clean == "" || clean == "." || strings.HasPrefix(clean, "../") {
+		http.NotFound(w, r)
+		return
+	}
+	s.resourceMu.RLock()
+	directory := s.mapDir
+	s.resourceMu.RUnlock()
+	if directory != "" {
+		target := filepath.Join(directory, filepath.FromSlash(clean))
+		relative, err := filepath.Rel(directory, target)
+		if err == nil && relative != ".." && !strings.HasPrefix(relative, ".."+string(filepath.Separator)) {
+			if info, err := os.Stat(target); err == nil && info.Mode().IsRegular() {
+				http.ServeFile(w, r, target)
+				return
+			}
+		}
+	}
+	s.embeddedMaps.ServeHTTP(w, r)
+}
 
 // --- auth ---
 
@@ -117,26 +211,42 @@ func (s *Server) withAuth(next http.HandlerFunc) http.HandlerFunc {
 // --- state ---
 
 type stateResponse struct {
-	MapID       string                   `json:"mapId"`
-	Maps        map[string]*registry.Map `json:"maps"`
-	Position    *store.PositionEvent     `json:"position"`
-	History     []store.PositionEvent    `json:"history"`
-	QuestStatus map[string]string        `json:"questStatus"`
-	Settings    store.Settings           `json:"settings"`
-	SVGBaseURL  string                   `json:"svgBaseUrl"`
-	ServerTime  time.Time                `json:"serverTime"`
+	MapID           string                   `json:"mapId"`
+	Maps            map[string]*registry.Map `json:"maps"`
+	Position        *store.PositionEvent     `json:"position"`
+	History         []store.PositionEvent    `json:"history"`
+	QuestStatus     map[string]string        `json:"questStatus"`
+	ActiveScope     progress.Scope           `json:"activeScope"`
+	Progress        progress.ProfileState    `json:"progress"`
+	Settings        store.Settings           `json:"settings"`
+	SVGBaseURL      string                   `json:"svgBaseUrl"`
+	CatalogVersion  string                   `json:"catalogVersion"`
+	MapAssetVersion string                   `json:"mapAssetVersion"`
+	Update          autoupdate.Status        `json:"update"`
+	ServerTime      time.Time                `json:"serverTime"`
 }
 
 func (s *Server) snapshot() stateResponse {
+	scope := s.st.ActiveScope()
+	s.resourceMu.RLock()
+	catalogVersion := s.catalog.Meta().Version
+	mapAssetVersion := s.mapAssetVersion
+	updateStatus := s.updateStatus
+	s.resourceMu.RUnlock()
 	return stateResponse{
-		MapID:       s.st.CurrentMap(),
-		Maps:        s.st.Maps(),
-		Position:    s.st.Position(),
-		History:     s.st.History(),
-		QuestStatus: s.st.QuestStatuses(),
-		Settings:    s.st.GetSettings(),
-		SVGBaseURL:  s.svgBase,
-		ServerTime:  time.Now().UTC(),
+		MapID:           s.st.CurrentMap(),
+		Maps:            s.st.Maps(),
+		Position:        s.st.Position(),
+		History:         s.st.History(),
+		QuestStatus:     s.st.QuestStatuses(),
+		ActiveScope:     scope,
+		Progress:        s.st.Progress(scope),
+		Settings:        s.st.GetSettings(),
+		SVGBaseURL:      s.svgBase,
+		CatalogVersion:  catalogVersion,
+		MapAssetVersion: mapAssetVersion,
+		Update:          updateStatus,
+		ServerTime:      time.Now().UTC(),
 	}
 }
 
@@ -318,9 +428,214 @@ func (s *Server) handleQuests(w http.ResponseWriter, r *http.Request) {
 	writeJSON(w, map[string]any{"quests": s.qr.Quests})
 }
 
+func (s *Server) handleCatalogMeta(w http.ResponseWriter, r *http.Request) {
+	writeJSON(w, s.currentCatalog().Meta())
+}
+
+func requestMode(r *http.Request) content.Mode {
+	return content.NormalizeMode(r.URL.Query().Get("mode"))
+}
+
+func requestScope(r *http.Request, fallback progress.Scope) progress.Scope {
+	scope := progress.Scope{
+		Profile: r.URL.Query().Get("profile"),
+		Mode:    r.URL.Query().Get("mode"),
+		Wipe:    r.URL.Query().Get("wipe"),
+	}
+	if scope.Profile == "" {
+		scope.Profile = fallback.Profile
+	}
+	if scope.Mode == "" {
+		scope.Mode = fallback.Mode
+	}
+	if scope.Wipe == "" {
+		scope.Wipe = fallback.Wipe
+	}
+	return progress.NormalizeScope(scope)
+}
+
+func (s *Server) handleTasks(w http.ResponseWriter, r *http.Request) {
+	mode := requestMode(r)
+	catalog := s.currentCatalog()
+	writeJSON(w, map[string]any{
+		"mode":  mode,
+		"tasks": catalog.Tasks(mode, r.URL.Query().Get("mapId")),
+	})
+}
+
+func (s *Server) handleMapFeatures(w http.ResponseWriter, r *http.Request) {
+	mapID := r.PathValue("id")
+	if s.reg.Get(mapID) == nil {
+		writeError(w, http.StatusNotFound, "unknown map")
+		return
+	}
+	mode := requestMode(r)
+	catalog := s.currentCatalog()
+	writeJSON(w, map[string]any{
+		"mode": mode, "mapId": mapID,
+		"coverage": catalog.Coverage(mode, mapID),
+		"features": catalog.Features(mode, mapID),
+		"tasks":    catalog.Tasks(mode, mapID),
+	})
+}
+
+func (s *Server) handleProgress(w http.ResponseWriter, r *http.Request) {
+	scope := requestScope(r, s.st.ActiveScope())
+	writeJSON(w, s.st.Progress(scope))
+}
+
+func (s *Server) handlePutProgressScope(w http.ResponseWriter, r *http.Request) {
+	var scope progress.Scope
+	if err := decode(r, &scope); err != nil {
+		writeError(w, http.StatusBadRequest, err.Error())
+		return
+	}
+	s.st.SetActiveScope(scope)
+	writeJSON(w, map[string]any{"ok": true, "scope": s.st.ActiveScope()})
+}
+
+func (s *Server) handlePutTaskProgress(w http.ResponseWriter, r *http.Request) {
+	id := r.PathValue("id")
+	var req struct {
+		Status  string `json:"status"`
+		Profile string `json:"profile"`
+		Mode    string `json:"mode"`
+		Wipe    string `json:"wipe"`
+	}
+	if err := decode(r, &req); err != nil {
+		writeError(w, http.StatusBadRequest, err.Error())
+		return
+	}
+	if req.Status == "" {
+		req.Status = progress.StatusUntracked
+	}
+	if !progress.ValidTaskStatus(req.Status) {
+		writeError(w, http.StatusBadRequest, "invalid task status")
+		return
+	}
+	scope := s.st.ActiveScope()
+	if req.Profile != "" {
+		scope.Profile = req.Profile
+	}
+	if req.Mode != "" {
+		scope.Mode = req.Mode
+	}
+	if req.Wipe != "" {
+		scope.Wipe = req.Wipe
+	}
+	scope = progress.NormalizeScope(scope)
+	event := progress.TaskEvent{
+		Profile: scope.Profile, Mode: scope.Mode, Wipe: scope.Wipe,
+		TaskID: id, Status: req.Status, Source: "manual", OccurredAt: time.Now().UTC(),
+	}
+	result := s.st.ApplyTaskEvents([]progress.TaskEvent{event})[0]
+	writeJSON(w, map[string]any{"ok": result.Applied, "result": result})
+}
+
+func (s *Server) handlePutObjectiveProgress(w http.ResponseWriter, r *http.Request) {
+	id := r.PathValue("id")
+	var req struct {
+		Completed bool   `json:"completed"`
+		Profile   string `json:"profile"`
+		Mode      string `json:"mode"`
+		Wipe      string `json:"wipe"`
+	}
+	if err := decode(r, &req); err != nil {
+		writeError(w, http.StatusBadRequest, err.Error())
+		return
+	}
+	scope := s.st.ActiveScope()
+	if req.Profile != "" {
+		scope.Profile = req.Profile
+	}
+	if req.Mode != "" {
+		scope.Mode = req.Mode
+	}
+	if req.Wipe != "" {
+		scope.Wipe = req.Wipe
+	}
+	scope = progress.NormalizeScope(scope)
+	result := s.st.SetObjectiveStatus(scope, id, req.Completed)
+	writeJSON(w, map[string]any{"ok": result.Applied, "result": result})
+}
+
+func (s *Server) handleIngestQuestEvents(w http.ResponseWriter, r *http.Request) {
+	var req struct {
+		Events []progress.TaskEvent `json:"events"`
+	}
+	if err := decode(r, &req); err != nil {
+		writeError(w, http.StatusBadRequest, err.Error())
+		return
+	}
+	if len(req.Events) > 100000 {
+		writeError(w, http.StatusRequestEntityTooLarge, "too many events")
+		return
+	}
+	results := s.st.ApplyTaskEvents(req.Events)
+	applied, duplicate := 0, 0
+	for _, result := range results {
+		if result.Applied {
+			applied++
+		}
+		if result.Duplicate {
+			duplicate++
+		}
+	}
+	writeJSON(w, map[string]any{"ok": true, "received": len(req.Events), "applied": applied, "duplicates": duplicate, "results": results})
+}
+
+func (s *Server) scanReplay(w http.ResponseWriter, r *http.Request, apply bool) {
+	if s.logsDir == "" {
+		writeError(w, http.StatusNotFound, "本机未配置游戏日志目录")
+		return
+	}
+	scope := requestScope(r, s.st.ActiveScope())
+	fromSession := r.URL.Query().Get("fromSession")
+	sourceProfile := r.URL.Query().Get("sourceProfile")
+	scan, err := questlog.ScanDirFrom(s.logsDir, scope, fromSession, sourceProfile)
+	if err != nil {
+		writeError(w, http.StatusUnprocessableEntity, err.Error())
+		return
+	}
+	if apply && fromSession == "" && len(scan.Breakpoints) > 1 {
+		writeError(w, http.StatusBadRequest, "请选择与当前删档周期对应的日志起点")
+		return
+	}
+	results := s.st.PreviewTaskEvents(scan.Events)
+	if apply {
+		results = s.st.ApplyTaskEvents(scan.Events)
+	}
+	applied, duplicates := 0, 0
+	changes := make([]map[string]string, 0)
+	for i, result := range results {
+		if result.Applied {
+			applied++
+			changes = append(changes, map[string]string{"taskId": scan.Events[i].TaskID, "status": scan.Events[i].Status})
+		}
+		if result.Duplicate {
+			duplicates++
+		}
+	}
+	writeJSON(w, map[string]any{
+		"ok": true, "applied": apply, "files": scan.Files, "sessions": scan.Sessions,
+		"events": len(scan.Events), "changes": changes, "changeCount": applied,
+		"duplicates": duplicates, "skipped": scan.Skipped, "modeSkipped": scan.ModeSkipped,
+		"breakpoints": scan.Breakpoints,
+	})
+}
+
+func (s *Server) handleLogReplayCandidates(w http.ResponseWriter, r *http.Request) {
+	s.scanReplay(w, r, false)
+}
+
+func (s *Server) handleLogReplay(w http.ResponseWriter, r *http.Request) {
+	s.scanReplay(w, r, true)
+}
+
 type ingestQuestReq struct {
 	QuestID string `json:"questId"` // BSG gameId (log notification templateId prefix)
 	Status  string `json:"status"`  // "completed", "failed", ...; empty clears
+	EventID string `json:"eventId,omitempty"`
 }
 
 func (s *Server) handleIngestQuest(w http.ResponseWriter, r *http.Request) {
@@ -333,13 +648,21 @@ func (s *Server) handleIngestQuest(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusBadRequest, "questId required")
 		return
 	}
+	if !progress.ValidTaskStatus(req.Status) {
+		writeError(w, http.StatusBadRequest, "invalid task status")
+		return
+	}
 	if s.qr.Get(req.QuestID) == nil {
 		// Not fatal: quests without map markers still track status.
 		log.Printf("quest %s not in located-quest registry (status %q)", req.QuestID, req.Status)
 	}
-	s.st.SetQuestStatus(req.QuestID, req.Status)
+	scope := s.st.ActiveScope()
+	result := s.st.ApplyTaskEvents([]progress.TaskEvent{{
+		EventID: req.EventID, Profile: scope.Profile, Mode: scope.Mode, Wipe: scope.Wipe,
+		TaskID: req.QuestID, Status: req.Status, Source: "live-log", OccurredAt: time.Now().UTC(),
+	}})[0]
 	log.Printf("quest: %s -> %q", req.QuestID, req.Status)
-	writeJSON(w, map[string]any{"ok": true})
+	writeJSON(w, map[string]any{"ok": result.Applied || result.Duplicate, "result": result})
 }
 
 func (s *Server) handleSetQuestStatus(w http.ResponseWriter, r *http.Request) {

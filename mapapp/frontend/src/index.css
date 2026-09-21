@@ -6,6 +6,16 @@ html, body, #root {
   background: #14181d;
 }
 
+html,
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+#root {
+  height: 100dvh;
+}
+
 /* antd <App> wrapper must not collapse the flex layout */
 .ant-app {
   height: 100%;
@@ -14,7 +24,54 @@ html, body, #root {
 /* SVG map viewport */
 .map-viewport {
   touch-action: none;
+  overscroll-behavior: contain;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  cursor: grab;
   background: radial-gradient(circle at 30% 20%, #1a2028 0%, #14181d 70%);
+}
+
+.map-viewport:active {
+  cursor: grabbing;
+}
+
+.app-header {
+  padding-left: max(0.5rem, env(safe-area-inset-left));
+  padding-right: max(0.5rem, env(safe-area-inset-right));
+  padding-top: max(0.5rem, env(safe-area-inset-top));
+}
+
+.map-controls {
+  right: max(0.75rem, env(safe-area-inset-right));
+  bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+@media (pointer: coarse), (max-width: 767px) {
+  .map-controls .ant-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 767px) {
+  .app-header {
+    flex-wrap: wrap;
+  }
+
+  .app-header .map-select {
+    min-width: 120px;
+    flex: 1 1 120px;
+  }
+
+  .app-header .mode-select {
+    width: 80px;
+  }
+
+  .app-header .floor-select {
+    min-width: 116px;
+    flex: 1 1 116px;
+  }
 }
 
 .map-transform {
@@ -26,23 +83,36 @@ html, body, #root {
    * zoom and the vector SVG would stay blurry until re-rastered */
 }
 
+.map-attribution {
+  position: absolute;
+  left: max(0.5rem, env(safe-area-inset-left));
+  bottom: max(0.5rem, env(safe-area-inset-bottom));
+  z-index: 5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  color: #aeb7c2;
+  background: #11161bd9;
+  font-size: 0.7rem;
+}
+
 .markers-layer {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  overflow: hidden;
+  overflow: visible;
+  transform-origin: 0 0;
+  will-change: transform;
 }
 
-/* Markers live OUTSIDE the scaled map transform and are positioned with a
- * plain translate() computed in JS every frame. Their sizes are fixed CSS
- * pixels, so they never distort or drift off their anchor at any zoom. */
+/* Marker coordinates are static within the transformed layer. One inherited
+ * inverse scale keeps their visual size fixed without per-marker writes while
+ * the user pans or pinches. */
 .marker {
   position: absolute;
-  left: 0;
-  top: 0;
   width: 0;
   height: 0;
   transform-origin: 0 0;
+  transform: scale(var(--marker-inverse-scale, 1)) translate(-50%, -50%);
 }
 
 .player-marker .dot {
@@ -75,7 +145,6 @@ html, body, #root {
 .trail-dot {
   width: 6px;
   height: 6px;
-  margin: -3px 0 0 -3px;
   border-radius: 50%;
   background: rgba(229, 50, 45, 0.45);
 }
@@ -83,7 +152,6 @@ html, body, #root {
 .calib-marker {
   width: 12px;
   height: 12px;
-  margin: -6px 0 0 -6px;
   border-radius: 50%;
   background: #4da3ff;
   border: 2px solid #fff;
@@ -96,7 +164,6 @@ html, body, #root {
 .quest-marker {
   width: 14px;
   height: 14px;
-  margin: -7px 0 0 -7px;
   pointer-events: auto;
   cursor: pointer;
 }
@@ -115,6 +182,77 @@ html, body, #root {
 }
 .quest-marker:hover .gem {
   background: #5ce0da;
+}
+
+.feature-marker {
+  width: 18px;
+  height: 18px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.feature-marker .feature-symbol {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  background: #65a30d;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.85);
+}
+
+.feature-marker.extract .feature-symbol {
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+}
+
+.feature-marker.pmc .feature-symbol {
+  background: #ef4444;
+}
+
+.feature-marker.scav .feature-symbol {
+  background: #22c55e;
+}
+
+.feature-marker.shared .feature-symbol {
+  background: #f59e0b;
+}
+
+.feature-marker.transit .feature-symbol {
+  background: #8b5cf6;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.task-list {
+  max-height: min(48vh, 520px);
+}
+
+.storyline-objectives {
+  max-height: min(52vh, 560px);
+  overflow-y: auto;
+}
+
+.task-title {
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.task-title:hover > div:first-child {
+  color: #5ce0da;
+}
+
+.task-media,
+.task-cover {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  background: #11161b;
+}
+
+.task-media-carousel .slick-dots-bottom {
+  bottom: 48px;
 }
 
 /* antd dark tweaks for the embedded panels */

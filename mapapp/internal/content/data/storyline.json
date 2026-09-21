@@ -1,0 +1,1720 @@
+{
+  "version": "2026-09-02",
+  "sources": [
+    {
+      "url": "https://github.com/Wilsman/kappas/blob/master/src/data/storylineQuests.ts",
+      "lastModified": "2026-07-29"
+    },
+    {
+      "url": "https://escapefromtarkov.fandom.com/wiki/Story_chapters"
+    },
+    {
+      "url": "https://www.tarkovbox.com/gamewiki/chapters"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "storyline:tour",
+      "name": "Tour",
+      "nameZh": "塔科夫之旅",
+      "description": "Starting quest - automatically unlocked at the beginning of the storyline",
+      "descriptionZh": "从爆炸中心撤离，联系商人，并打通各地点与港口航站楼的通行条件。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 1,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Tour",
+      "objectives": [
+        {
+          "id": "tour-main-1",
+          "description": "Escape Ground Zero",
+          "type": "storyline",
+          "maps": [
+            "groundzero"
+          ]
+        },
+        {
+          "id": "tour-main-2",
+          "description": "Talk to Therapist",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-3",
+          "description": "Ensure access to the Streets of Tarkov",
+          "type": "storyline",
+          "maps": [
+            "streetsoftarkov"
+          ]
+        },
+        {
+          "id": "tour-main-4",
+          "description": "Hand over the cash to Therapist",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-5",
+          "description": "Talk to Ragman",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-6",
+          "description": "Survive and extract from Interchange or visit Interchange 3 times",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "tour-main-7",
+          "description": "Tell Ragman what you found during the recon",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-8",
+          "description": "Talk to Skier",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-9",
+          "description": "Survive and extract from Customs or visit Customs 3 times",
+          "type": "storyline",
+          "maps": [
+            "customs"
+          ]
+        },
+        {
+          "id": "tour-main-10",
+          "description": "Hand over any 5 found in raid Building materials items to Skier",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-11",
+          "description": "Talk to Mechanic",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-12",
+          "description": "Survive and extract from Factory or visit Factory 3 times",
+          "type": "storyline",
+          "maps": [
+            "factory"
+          ]
+        },
+        {
+          "id": "tour-main-13",
+          "description": "Hand over any 2 found in raid weapons to Mechanic",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-14",
+          "description": "Talk to Skier",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-15",
+          "description": "Eliminate any 3 targets on Woods",
+          "type": "storyline",
+          "maps": [
+            "woods"
+          ]
+        },
+        {
+          "id": "tour-main-16",
+          "description": "Survive and extract from Woods or visit Woods 3 times",
+          "type": "storyline",
+          "maps": [
+            "woods"
+          ]
+        },
+        {
+          "id": "tour-main-17",
+          "description": "Locate the entrance to the port Terminal",
+          "type": "storyline",
+          "maps": [
+            "terminal"
+          ]
+        },
+        {
+          "id": "tour-main-18",
+          "description": "Find a way to contact the soldiers at the Terminal",
+          "type": "storyline",
+          "maps": [
+            "terminal"
+          ]
+        },
+        {
+          "id": "tour-main-19",
+          "description": "Use the intercom to contact the port garrison",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-20",
+          "description": "Learn how to escape Tarkov",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-21",
+          "description": "Ensure access to Lighthouse",
+          "type": "storyline",
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "tour-main-22",
+          "description": "Hand over 20,000 Dollars to Mechanic",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-23",
+          "description": "Ensure access to Reserve",
+          "type": "storyline",
+          "maps": [
+            "reserve"
+          ]
+        },
+        {
+          "id": "tour-main-24",
+          "description": "Hand over 5 PMC dogtags to Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-25",
+          "description": "Survive and extract from Shoreline or visit Shoreline 3 times",
+          "type": "storyline",
+          "maps": [
+            "shoreline"
+          ]
+        },
+        {
+          "id": "tour-main-26",
+          "description": "Ensure access to The Lab",
+          "type": "storyline",
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "tour-main-27",
+          "description": "Access the secret TerraGroup facility",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "tour-main-28",
+          "description": "Locate the escape path through the drainage system in The Lab",
+          "type": "storyline",
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "tour-main-29",
+          "description": "Search the top management offices in The Lab",
+          "type": "storyline",
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "tour-main-30",
+          "description": "Search the server room in The Lab",
+          "type": "storyline",
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "tour-opt-1",
+          "description": "Collect the required 250,000 Roubles",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "tour-opt-2",
+          "description": "Find any 5 items in raid from the Building materials category",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "tour-opt-3",
+          "description": "Find any 2 weapons in raid",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "tour-opt-4",
+          "description": "Collect the required 20,000 USD",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "tour-opt-5",
+          "description": "Find 5 PMC dogtags in raid",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "tour-opt-6",
+          "description": "Obtain a keycard or access codes to enter the facility",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "tour-opt-7",
+          "description": "Locate the entrance to the facility on Factory",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "factory"
+          ]
+        },
+        {
+          "id": "tour-opt-8",
+          "description": "Locate the entrance to the facility on Streets of Tarkov",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "streetsoftarkov"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storyline:falling-skies",
+      "name": "Falling Skies",
+      "nameZh": "陨落星辰",
+      "description": "Best method: Keep doing Tour until completing Mechanic's quest, then go to the broken plane in Woods",
+      "descriptionZh": "调查森林坠机事件、飞行记录器与装甲箱，并决定装甲箱的去向。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 2,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Falling_Skies",
+      "objectives": [
+        {
+          "id": "falling-skies-main-1",
+          "description": "Locate the fallen plane",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-2",
+          "description": "Reach Loyalty Level 2 with Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-3",
+          "description": "Ask the traders about the fallen plane",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-4",
+          "description": "Gather information from Therapist",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-5",
+          "description": "Retrieve the flash drive from one of the G-Wagon SUVs",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-6",
+          "description": "Hand over the flash drive to Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-7",
+          "description": "Wait 1 hour for information from Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-8",
+          "description": "Retrieve the plane's flight recorder",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-9",
+          "description": "Leave the flight recorder in the specified spot",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-10",
+          "description": "Visit Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-11",
+          "description": "Hand over 2 found in raid Toolsets",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-12",
+          "description": "Hand over 3 found in raid Rechargeable batteries",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-13",
+          "description": "Hand over 5 found in raid Printed circuit boards",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-14",
+          "description": "Wait 3-5 hours for information from Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-15",
+          "description": "Hand over the flight crew's transcript to Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-16",
+          "description": "Hand over Elektronik's secure flash drive to Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-17",
+          "description": "Wait 1-3 hours for information from Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-18",
+          "description": "Retrieve the armored case",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-19",
+          "description": "Hand over the armored case to Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-main-20",
+          "description": "Keep the armored case for yourself",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "falling-skies-opt-1",
+          "description": "Hand over 2,000 USD to Therapist to learn details about the SUV",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        }
+      ]
+    },
+    {
+      "id": "storyline:the-ticket",
+      "name": "The Ticket",
+      "nameZh": "门票",
+      "description": "Earned automatically after completing Falling Skies",
+      "descriptionZh": "围绕离开塔科夫的通行资格、阵营选择与最终结局推进剧情。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 3,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Ticket",
+      "requirements": [
+        {
+          "taskId": "storyline:falling-skies",
+          "statuses": [
+            "complete"
+          ]
+        }
+      ],
+      "objectives": []
+    },
+    {
+      "id": "storyline:batya",
+      "name": "Batya",
+      "nameZh": "巴蒂亚",
+      "description": "Turns out BEAR didn't send just regular squads into Tarkov, there were real SOF guys here. I'd like to know more about those units and what exactly they were doing.",
+      "descriptionZh": "调查 BEAR 博加特尔特种小队的成员、行动轨迹与失踪真相。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 4,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Batya",
+      "objectives": [
+        {
+          "id": "batya-main-1",
+          "description": "Locate the traces of the BEAR special squad",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-opt-1",
+          "description": "Locate and obtain the Bogatyr squad patch",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "batya-main-2",
+          "description": "Learn more about the Bogatyr squad from the traders",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-3",
+          "description": "Locate the Ryabina outpost",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-4",
+          "description": "Find more information about the Bogatyr squad",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-opt-2",
+          "description": "Locate and obtain a keepsake of one of the Bogatyrs",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "batya-main-5",
+          "description": "Locate the Carousel outpost",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-6",
+          "description": "Find the Bogatyr squad's personal notes",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-7",
+          "description": "Learn more about Strelets",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-8",
+          "description": "Learn more about Taran",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-opt-3",
+          "description": "Locate and obtain a personal item of one of the Bogatyrs",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "batya-main-9",
+          "description": "Learn more about Voevoda",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-10",
+          "description": "Find Voevoda's personal belongings",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-opt-4",
+          "description": "Locate and obtain the squad commander's recorder",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "batya-main-11",
+          "description": "Locate the Gnezdo outpost",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-12",
+          "description": "Search the Gnezdo outpost",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-13",
+          "description": "Figure out what happened to the Bogatyr squad",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-14",
+          "description": "Figure out where the Bogatyr squad got ambushed",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-15",
+          "description": "Learn more about the Bogatyr squad's activities",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-16",
+          "description": "Learn more about the Bogatyr squad's members",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-17",
+          "description": "Locate the ambush spot",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-18",
+          "description": "Obtain more information about the Bogatyr squad",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-19",
+          "description": "Inspect Moreman's body",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-opt-5",
+          "description": "Locate and obtain Moreman's phone",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "batya-opt-6",
+          "description": "Locate and obtain a dogtag of one of the Bogatyrs",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "batya-main-20",
+          "description": "Retrieve more information about the ambush from Moreman's phone",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-21",
+          "description": "Obtain Intelligence Center level 3",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-22",
+          "description": "Contact the Bogatyr squad",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-23",
+          "description": "Gain access to Lightkeeper",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-24",
+          "description": "Stay on good terms with Lightkeeper",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-25",
+          "description": "Bring all the Bogatyr squad's items to Lightkeeper",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-26",
+          "description": "Wait for Voevoda to reach out",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-27",
+          "description": "Reach the Light Machine Guns skill level 5",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-28",
+          "description": "Reach the Assault Rifles skill level 10",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-29",
+          "description": "Reach the Stress Resistance skill level 10",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-30",
+          "description": "Reach the Strength skill level 15",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-31",
+          "description": "Eliminate any 15 targets without dying",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-32",
+          "description": "Eliminate 4 PMC operatives without dying",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-33",
+          "description": "Contact Voevoda",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-34",
+          "description": "Locate the traces of the traitors",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-35",
+          "description": "Interrogate Prapor",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-36",
+          "description": "Figure out how the cultists are connected to the General",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-37",
+          "description": "Talk to Lightkeeper",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "batya-main-38",
+          "description": "Wait for Lightkeeper to prepare the documents on The Unheard",
+          "type": "storyline",
+          "maps": []
+        }
+      ]
+    },
+    {
+      "id": "storyline:the-unheard",
+      "name": "The Unheard",
+      "nameZh": "无名者",
+      "description": "The Unheard questline",
+      "descriptionZh": "追查 TerraGroup、蓝冰燃料催化剂和无名者协议之间的联系。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 5,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Unheard",
+      "objectives": [
+        {
+          "id": "unheard-main-1",
+          "description": "Learn more about The Unheard",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-2",
+          "description": "Learn more about TerraGroup's activities",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-3",
+          "description": "Learn more about the \"fuel\" mentioned in the note",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-4",
+          "description": "Find more information about the special catalyst shipment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-5",
+          "description": "Locate Rzhevsky's service vehicle and obtain his personal belongings",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-6",
+          "description": "Retrieve the data from the hard drive in Rzhevsky's car",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-7",
+          "description": "Read the transcript of Rzhevsky's conversation",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-8",
+          "description": "Locate and obtain the documents on the Blue Ice fuel catalyst research",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-9",
+          "description": "Find as much information as possible about the plans of The Unheard",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-10",
+          "description": "Learn more about A.P.'s activities",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-11",
+          "description": "Learn more about A.P.'s role",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-12",
+          "description": "Search for any mention of A.P. in The Lab",
+          "type": "storyline",
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "unheard-main-13",
+          "description": "Locate A.P.'s room in the Health Resort",
+          "type": "storyline",
+          "maps": [
+            "shoreline"
+          ]
+        },
+        {
+          "id": "unheard-opt-1",
+          "description": "Find out which room A.P. was assigned to",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "unheard-main-14",
+          "description": "Obtain A.P.'s personal belongings",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-15",
+          "description": "Obtain A.P.'s data storage device",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-16",
+          "description": "Decrypt the flash drive from A.P.'s room",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-17",
+          "description": "Ask Mechanic for help",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-18",
+          "description": "Hand over 5,000,000 Roubles to Mechanic",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-19",
+          "description": "Hand over the A.P. flash drive to Mechanic",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-20",
+          "description": "Wait for the news from Elektronik",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-21",
+          "description": "Integrate the tech files from A.P.'s flash drive into a TerraGroup keycard",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-22",
+          "description": "Access A.P.'s corporate apartment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-23",
+          "description": "Investigate A.P.'s apartment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-24",
+          "description": "Access the hidden room in A.P.'s apartment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-25",
+          "description": "Study the TerraGroup documentation in A.P.'s office",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-26",
+          "description": "Study the role of the Blue Ice catalyst in The Unheard's protocol",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-27",
+          "description": "Learn more about The Unheard's protocol",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "unheard-main-28",
+          "description": "Figure out how The Unheard are connected to Tarkov",
+          "type": "storyline",
+          "maps": []
+        }
+      ]
+    },
+    {
+      "id": "storyline:blue-fire",
+      "name": "Blue Fire",
+      "nameZh": "神秘蓝焰",
+      "description": "Find flyer at any of these locations:\n• Woods med camp: Inside a GREEN container taped to a white drawer\n• Interchange: New area flyer\n• Interchange: Big Terragroup area behind old co-op extract, med tent/bunker",
+      "descriptionZh": "调查特殊电磁脉冲装置、1156 号物品与实验室服务器。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 6,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Blue_Fire",
+      "objectives": [
+        {
+          "id": "blue-fire-main-1",
+          "description": "Locate and obtain the device fragment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "blue-fire-main-2",
+          "description": "Talk to Mechanic about the EMP blast",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "blue-fire-main-3",
+          "description": "Locate and obtain the device fragment in Chek 13",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "blue-fire-main-4",
+          "description": "Talk to Mechanic",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "blue-fire-main-5",
+          "description": "Plant the hacking device in the server room in The Lab",
+          "type": "storyline",
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "blue-fire-opt-1",
+          "description": "Hand over the fragment of Item 1156 to Mechanic",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "blue-fire-opt-2",
+          "description": "Keep the fragment of Item 1156 for yourself",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "blue-fire-opt-3",
+          "description": "Find a lead on Item 1156 (if fragment was sold)",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        }
+      ]
+    },
+    {
+      "id": "storyline:they-are-already-here",
+      "name": "They Are Already Here",
+      "nameZh": "他们已经来了",
+      "description": "Complete any ONE of these:\n• Kill cultist\n• Loot dorms marked room\n• Get note next to cultist circle in abandoned village\n• Fisherman island on Shoreline where the green box is",
+      "descriptionZh": "调查邪教符号、世界之眼、受害者与 ARRS 14-4 KORD 站点。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 7,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/They_Are_Already_Here",
+      "objectives": [
+        {
+          "id": "they-are-already-here-main-1",
+          "description": "Learn more about the hooded men/Learn more about the people leaving strange symbols in Tarkov",
+          "descriptionZh": "了解在塔科夫四处留下奇特符号的神秘人士",
+          "type": "storyline",
+          "maps": [
+            "customs",
+            "groundzero",
+            "reserve",
+            "shoreline",
+            "woods"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-2",
+          "description": "Locate a place connected to the Eye of the World",
+          "descriptionZh": "找到与世界之眼有关的地点",
+          "type": "storyline",
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-3",
+          "description": "Learn more about the cultist's victim from the torture room",
+          "descriptionZh": "进一步了解刑讯室中的邪教受害者",
+          "type": "storyline",
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-4",
+          "description": "Locate the cult victim's apartment",
+          "descriptionZh": "找到邪教受害者的公寓",
+          "type": "storyline",
+          "maps": [
+            "streetsoftarkov"
+          ]
+        },
+        {
+          "id": "they-are-already-here-opt-1",
+          "description": "Obtain the key to the apartment",
+          "descriptionZh": "获取公寓钥匙",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "streetsoftarkov"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-5",
+          "description": "Investigate the victim's apartment",
+          "descriptionZh": "调查邪教受害者的公寓",
+          "type": "storyline",
+          "maps": [
+            "streetsoftarkov"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-6",
+          "description": "Obtain the victim's first audio tape",
+          "descriptionZh": "找到受害者的第一盘录音带",
+          "type": "storyline",
+          "maps": [
+            "streetsoftarkov"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-7",
+          "description": "Ask Mechanic about the Eye of the World",
+          "descriptionZh": "向 Mechanic 询问世界之眼",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "they-are-already-here-opt-2",
+          "description": "Gain access to Mechanic",
+          "descriptionZh": "获得与 Mechanic 对话的条件",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "they-are-already-here-main-8",
+          "description": "Locate and neutralize a Cultist priest",
+          "descriptionZh": "找到并消灭一名邪教徒祭司",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "they-are-already-here-main-9",
+          "description": "Obtain more information about the Eye of the World",
+          "descriptionZh": "收集更多有关世界之眼的情报",
+          "type": "storyline",
+          "maps": [
+            "customs",
+            "reserve"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-10",
+          "description": "Locate the place marked with the Eye of the World on Lighthouse",
+          "descriptionZh": "在灯塔找到标有世界之眼的地点",
+          "type": "storyline",
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-11",
+          "description": "Investigate the ransacked cultist room in the chalet",
+          "descriptionZh": "调查木屋中被洗劫的邪教房间",
+          "type": "storyline",
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "they-are-already-here-opt-3",
+          "description": "Locate the victim's belongings",
+          "descriptionZh": "找到受害者的个人物品",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-12",
+          "description": "Locate and obtain the key mentioned in the victim's note",
+          "descriptionZh": "找到受害者笔记中提到的钥匙",
+          "type": "storyline",
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-13",
+          "description": "Locate the place marked with the Eye of the World on Woods",
+          "descriptionZh": "在森林找到标有世界之眼的地点",
+          "type": "storyline",
+          "maps": [
+            "woods"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-14",
+          "description": "Investigate the cultists' house marked with the Eye of the World",
+          "descriptionZh": "调查标有世界之眼的邪教房屋",
+          "type": "storyline",
+          "maps": [
+            "woods"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-15",
+          "description": "Locate the place marked with the Eye of the World on Shoreline",
+          "descriptionZh": "在海岸线找到标有世界之眼的地点",
+          "type": "storyline",
+          "maps": [
+            "shoreline"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-16",
+          "description": "Investigate the area around the Sordi communications tower",
+          "descriptionZh": "调查 Sordi 通讯塔周围区域",
+          "type": "storyline",
+          "maps": [
+            "shoreline"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-17",
+          "description": "Repair the Sordi tower",
+          "descriptionZh": "修复 Sordi 通讯塔",
+          "type": "storyline",
+          "maps": [
+            "shoreline"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-18",
+          "description": "Restore Arshavin's keycard",
+          "descriptionZh": "修复 Arshavin 的钥匙卡",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "they-are-already-here-main-19",
+          "description": "Gain access to NGO Cobalt's secret facility",
+          "descriptionZh": "设法进入 NGO Cobalt 的秘密设施",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-20",
+          "description": "Restore power at the station",
+          "descriptionZh": "恢复站点供电",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-21",
+          "description": "Turn on the cooling system in the server room",
+          "descriptionZh": "启动机房冷却系统",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-22",
+          "description": "Install a flash drive to download the data",
+          "descriptionZh": "插入 U 盘下载数据",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-23",
+          "description": "Investigate ARRS Station 14-4 KORD thoroughly",
+          "descriptionZh": "彻底调查 ARRS 14-4 KORD 站点",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-24",
+          "description": "Survive and extract from Interchange",
+          "descriptionZh": "从立交桥成功撤离",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-25",
+          "description": "Find a way to disconnect the station from external agents",
+          "descriptionZh": "断开站点与外部代理的连接",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-26",
+          "description": "Restore the ARRS station to backup settings",
+          "descriptionZh": "将 ARRS 站点恢复为备份设置",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-opt-4",
+          "description": "Check that the station power is turned on",
+          "descriptionZh": "确认站点电源已经开启",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-27",
+          "description": "Collect the flash drive from the ARRS station",
+          "descriptionZh": "从 ARRS 站点取回 U 盘",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-28",
+          "description": "Survive and extract from Interchange",
+          "descriptionZh": "从立交桥成功撤离",
+          "type": "storyline",
+          "maps": [
+            "interchange"
+          ]
+        },
+        {
+          "id": "they-are-already-here-main-29",
+          "description": "Hand over the flash drive with data to Mechanic",
+          "descriptionZh": "将装有数据的 U 盘交给 Mechanic",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "they-are-already-here-main-30",
+          "description": "Read the ARRS station specifications",
+          "descriptionZh": "阅读 ARRS 站点规格说明",
+          "type": "storyline",
+          "maps": []
+        }
+      ]
+    },
+    {
+      "id": "storyline:accidental-witness",
+      "name": "Accidental Witness",
+      "nameZh": "意外证人",
+      "description": "Check the car between customs dorm",
+      "descriptionZh": "调查科兹洛夫、债务关系、伏击现场与相关证据。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 8,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Accidental_Witness",
+      "objectives": [
+        {
+          "id": "accidental-witness-main-1",
+          "description": "Figure out where Kozlov lived",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-2",
+          "description": "Read the note on Kozlov's door",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-3",
+          "description": "Find out what Kozlov was involved in",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-4",
+          "description": "Ask the traders about Anastasia",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-5",
+          "description": "Access Skier's accomplice's apartment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-6",
+          "description": "Learn more about Skier's accomplice's apartment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-7",
+          "description": "Read the documents in Skier's accomplice's apartment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-8",
+          "description": "Report to Skier",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-9",
+          "description": "Talk to Ragman",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-10",
+          "description": "Locate Anastasia's apartment",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-11",
+          "description": "Investigate the entrance to Anastasia's building",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-12",
+          "description": "Learn more about Anastasia",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-13",
+          "description": "Locate courier Pasha",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-14",
+          "description": "Search the ambush spot",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-15",
+          "description": "Talk to Skier",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-16",
+          "description": "Locate Reshala's stash",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-17",
+          "description": "Investigate Reshala's bunkhouse",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-18",
+          "description": "Locate Kozlov's hideout",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-main-19",
+          "description": "Locate and obtain Kozlov's evidence",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-opt-1",
+          "description": "Access Kozlov's room",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-opt-2",
+          "description": "Figure out where to get Kozlov's key",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "accidental-witness-opt-3",
+          "description": "Find the key to Skier's accomplice's apartment",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        }
+      ]
+    },
+    {
+      "id": "storyline:the-labyrinth",
+      "name": "The Labyrinth",
+      "nameZh": "迷宫",
+      "description": "Go into the access tunnel in Shoreline Resort Basement\n\nRequires: Knossos key\nSee: escapefromtarkov.fandom.com/wiki/Knossos_LLC_facility_key",
+      "descriptionZh": "调查海岸线疗养院地下的 TerraGroup 设施与 BEAR 小队遭遇。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 9,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Labyrinth",
+      "objectives": [
+        {
+          "id": "labyrinth-main-1",
+          "description": "Ask the traders about the underground facility",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "labyrinth-opt-1",
+          "description": "Ask Therapist how to access the underground facility",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "labyrinth-main-2",
+          "description": "Wait for Jaeger to gather the keycards",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "labyrinth-main-3",
+          "description": "Figure out what happened to the BEAR squad",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "labyrinth-opt-2",
+          "description": "Locate the entrance to the underground facility beneath the Health Resort",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "shoreline"
+          ]
+        },
+        {
+          "id": "labyrinth-opt-3",
+          "description": "Access the facility",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "labyrinth-opt-4",
+          "description": "Locate the traces of the BEAR squad in The Labyrinth",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "labyrinth-opt-5",
+          "description": "Investigate the BEAR squad regroup spot at Item 1156",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "labyrinth-opt-6",
+          "description": "Locate the squad leader",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "labyrinth-opt-7",
+          "description": "Gather more information about the squad",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "labyrinth-opt-8",
+          "description": "Investigate the 5 lab staff bodies",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "labyrinth-opt-9",
+          "description": "Access the locked office",
+          "type": "storyline",
+          "optional": true,
+          "maps": []
+        },
+        {
+          "id": "labyrinth-main-4",
+          "description": "Listen to the audio tape from the office",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "labyrinth-main-5",
+          "description": "Hand over the audio tape to Jaeger",
+          "type": "storyline",
+          "maps": []
+        },
+        {
+          "id": "labyrinth-main-6",
+          "description": "Read the Labyrinth facility research report",
+          "type": "storyline",
+          "maps": [
+            "lab"
+          ]
+        },
+        {
+          "id": "labyrinth-opt-10",
+          "description": "Locate and obtain the Labyrinth facility research report",
+          "type": "storyline",
+          "optional": true,
+          "maps": [
+            "lab"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storyline:boreas",
+      "name": "Boreas",
+      "nameZh": "北风",
+      "description": "Investigate the distress signal, Paradigm Shipping, and secure transport to the Icebreaker.",
+      "descriptionZh": "调查求救信号、Paradigm Shipping 文件，并安排前往破冰船的交通。",
+      "traderId": "storyline",
+      "trader": "Story chapter",
+      "traderZh": "剧情章节",
+      "category": "storyline",
+      "storylineOrder": 10,
+      "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Boreas",
+      "objectives": [
+        {
+          "id": "boreas-main-1",
+          "description": "Investigate the distress signal and ask the traders",
+          "descriptionZh": "调查求救信号并询问商人",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-2",
+          "description": "Ask Mechanic about Boreas",
+          "descriptionZh": "向 Mechanic 询问 Boreas",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-3",
+          "description": "Repair the cellular equipment near the Scav bunker on Woods",
+          "descriptionZh": "维修森林 Scav 地堡附近的通信设备",
+          "type": "storyline",
+          "maps": [
+            "woods"
+          ]
+        },
+        {
+          "id": "boreas-main-4",
+          "description": "Obtain the Paradigm Shipping documents on Lighthouse",
+          "descriptionZh": "在灯塔取得 Paradigm Shipping 文件",
+          "type": "storyline",
+          "maps": [
+            "lighthouse"
+          ]
+        },
+        {
+          "id": "boreas-main-5",
+          "description": "Arrange transportation to the Icebreaker",
+          "descriptionZh": "安排前往破冰船的交通",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-6",
+          "description": "Complete the Prapor or BTR Driver transport branch",
+          "descriptionZh": "完成 Prapor 或 BTR Driver 的交通分支",
+          "type": "storyline",
+          "maps": [
+            "customs",
+            "reserve",
+            "shoreline",
+            "interchange"
+          ]
+        },
+        {
+          "id": "boreas-main-7",
+          "description": "Board the smugglers hovercraft on Shoreline",
+          "descriptionZh": "在海岸线登上走私者气垫船",
+          "type": "storyline",
+          "maps": [
+            "shoreline"
+          ]
+        },
+        {
+          "id": "boreas-main-8",
+          "description": "Investigate the Icebreaker and locate the scientist",
+          "descriptionZh": "调查破冰船并找到科学家",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-9",
+          "description": "Obtain explosives and breach the sealed story area",
+          "descriptionZh": "取得炸药并炸开封闭的剧情区域",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-10",
+          "description": "Learn the access code from the scientist and Mechanic",
+          "descriptionZh": "从科学家和 Mechanic 处取得访问密码",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-11",
+          "description": "Reach the captain and complete the evacuation steps",
+          "descriptionZh": "找到船长并完成撤离准备",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-12",
+          "description": "Recover the Icebreaker archive data",
+          "descriptionZh": "取得破冰船档案数据",
+          "type": "storyline"
+        },
+        {
+          "id": "boreas-main-13",
+          "description": "Report the findings and complete the chapter",
+          "descriptionZh": "报告调查结果并完成章节",
+          "type": "storyline"
+        }
+      ]
+    }
+  ]
+}

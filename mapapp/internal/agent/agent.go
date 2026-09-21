@@ -22,13 +22,18 @@ import (
 	"time"
 
 	"github.com/fsnotify/fsnotify"
+
+	"tarkovmap/internal/progress"
+	"tarkovmap/internal/questlog"
 )
 
 var (
 	// PVP: "TRACE-NetworkGameCreate profileStatus ... location: bigmap, ..."
 	locationRe = regexp.MustCompile(`(?i)location:\s*(\S+),`)
 	// PVE: "scene preset ... path:maps/factory4_day.bundle"
-	locationRe2 = regexp.MustCompile(`(?i)path:maps/(\w+)\.bundle`)
+	locationRe2     = regexp.MustCompile(`(?i)path:maps/(\w+)\.bundle`)
+	sessionModeRe   = regexp.MustCompile(`(?i)Session mode:\s*(Pve|PVE|Regular|PVP)`)
+	profileSelectRe = regexp.MustCompile(`(SelectProfile|SelectedProfile|PrepareSelectedProfileLocally) ProfileId:(\w+) AccountId:(\d+)`)
 
 	// a log line starting with a date — ends a notification JSON block
 	lineStartWithDateRe = regexp.MustCompile(`^\d{4}-\d{2}-\d{2} \d{1,2}:\d{1,2}:\d{1,2}\.\d{3}`)
@@ -48,26 +53,7 @@ type pushNotification struct {
 // questStatusFromTemplate derives a quest status from the notification
 // templateId, e.g. "6574e0de… successMessageText" → ("6574e0de…", "completed").
 func questStatusFromTemplate(templateID string, rawType string) (questID, status string, ok bool) {
-	parts := strings.Fields(templateID)
-	if len(parts) == 0 || parts[0] == "" {
-		return "", "", false
-	}
-	questID = parts[0]
-	suffix := ""
-	if len(parts) > 1 {
-		suffix = strings.ToLower(parts[1])
-	}
-	switch {
-	case strings.Contains(suffix, "successmessagetext"):
-		status = "completed"
-	case strings.Contains(suffix, "failmessagetext"):
-		status = "failed"
-	case strings.Contains(suffix, "startmessagetext"), strings.Contains(suffix, "acceptmessagetext"):
-		status = "started"
-	default:
-		status = rawType // unknown template — keep the raw type for debugging
-	}
-	return questID, status, true
+	return questlog.StatusFromNotification(templateID, rawType)
 }
 
 type Config struct {
@@ -75,29 +61,62 @@ type Config struct {
 	Token          string
 	ScreenshotsDir string
 	LogsDir        string
+	Profile        string
+	Mode           string
+	Wipe           string
+	FromSession    string
+	SourceProfile  string
+}
+
+// ReplayQuests scans all historical task notifications and uploads them as an
+// idempotent batch. The server performs the final conflict resolution.
+func (a *Agent) ReplayQuests(apply bool) (questlog.ScanResult, error) {
+	result, err := questlog.ScanDirFrom(a.cfg.LogsDir, progress.Scope{
+		Profile: a.cfg.Profile, Mode: a.cfg.Mode, Wipe: a.cfg.Wipe,
+	}, a.cfg.FromSession, a.cfg.SourceProfile)
+	if err != nil {
+		return result, err
+	}
+	if !apply || len(result.Events) == 0 {
+		return result, nil
+	}
+	if a.cfg.FromSession == "" && len(result.Breakpoints) > 1 {
+		return result, fmt.Errorf("multiple profile/version breakpoints found; select one with -from-session")
+	}
+	err = a.post("/api/ingest/quest-events", map[string]any{"events": result.Events})
+	return result, err
 }
 
 type Agent struct {
 	cfg    Config
 	client *http.Client
 
-	seenScreens map[string]bool
-	lastMapSent string
+	seenScreens   map[string]bool
+	lastMapSent   string
+	lastScopeSent string
+	activeProfile string
+	activeMode    string
 
-	logSession  string
-	logPosition map[string]int64
+	logSession   string
+	logPosition  map[string]int64
+	pendingQuest bool
+	questJSON    strings.Builder
 
 	startedAt        time.Time
 	cleanScreenshots bool // polled from the server (web UI toggle)
+	onQuest          func(string, string)
+	onScope          func(progress.Scope)
 }
 
 func New(cfg Config) *Agent {
 	return &Agent{
-		cfg:         cfg,
-		client:      &http.Client{Timeout: 5 * time.Second},
-		seenScreens: map[string]bool{},
-		logPosition: map[string]int64{},
-		startedAt:   time.Now(),
+		cfg:           cfg,
+		client:        &http.Client{Timeout: 5 * time.Second},
+		seenScreens:   map[string]bool{},
+		logPosition:   map[string]int64{},
+		startedAt:     time.Now(),
+		activeProfile: cfg.Profile,
+		activeMode:    cfg.Mode,
 	}
 }
 
@@ -247,6 +266,8 @@ func (a *Agent) scanLogs() {
 	if session != a.logSession {
 		a.logSession = session
 		a.logPosition = map[string]int64{}
+		a.pendingQuest = false
+		a.questJSON.Reset()
 		log.Printf("agent: log session %s", filepath.Base(session))
 	}
 
@@ -288,10 +309,31 @@ func (a *Agent) scanLogs() {
 // quest notifications are a marker line followed by a multi-line JSON block
 // (same parsing as TarkovPilot's LogsWatcher).
 func (a *Agent) processLines(lines []string) {
-	for i := 0; i < len(lines); i++ {
-		line := lines[i]
+	for _, line := range lines {
 		if line == "" {
 			continue
+		}
+		if a.pendingQuest {
+			if lineStartWithDateRe.MatchString(line) {
+				a.flushQuestPayload(true)
+			} else {
+				a.questJSON.WriteString(line)
+				a.questJSON.WriteByte('\n')
+				a.flushQuestPayload(false)
+				continue
+			}
+		}
+		if match := sessionModeRe.FindStringSubmatch(line); match != nil && a.cfg.Mode == "" {
+			if strings.EqualFold(match[1], "pve") {
+				a.activeMode = "pve"
+			} else {
+				a.activeMode = "pvp"
+			}
+			a.sendScope()
+		}
+		if match := profileSelectRe.FindStringSubmatch(line); match != nil && a.cfg.Profile == "" {
+			a.activeProfile = match[2]
+			a.sendScope()
 		}
 
 		if raw := matchLocation(line); raw != "" {
@@ -302,41 +344,62 @@ func (a *Agent) processLines(lines []string) {
 		if !strings.Contains(line, taskSubstring) {
 			continue
 		}
+		a.pendingQuest = true
+		if brace := strings.IndexByte(line, '{'); brace >= 0 {
+			a.questJSON.WriteString(line[brace:])
+			a.questJSON.WriteByte('\n')
+			a.flushQuestPayload(false)
+		}
+	}
+}
 
-		// the notification JSON spans the following lines until a dated line
-		var sb strings.Builder
-		i++
-		for i < len(lines) {
-			jl := lines[i]
-			if lineStartWithDateRe.MatchString(jl) {
-				i-- // the dated line belongs to the outer loop
-				break
-			}
-			sb.WriteString(jl)
-			sb.WriteString("\n")
-			i++
-		}
+func (a *Agent) sendScope() {
+	scope := progress.NormalizeScope(progress.Scope{Profile: a.activeProfile, Mode: a.activeMode, Wipe: a.cfg.Wipe})
+	key := scope.Key()
+	if key == a.lastScopeSent {
+		return
+	}
+	if a.onScope != nil {
+		a.onScope(scope)
+		a.lastScopeSent = key
+		return
+	}
+	if err := a.sendJSON(http.MethodPut, "/api/progress/scope", scope); err != nil {
+		log.Printf("agent: send profile scope: %v", err)
+		return
+	}
+	a.lastScopeSent = key
+}
 
-		jsonStr := strings.TrimSpace(sb.String())
-		if jsonStr == "" {
-			continue
+func (a *Agent) flushQuestPayload(force bool) {
+	payload := strings.TrimSpace(a.questJSON.String())
+	if payload == "" {
+		if force {
+			a.pendingQuest = false
+			a.questJSON.Reset()
 		}
-		var rec pushNotification
-		if err := json.Unmarshal([]byte(jsonStr), &rec); err != nil {
-			continue // incomplete/broken block — skip
-		}
-		if rec.Message.TemplateID == "" {
-			continue
-		}
-		questID, status, ok := questStatusFromTemplate(rec.Message.TemplateID, statusToString(rec.Message.Type))
-		if !ok {
-			continue
-		}
+		return
+	}
+	if !json.Valid([]byte(payload)) && !force {
+		return
+	}
+	a.pendingQuest = false
+	a.questJSON.Reset()
+	var rec pushNotification
+	if json.Unmarshal([]byte(payload), &rec) != nil || rec.Message.TemplateID == "" {
+		return
+	}
+	questID, status, ok := questStatusFromTemplate(rec.Message.TemplateID, statusToString(rec.Message.Type))
+	if ok {
 		a.sendQuest(questID, status)
 	}
 }
 
 func (a *Agent) sendQuest(questID, status string) {
+	if a.onQuest != nil {
+		a.onQuest(questID, status)
+		return
+	}
 	if err := a.post("/api/ingest/quest", map[string]string{"questId": questID, "status": status}); err != nil {
 		log.Printf("agent: send quest: %v", err)
 		return
@@ -446,12 +509,16 @@ func readNewLines(path string, pos int64) ([]string, int64) {
 // --- http ---
 
 func (a *Agent) post(path string, body any) error {
+	return a.sendJSON(http.MethodPost, path, body)
+}
+
+func (a *Agent) sendJSON(method, path string, body any) error {
 	b, err := json.Marshal(body)
 	if err != nil {
 		return err
 	}
 	url := strings.TrimSuffix(a.cfg.ServerURL, "/") + path
-	req, err := http.NewRequest(http.MethodPost, url, bytes.NewReader(b))
+	req, err := http.NewRequest(method, url, bytes.NewReader(b))
 	if err != nil {
 		return err
 	}

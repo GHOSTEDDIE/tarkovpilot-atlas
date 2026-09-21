@@ -6,8 +6,8 @@
   "floors": [
    "Basement",
    "Ground_Floor",
-   "First_Floor",
-   "Second_Floor"
+   "Second_Floor",
+   "Third_Floor"
   ],
   "defaultFloor": "Ground_Floor",
   "projection": {
@@ -274,6 +274,12 @@
   "name": "Lighthouse",
   "nameRu": "Маяк",
   "svgFile": "Lighthouse.svg",
+  "fallbackImage": "reference/lighthouse-2d.jpg",
+  "fallbackImageSource": "https://tarkov.dev/maps/lighthouse-2d.jpg",
+  "fallbackImageWidth": 2242,
+  "fallbackImageHeight": 3892,
+  "fallbackAttribution": "Shebuka & Jindouz / Tarkov.dev",
+  "fallbackAttributionUrl": "https://tarkov.dev/map/lighthouse-2d",
   "floors": [
    "Ground_Level"
   ],
@@ -391,10 +397,171 @@
   "floorRanges": [],
   "nameZh": "中心区"
  },
+ "labyrinth": {
+  "name": "The Labyrinth",
+  "nameRu": "Лабиринт",
+  "nameZh": "迷宫",
+  "svgFile": "",
+  "floors": [
+   "Main_Level"
+  ],
+  "defaultFloor": "Main_Level",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 270,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -52,
+   "maxX": 53,
+   "minZ": -37,
+   "maxZ": 76
+  },
+  "floorRanges": [
+   {
+    "floor": "Main_Level",
+    "minY": -10000,
+    "maxY": 10000
+   }
+  ],
+  "raster": {
+   "zoom": 2,
+   "tileSize": 256,
+   "transform": [
+    2.115,
+    85.5,
+    2.115,
+    128
+   ],
+   "layers": [
+    {
+     "floor": "Main_Level",
+     "tilePath": "tiles/labyrinth/main/{z}/{x}-{y}.png",
+     "sourceUrl": "https://assets.tarkov.dev/maps/labyrinth/main/{z}/{x}/{y}.png"
+    }
+   ]
+  },
+  "attribution": "Tarkov.dev",
+  "attributionUrl": "https://tarkov.dev/map/labyrinth"
+ },
+ "icebreaker": {
+  "name": "Icebreaker",
+  "nameRu": "Ледокол",
+  "nameZh": "破冰船",
+  "svgFile": "",
+  "floors": [
+   "Control_Room",
+   "Engine_Room",
+   "Engine_Room_Upper",
+   "Fuel_Pumps_Lower",
+   "Fuel_Pumps",
+   "Storage_Security",
+   "Infirmary",
+   "Helipad",
+   "Gym_Canteen",
+   "Accommodation_Lower",
+   "Accommodation_Mid",
+   "Accommodation_Upper",
+   "Officers_Deck",
+   "Stairs_Blocked",
+   "Bridge",
+   "Bridge_Roof"
+  ],
+  "defaultFloor": "Infirmary",
+  "projection": {
+   "axisOrder": "x,y,z",
+   "horizontalAxes": [
+    "x",
+    "z"
+   ],
+   "mirrorX": false,
+   "mirrorY": true,
+   "rotation": 180,
+   "affine": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "calibrated": false,
+   "calibrationError": 0
+  },
+  "bounds": {
+   "minX": -65.5,
+   "maxX": 77,
+   "minZ": -64.5,
+   "maxZ": 67.4
+  },
+  "floorRanges": [
+   { "floor": "Control_Room", "minY": -10000, "maxY": 3.5 },
+   { "floor": "Engine_Room", "minY": 3.6, "maxY": 5.6 },
+   { "floor": "Engine_Room_Upper", "minY": 5.7, "maxY": 8.7 },
+   { "floor": "Fuel_Pumps_Lower", "minY": 8.8, "maxY": 11.8 },
+   { "floor": "Fuel_Pumps", "minY": 11.9, "maxY": 14.9 },
+   { "floor": "Storage_Security", "minY": 15, "maxY": 18.92 },
+   { "floor": "Infirmary", "minY": 18.92, "maxY": 19.56 },
+   { "floor": "Helipad", "minY": 19.57, "maxY": 22.1 },
+   { "floor": "Gym_Canteen", "minY": 22.2, "maxY": 25.2 },
+   { "floor": "Accommodation_Lower", "minY": 25.3, "maxY": 28.2 },
+   { "floor": "Accommodation_Mid", "minY": 28.3, "maxY": 31.3 },
+   { "floor": "Accommodation_Upper", "minY": 31.4, "maxY": 34.4 },
+   { "floor": "Officers_Deck", "minY": 34.5, "maxY": 37.5 },
+   { "floor": "Stairs_Blocked", "minY": 37.6, "maxY": 40.6 },
+   { "floor": "Bridge", "minY": 40.7, "maxY": 43.7 },
+   { "floor": "Bridge_Roof", "minY": 43.8, "maxY": 10000 }
+  ],
+  "raster": {
+   "zoom": 2,
+   "tileSize": 256,
+   "transform": [
+    2,
+    125,
+    3.5,
+    91
+   ],
+   "layers": [
+    { "floor": "Control_Room", "tilePath": "tiles/icebreaker/00_control_room/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/00_control_room/{z}/{x}/{y}.png" },
+    { "floor": "Engine_Room", "tilePath": "tiles/icebreaker/01_engine_room/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/01_engine_room/{z}/{x}/{y}.png" },
+    { "floor": "Engine_Room_Upper", "tilePath": "tiles/icebreaker/02_engine_room_upper/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/02_engine_room_upper/{z}/{x}/{y}.png" },
+    { "floor": "Fuel_Pumps_Lower", "tilePath": "tiles/icebreaker/03_fuel_pumps_lower/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/03_fuel_pumps_lower/{z}/{x}/{y}.png" },
+    { "floor": "Fuel_Pumps", "tilePath": "tiles/icebreaker/04_fuel_pumps/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/04_fuel_pumps/{z}/{x}/{y}.png" },
+    { "floor": "Storage_Security", "tilePath": "tiles/icebreaker/05_storage_ecurity/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/05_storage_ecurity/{z}/{x}/{y}.png" },
+    { "floor": "Infirmary", "tilePath": "tiles/icebreaker/06_infirmary/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/06_infirmary/{z}/{x}/{y}.png" },
+    { "floor": "Helipad", "tilePath": "tiles/icebreaker/07_helipad/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/07_helipad/{z}/{x}/{y}.png" },
+    { "floor": "Gym_Canteen", "tilePath": "tiles/icebreaker/08_gym-canteen/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/08_gym-canteen/{z}/{x}/{y}.png" },
+    { "floor": "Accommodation_Lower", "tilePath": "tiles/icebreaker/09_accommodation_lower/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/09_accommodation_lower/{z}/{x}/{y}.png" },
+    { "floor": "Accommodation_Mid", "tilePath": "tiles/icebreaker/10_accommodation_mid/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/10_accommodation_mid/{z}/{x}/{y}.png" },
+    { "floor": "Accommodation_Upper", "tilePath": "tiles/icebreaker/11_accommodation_upper/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/11_accommodation_upper/{z}/{x}/{y}.png" },
+    { "floor": "Officers_Deck", "tilePath": "tiles/icebreaker/12_officers_deck/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/12_officers_deck/{z}/{x}/{y}.png" },
+    { "floor": "Stairs_Blocked", "tilePath": "tiles/icebreaker/13_stairs_blocked/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/13_stairs_blocked/{z}/{x}/{y}.png" },
+    { "floor": "Bridge", "tilePath": "tiles/icebreaker/14_bridge/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/14_bridge/{z}/{x}/{y}.png" },
+    { "floor": "Bridge_Roof", "tilePath": "tiles/icebreaker/15_bridge_roof/{z}/{x}-{y}.png", "sourceUrl": "https://assets.tarkov.dev/maps/icebreaker/15_bridge_roof/{z}/{x}/{y}.png" }
+   ]
+  },
+  "attribution": "TarkovBOT.eu / Tarkov.dev",
+  "attributionUrl": "https://tarkov.dev/map/icebreaker"
+ },
  "terminal": {
   "name": "Terminal",
   "nameRu": "",
-  "nameZh": "",
+  "nameZh": "航站楼",
   "svgFile": "Terminal.svg",
   "floors": [
    "Ground_Level"

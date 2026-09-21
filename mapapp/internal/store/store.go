@@ -10,19 +10,20 @@ import (
 	"time"
 
 	"tarkovmap/internal/parser"
+	"tarkovmap/internal/progress"
 	"tarkovmap/internal/registry"
 )
 
 const historyLimit = 500
 
 type PositionEvent struct {
-	MapID    string        `json:"mapId"`
-	World    parser.Vec3   `json:"world"`
-	Rotation parser.Quat   `json:"rotation"`
-	Raw      string        `json:"rawFilename,omitempty"`
-	Floor    string        `json:"floor,omitempty"`
-	Time     time.Time     `json:"time"`
-	Source   string        `json:"source"` // "screenshot" | "manual" | "agent"
+	MapID    string      `json:"mapId"`
+	World    parser.Vec3 `json:"world"`
+	Rotation parser.Quat `json:"rotation"`
+	Raw      string      `json:"rawFilename,omitempty"`
+	Floor    string      `json:"floor,omitempty"`
+	Time     time.Time   `json:"time"`
+	Source   string      `json:"source"` // "screenshot" | "manual" | "agent"
 }
 
 type Settings struct {
@@ -33,12 +34,14 @@ type Settings struct {
 }
 
 type persisted struct {
-	CurrentMap  string                       `json:"currentMap"`
-	Position    *PositionEvent               `json:"position"`
-	Projections map[string]registry.Projection `json:"projections"`
+	CurrentMap  string                           `json:"currentMap"`
+	Position    *PositionEvent                   `json:"position"`
+	Projections map[string]registry.Projection   `json:"projections"`
 	FloorRanges map[string][]registry.FloorRange `json:"floorRanges"`
-	QuestStatus map[string]string            `json:"questStatus"`
-	Settings    Settings                     `json:"settings"`
+	QuestStatus map[string]string                `json:"questStatus,omitempty"`
+	Progress    *progress.Book                   `json:"progress,omitempty"`
+	ActiveScope progress.Scope                   `json:"activeScope"`
+	Settings    Settings                         `json:"settings"`
 }
 
 type Store struct {
@@ -50,7 +53,8 @@ type Store struct {
 	history     []PositionEvent
 	overrides   map[string]registry.Projection
 	floorRng    map[string][]registry.FloorRange
-	questStatus map[string]string
+	progress    *progress.Book
+	activeScope progress.Scope
 	settings    Settings
 	onChange    func()
 }
@@ -61,7 +65,8 @@ func New(path string, reg *registry.Registry) *Store {
 		reg:         reg,
 		overrides:   map[string]registry.Projection{},
 		floorRng:    map[string][]registry.FloorRange{},
-		questStatus: map[string]string{},
+		progress:    progress.NewBook(),
+		activeScope: progress.NormalizeScope(progress.Scope{}),
 	}
 	s.load()
 	return s
@@ -185,24 +190,106 @@ func (s *Store) SetFloorRanges(mapID string, fr []registry.FloorRange) bool {
 func (s *Store) QuestStatuses() map[string]string {
 	s.mu.Lock()
 	defer s.mu.Unlock()
-	out := make(map[string]string, len(s.questStatus))
-	for k, v := range s.questStatus {
-		out[k] = v
+	state := s.progress.Snapshot(s.activeScope)
+	out := make(map[string]string, len(state.Tasks))
+	for k, record := range state.Tasks {
+		if record.Status != progress.StatusUntracked {
+			out[k] = record.Status
+		}
 	}
 	return out
 }
 
 // SetQuestStatus records a quest status; empty status clears the record.
 func (s *Store) SetQuestStatus(questID, status string) {
-	s.mu.Lock()
 	if status == "" {
-		delete(s.questStatus, questID)
-	} else {
-		s.questStatus[questID] = status
+		status = progress.StatusUntracked
 	}
+	s.mu.Lock()
+	s.progress.SetTask(s.activeScope, questID, status, "manual", time.Now().UTC())
 	s.mu.Unlock()
 	s.save()
 	s.changed()
+}
+
+func (s *Store) ActiveScope() progress.Scope {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	return s.activeScope
+}
+
+func (s *Store) SetActiveScope(scope progress.Scope) {
+	s.mu.Lock()
+	s.activeScope = progress.NormalizeScope(scope)
+	s.progress.State(s.activeScope)
+	s.mu.Unlock()
+	s.save()
+	s.changed()
+}
+
+func (s *Store) Progress(scope progress.Scope) progress.ProfileState {
+	s.mu.Lock()
+	defer s.mu.Unlock()
+	return s.progress.Snapshot(scope)
+}
+
+func (s *Store) ApplyTaskEvents(events []progress.TaskEvent) []progress.ApplyResult {
+	now := time.Now().UTC()
+	s.mu.Lock()
+	results := make([]progress.ApplyResult, len(events))
+	changed := false
+	for i, event := range events {
+		if event.Profile == "" {
+			event.Profile = s.activeScope.Profile
+		}
+		if event.Mode == "" {
+			event.Mode = s.activeScope.Mode
+		}
+		if event.Wipe == "" {
+			event.Wipe = s.activeScope.Wipe
+		}
+		results[i] = s.progress.ApplyEvent(event, now)
+		changed = changed || results[i].Applied
+	}
+	s.mu.Unlock()
+	if changed {
+		s.save()
+		s.changed()
+	}
+	return results
+}
+
+func (s *Store) PreviewTaskEvents(events []progress.TaskEvent) []progress.ApplyResult {
+	s.mu.Lock()
+	book := s.progress.Clone()
+	scope := s.activeScope
+	s.mu.Unlock()
+	now := time.Now().UTC()
+	results := make([]progress.ApplyResult, len(events))
+	for i, event := range events {
+		if event.Profile == "" {
+			event.Profile = scope.Profile
+		}
+		if event.Mode == "" {
+			event.Mode = scope.Mode
+		}
+		if event.Wipe == "" {
+			event.Wipe = scope.Wipe
+		}
+		results[i] = book.ApplyEvent(event, now)
+	}
+	return results
+}
+
+func (s *Store) SetObjectiveStatus(scope progress.Scope, objectiveID string, completed bool) progress.ApplyResult {
+	s.mu.Lock()
+	result := s.progress.SetObjective(scope, objectiveID, completed, time.Now().UTC())
+	s.mu.Unlock()
+	if result.Applied {
+		s.save()
+		s.changed()
+	}
+	return result
 }
 
 func (s *Store) GetSettings() Settings {
@@ -236,10 +323,31 @@ func (s *Store) load() {
 	if p.FloorRanges != nil {
 		s.floorRng = p.FloorRanges
 	}
-	if p.QuestStatus != nil {
-		s.questStatus = p.QuestStatus
+	migrated := false
+	if p.Progress != nil {
+		p.Progress.Ensure()
+		s.progress = p.Progress
+	} else if len(p.QuestStatus) > 0 {
+		// Preserve the exact pre-migration state before the first v2 save.
+		if _, err := os.Stat(s.path + ".v1.bak"); os.IsNotExist(err) {
+			_ = os.WriteFile(s.path+".v1.bak", b, 0o644)
+		}
+		now := time.Now().UTC()
+		for taskID, status := range p.QuestStatus {
+			if status == "" {
+				continue
+			}
+			s.progress.SetTask(s.activeScope, taskID, status, "legacy-migration", now)
+		}
+		migrated = true
+	}
+	if p.ActiveScope.Profile != "" || p.ActiveScope.Mode != "" || p.ActiveScope.Wipe != "" {
+		s.activeScope = progress.NormalizeScope(p.ActiveScope)
 	}
 	s.settings = p.Settings
+	if migrated {
+		s.save()
+	}
 }
 
 func (s *Store) save() {
@@ -247,12 +355,27 @@ func (s *Store) save() {
 		return
 	}
 	s.mu.Lock()
+	var position *PositionEvent
+	if s.position != nil {
+		copyPosition := *s.position
+		position = &copyPosition
+	}
+	projections := make(map[string]registry.Projection, len(s.overrides))
+	for id, projection := range s.overrides {
+		projection.HorizontalAxes = append([]string(nil), projection.HorizontalAxes...)
+		projections[id] = projection
+	}
+	floorRanges := make(map[string][]registry.FloorRange, len(s.floorRng))
+	for id, ranges := range s.floorRng {
+		floorRanges[id] = append([]registry.FloorRange(nil), ranges...)
+	}
 	p := persisted{
 		CurrentMap:  s.current,
-		Position:    s.position,
-		Projections: s.overrides,
-		FloorRanges: s.floorRng,
-		QuestStatus: s.questStatus,
+		Position:    position,
+		Projections: projections,
+		FloorRanges: floorRanges,
+		Progress:    s.progress.Clone(),
+		ActiveScope: s.activeScope,
 		Settings:    s.settings,
 	}
 	s.mu.Unlock()
@@ -260,9 +383,11 @@ func (s *Store) save() {
 	if err != nil {
 		return
 	}
+	if err := os.MkdirAll(filepath.Dir(s.path), 0o755); err != nil {
+		return
+	}
 	tmp := s.path + ".tmp"
 	if os.WriteFile(tmp, b, 0o644) == nil {
 		_ = os.Rename(tmp, s.path)
 	}
-	_ = os.MkdirAll(filepath.Dir(s.path), 0o755)
 }
